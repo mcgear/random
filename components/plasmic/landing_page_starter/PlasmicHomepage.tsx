@@ -1552,6 +1552,9 @@ function PlasmicHomepage__RenderFunc(props: {
                         />
                       }
                       flat={"flat" as const}
+                      link={
+                        "/docs/guides/e-commerce/forestry-11ty-jamcart/overview" as const
+                      }
                       showEndIcon={"showEndIcon" as const}
                     >
                       <div
@@ -1807,7 +1810,97 @@ function PlasmicHomepage__RenderFunc(props: {
               fullHeight: 1787,
               aspectRatio: undefined
             }}
-          />
+          >
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(
+                defaultcss.all,
+                projectcss.all,
+                sty.freeBox__vnQMz
+              )}
+            >
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  projectcss.all,
+                  defaultcss.__wab_text,
+                  sty.text__yaErR
+                )}
+              >
+                {"Welcome"}
+              </div>
+
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  projectcss.all,
+                  defaultcss.__wab_text,
+                  sty.text___0Sb3N
+                )}
+              >
+                {"Let's get started"}
+              </div>
+
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  projectcss.all,
+                  defaultcss.__wab_text,
+                  sty.text__bGarT
+                )}
+              >
+                {
+                  "Start building your next open-source project to engage your users."
+                }
+              </div>
+            </p.Stack>
+
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(
+                defaultcss.all,
+                projectcss.all,
+                sty.freeBox__q7QsW
+              )}
+            >
+              <Button
+                className={classNames("__wab_instance", sty.button__lsSLx)}
+                color={"blue" as const}
+                endIcon={
+                  <ChevronRightIcon
+                    className={classNames(
+                      defaultcss.all,
+                      projectcss.all,
+                      sty.svg__tWuK
+                    )}
+                    role={"img"}
+                  />
+                }
+                link={"/" as const}
+                showEndIcon={"showEndIcon" as const}
+              >
+                {"Start now"}
+              </Button>
+
+              <Button
+                bgDifference={"bgDifference" as const}
+                className={classNames("__wab_instance", sty.button__bep7L)}
+              >
+                <div
+                  className={classNames(
+                    defaultcss.all,
+                    projectcss.all,
+                    defaultcss.__wab_text,
+                    sty.text__gjKxq
+                  )}
+                >
+                  {"Learn more…"}
+                </div>
+              </Button>
+            </p.Stack>
+          </CallToActionSection>
 
           <FooterSection
             data-plasmic-name={"footerSection"}
