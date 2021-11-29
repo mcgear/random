@@ -1855,7 +1855,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 )}
               >
                 {
-                  "Start building your next open-source project to engage your users."
+                  "Start building your next open-source project that engages your users."
                 }
               </div>
             </p.Stack>
