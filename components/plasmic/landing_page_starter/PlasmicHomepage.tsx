@@ -202,7 +202,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         sty.text__bAdTn
                       )}
                     >
-                      {"Develop. Deploy. Engage."}
+                      {"Accelerated Engagement"}
                     </div>
 
                     <div
@@ -213,7 +213,9 @@ function PlasmicHomepage__RenderFunc(props: {
                         sty.text__zKop
                       )}
                     >
-                      {"Build Fatster. Test Faster.  Iterate Faster."}
+                      {
+                        "Accelerate software delivery by keeping dirty code out of your main branch"
+                      }
                     </div>
                   </p.Stack>
 
