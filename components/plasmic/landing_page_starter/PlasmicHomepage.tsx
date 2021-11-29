@@ -1882,7 +1882,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     role={"img"}
                   />
                 }
-                link={"/" as const}
+                link={"/dashboard" as const}
                 showEndIcon={"showEndIcon" as const}
               >
                 {"Start now"}
