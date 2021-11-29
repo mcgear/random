@@ -616,6 +616,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       />
                     }
                     flat={"flat" as const}
+                    link={"/docs" as const}
                     showEndIcon={"showEndIcon" as const}
                   >
                     <div
