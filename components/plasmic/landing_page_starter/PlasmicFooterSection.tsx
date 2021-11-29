@@ -289,25 +289,29 @@ function PlasmicFooterSection__RenderFunc(props: {
             className={classNames("__wab_instance", sty.button__tX3Zg)}
             color={"navLink" as const}
             flat={"flat" as const}
+            link={"/docs" as const}
           >
             {"Documentation"}
           </Button>
 
-          <Button
-            className={classNames("__wab_instance", sty.button__g5Apb)}
-            color={"navLink" as const}
-            flat={"flat" as const}
-          >
-            {"FAQs"}
-          </Button>
-
-          <Button
-            className={classNames("__wab_instance", sty.button__g6XVu)}
-            color={"navLink" as const}
-            flat={"flat" as const}
-          >
-            {"Status"}
-          </Button>
+          {true ? (
+            <Button
+              className={classNames("__wab_instance", sty.button__g5Apb)}
+              color={"navLink" as const}
+              flat={"flat" as const}
+            >
+              {"FAQs"}
+            </Button>
+          ) : null}
+          {true ? (
+            <Button
+              className={classNames("__wab_instance", sty.button__g6XVu)}
+              color={"navLink" as const}
+              flat={"flat" as const}
+            >
+              {"Status"}
+            </Button>
+          ) : null}
         </p.Stack>
 
         <p.Stack

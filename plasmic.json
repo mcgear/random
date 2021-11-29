@@ -466,6 +466,11 @@
           "id": "Jivi028fR",
           "name": "image 8",
           "filePath": "../public/plasmic/landing_page_starter/images/image8.png"
+        },
+        {
+          "id": "Vc1KQZImW",
+          "name": "image 9",
+          "filePath": "../public/plasmic/landing_page_starter/images/image9.png"
         }
       ],
       "indirect": false,

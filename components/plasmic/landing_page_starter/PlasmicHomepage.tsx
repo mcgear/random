@@ -1809,9 +1809,9 @@ function PlasmicHomepage__RenderFunc(props: {
             data-plasmic-override={overrides.callToActionSection}
             className={classNames("__wab_instance", sty.callToActionSection)}
             image={{
-              src: "/plasmic/landing_page_starter/images/meeting.jpeg",
-              fullWidth: 2916,
-              fullHeight: 1787,
+              src: "/plasmic/landing_page_starter/images/image9.png",
+              fullWidth: 1200,
+              fullHeight: 470,
               aspectRatio: undefined
             }}
           >

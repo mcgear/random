@@ -312,6 +312,7 @@
 }
 .button__g5Apb:global(.__wab_instance) {
   position: relative;
+  display: none;
 }
 .svg__fyjXs {
   width: 24px;
@@ -327,6 +328,7 @@
 }
 .button__g6XVu:global(.__wab_instance) {
   position: relative;
+  display: none;
 }
 .svg__uvsnt {
   width: 24px;
