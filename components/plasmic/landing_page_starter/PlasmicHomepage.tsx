@@ -379,7 +379,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 <ValueProp
                   className={classNames("__wab_instance", sty.valueProp__abLjc)}
                   description={
-                    "Nulla odio mauris enim parturient adipiscing vestibulum inceptos."
+                    "orchestration tools that bring open source to your solutions."
                   }
                   flatIcon={"flatIcon" as const}
                   icon={
@@ -398,7 +398,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 <ValueProp
                   className={classNames("__wab_instance", sty.valueProp__aRwE0)}
                   description={
-                    "Consequat scelerisque a eros taciti nisl a sodales."
+                    "pages for your users, faster time to market for your team."
                   }
                   flatIcon={"flatIcon" as const}
                   icon={
@@ -416,7 +416,18 @@ function PlasmicHomepage__RenderFunc(props: {
 
                 <ValueProp
                   className={classNames("__wab_instance", sty.valueProp__aICgJ)}
-                  description={"At ut condimentum amet adipiscing ac diam a."}
+                  description={
+                    <div
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        defaultcss.__wab_text,
+                        sty.text__jyQhh
+                      )}
+                    >
+                      {"for engaging users with modern web projects."}
+                    </div>
+                  }
                   flatIcon={"flatIcon" as const}
                   icon={
                     <CheckIcon
@@ -428,37 +439,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       role={"img"}
                     />
                   }
-                  title={"Best and brightest"}
-                />
-
-                <ValueProp
-                  className={classNames("__wab_instance", sty.valueProp__xqzi3)}
-                  description={
-                    "Donec purus nec vestibulum volutpat vivamus vulputate suspendisse."
-                  }
-                  flatIcon={"flatIcon" as const}
-                  icon={
-                    <CheckIcon
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.svg__yFeyv
-                      )}
-                      role={"img"}
-                    />
-                  }
-                  title={
-                    <div
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        defaultcss.__wab_text,
-                        sty.text___5DI78
-                      )}
-                    >
-                      {"Dynamic range"}
-                    </div>
-                  }
+                  title={"Best practices"}
                 />
               </p.Stack>
 
@@ -473,9 +454,7 @@ function PlasmicHomepage__RenderFunc(props: {
               >
                 <ValueProp
                   className={classNames("__wab_instance", sty.valueProp__sNrTh)}
-                  description={
-                    "Commodo pretium himenaeos nisi potenti ad in ante."
-                  }
+                  description={"devops powered by modern devops practices."}
                   flatIcon={"flatIcon" as const}
                   icon={
                     <CheckIcon
@@ -504,7 +483,18 @@ function PlasmicHomepage__RenderFunc(props: {
                 <ValueProp
                   className={classNames("__wab_instance", sty.valueProp__i37A5)}
                   description={
-                    "Magna ullamcorper ut arcu nisi a per facilisis."
+                    <div
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        defaultcss.__wab_text,
+                        sty.text___47Cnh
+                      )}
+                    >
+                      {
+                        "make it easier to deliver, test, and iterate on solutions that engage users."
+                      }
+                    </div>
                   }
                   flatIcon={"flatIcon" as const}
                   icon={
@@ -517,13 +507,13 @@ function PlasmicHomepage__RenderFunc(props: {
                       role={"img"}
                     />
                   }
-                  title={"Production-ready"}
+                  title={"Micro-frontends"}
                 />
 
                 <ValueProp
                   className={classNames("__wab_instance", sty.valueProp__ieC1Q)}
                   description={
-                    "Ac lobortis praesent sagittis dictumst fermentum vestibulum nunc."
+                    "that integrate analytics, A/B testing, engagement and more. "
                   }
                   flatIcon={"flatIcon" as const}
                   icon={
@@ -536,26 +526,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       role={"img"}
                     />
                   }
-                  title={"Magical"}
-                />
-
-                <ValueProp
-                  className={classNames("__wab_instance", sty.valueProp__foKms)}
-                  description={
-                    "A parturient mi suspendisse nisl inceptos nullam a."
-                  }
-                  flatIcon={"flatIcon" as const}
-                  icon={
-                    <CheckIcon
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.svg___5ShjR
-                      )}
-                      role={"img"}
-                    />
-                  }
-                  title={"Accessible"}
+                  title={"Application Modifiers"}
                 />
               </p.Stack>
             </p.Stack>
@@ -616,7 +587,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.h2___8KWgn
                     )}
                   >
-                    {"Open by design"}
+                    {"Design to be open"}
                   </h2>
 
                   <div
@@ -628,7 +599,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                   >
                     {
-                      "Vitae sed sem a justo mauris potenti a primis vivamus justo tempor viverra adipiscing convallis fusce odio condimentum mi parturient ultricies."
+                      "Build solutions that grow and adapt with the communities you serve.  Empower business owners, web admins, and friends."
                     }
                   </div>
 
@@ -704,7 +675,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         sty.text__dMvab
                       )}
                     >
-                      {"Built on capability"}
+                      {"Built in public"}
                     </div>
                   </ListItem>
 
@@ -733,36 +704,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         sty.text__qE2A3
                       )}
                     >
-                      {"Highly energetic"}
-                    </div>
-                  </ListItem>
-
-                  <ListItem
-                    bottomBorder={"dark" as const}
-                    className={classNames(
-                      "__wab_instance",
-                      sty.listItem__nImeD
-                    )}
-                    icon={
-                      <CheckCircleIcon
-                        className={classNames(
-                          defaultcss.all,
-                          projectcss.all,
-                          sty.svg__pnEZr
-                        )}
-                        role={"img"}
-                      />
-                    }
-                  >
-                    <div
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        defaultcss.__wab_text,
-                        sty.text__tixg3
-                      )}
-                    >
-                      {"100% transparency and accountability"}
+                      {"Communities that adapt"}
                     </div>
                   </ListItem>
 
@@ -791,7 +733,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         sty.text__xeRf1
                       )}
                     >
-                      {"Refreshing clarity"}
+                      {"Open source for the enterprise"}
                     </div>
                   </ListItem>
 
@@ -819,7 +761,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         sty.text__vg6Ue
                       )}
                     >
-                      {"Modern results"}
+                      {"Modern web projects"}
                     </div>
                   </ListItem>
                 </div>
@@ -1469,7 +1411,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             sty.text___79LnD
                           )}
                         >
-                          {"Get Started"}
+                          {"Docs Coming Soon"}
                         </div>
                       </Button>
                     </React.Fragment>

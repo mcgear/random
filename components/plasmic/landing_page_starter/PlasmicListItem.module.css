@@ -2,8 +2,8 @@
   display: flex;
   position: relative;
   flex-direction: row;
-  padding-bottom: 16px;
   padding-top: 16px;
+  height: auto;
 }
 .root > :global(.__wab_flex-container) {
   flex-direction: row;
