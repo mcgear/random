@@ -1574,231 +1574,234 @@ function PlasmicHomepage__RenderFunc(props: {
             </p.Stack>
           </Section>
 
-          <Section
-            data-plasmic-name={"logoCloudSection"}
-            data-plasmic-override={overrides.logoCloudSection}
-            className={classNames("__wab_instance", sty.logoCloudSection)}
-          >
-            <p.Stack
-              as={"div"}
-              hasGap={true}
-              className={classNames(
-                defaultcss.all,
-                projectcss.all,
-                sty.freeBox__hhPwB
-              )}
+          {true ? (
+            <Section
+              data-plasmic-name={"logoCloudSection"}
+              data-plasmic-override={overrides.logoCloudSection}
+              className={classNames("__wab_instance", sty.logoCloudSection)}
             >
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__nn9Oq)}
-                displayHeight={"48px" as const}
-                displayMaxHeight={"none" as const}
-                displayMaxWidth={"none" as const}
-                displayMinHeight={"0" as const}
-                displayMinWidth={"0" as const}
-                displayWidth={"auto" as const}
-                src={{
-                  src: "/plasmic/landing_page_starter/images/loom.svg",
-                  fullWidth: 300,
-                  fullHeight: 91,
-                  aspectRatio: 3.303226
-                }}
-              />
-
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__ftggO)}
-                displayHeight={"48px" as const}
-                displayMaxHeight={"none" as const}
-                displayMaxWidth={"none" as const}
-                displayMinHeight={"0" as const}
-                displayMinWidth={"0" as const}
-                displayWidth={"auto" as const}
-                src={{
-                  src: "/plasmic/landing_page_starter/images/strapi.svg",
-                  fullWidth: 300,
-                  fullHeight: 78,
-                  aspectRatio: 3.849624
-                }}
-              />
-
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__uTe6C)}
-                displayHeight={"48px" as const}
-                displayMaxHeight={"none" as const}
-                displayMaxWidth={"none" as const}
-                displayMinHeight={"0" as const}
-                displayMinWidth={"0" as const}
-                displayWidth={"auto" as const}
-                src={{
-                  src: "/plasmic/landing_page_starter/images/segment.svg",
-                  fullWidth: 300,
-                  fullHeight: 62,
-                  aspectRatio: 4.87619
-                }}
-              />
-
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__soAF)}
-                displayHeight={"48px" as const}
-                displayMaxHeight={"none" as const}
-                displayMaxWidth={"none" as const}
-                displayMinHeight={"0" as const}
-                displayMinWidth={"0" as const}
-                displayWidth={"auto" as const}
-                src={{
-                  src: "/plasmic/landing_page_starter/images/xstate.svg",
-                  fullWidth: 300,
-                  fullHeight: 94,
-                  aspectRatio: 3.2
-                }}
-              />
-
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img___31V6W)}
-                displayHeight={"48px" as const}
-                displayMaxHeight={"none" as const}
-                displayMaxWidth={"none" as const}
-                displayMinHeight={"0" as const}
-                displayMinWidth={"0" as const}
-                displayWidth={"auto" as const}
-                src={{
-                  src: "/plasmic/landing_page_starter/images/mapbox.svg",
-                  fullWidth: 300,
-                  fullHeight: 67,
-                  aspectRatio: 4.491228
-                }}
-              />
-            </p.Stack>
-          </Section>
-
-          <Section
-            data-plasmic-name={"testimonialsSection"}
-            data-plasmic-override={overrides.testimonialsSection}
-            background={"gray" as const}
-            className={classNames("__wab_instance", sty.testimonialsSection)}
-          >
-            <p.Stack
-              as={"div"}
-              hasGap={true}
-              className={classNames(
-                defaultcss.all,
-                projectcss.all,
-                sty.columns__onWf
-              )}
-            >
-              <div
+              <p.Stack
+                as={"div"}
+                hasGap={true}
                 className={classNames(
                   defaultcss.all,
                   projectcss.all,
-                  sty.column__p2Lgp
+                  sty.freeBox__hhPwB
                 )}
               >
-                <Testimonial
-                  className={classNames(
-                    "__wab_instance",
-                    sty.testimonial__drVW
-                  )}
-                  image={{
-                    src: "/plasmic/landing_page_starter/images/tracy.png",
-                    fullWidth: 500,
-                    fullHeight: 500,
-                    aspectRatio: undefined
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__nn9Oq)}
+                  displayHeight={"48px" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"none" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"auto" as const}
+                  src={{
+                    src: "/plasmic/landing_page_starter/images/loom.svg",
+                    fullWidth: 300,
+                    fullHeight: 91,
+                    aspectRatio: 3.303226
                   }}
                 />
-              </div>
 
-              <div
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__ftggO)}
+                  displayHeight={"48px" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"none" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"auto" as const}
+                  src={{
+                    src: "/plasmic/landing_page_starter/images/strapi.svg",
+                    fullWidth: 300,
+                    fullHeight: 78,
+                    aspectRatio: 3.849624
+                  }}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__uTe6C)}
+                  displayHeight={"48px" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"none" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"auto" as const}
+                  src={{
+                    src: "/plasmic/landing_page_starter/images/segment.svg",
+                    fullWidth: 300,
+                    fullHeight: 62,
+                    aspectRatio: 4.87619
+                  }}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__soAF)}
+                  displayHeight={"48px" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"none" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"auto" as const}
+                  src={{
+                    src: "/plasmic/landing_page_starter/images/xstate.svg",
+                    fullWidth: 300,
+                    fullHeight: 94,
+                    aspectRatio: 3.2
+                  }}
+                />
+
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img___31V6W)}
+                  displayHeight={"48px" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"none" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"auto" as const}
+                  src={{
+                    src: "/plasmic/landing_page_starter/images/mapbox.svg",
+                    fullWidth: 300,
+                    fullHeight: 67,
+                    aspectRatio: 4.491228
+                  }}
+                />
+              </p.Stack>
+            </Section>
+          ) : null}
+          {true ? (
+            <Section
+              data-plasmic-name={"testimonialsSection"}
+              data-plasmic-override={overrides.testimonialsSection}
+              background={"gray" as const}
+              className={classNames("__wab_instance", sty.testimonialsSection)}
+            >
+              <p.Stack
+                as={"div"}
+                hasGap={true}
                 className={classNames(
                   defaultcss.all,
                   projectcss.all,
-                  sty.column__lrL1
+                  sty.columns__onWf
                 )}
               >
-                <Testimonial
+                <div
                   className={classNames(
-                    "__wab_instance",
-                    sty.testimonial__ussQz
+                    defaultcss.all,
+                    projectcss.all,
+                    sty.column__p2Lgp
                   )}
-                  image={{
-                    src: "/plasmic/landing_page_starter/images/elaine.png",
-                    fullWidth: 460,
-                    fullHeight: 280,
-                    aspectRatio: undefined
-                  }}
-                  name={"Elaine Benes"}
-                  quote={
-                    <React.Fragment>
+                >
+                  <Testimonial
+                    className={classNames(
+                      "__wab_instance",
+                      sty.testimonial__drVW
+                    )}
+                    image={{
+                      src: "/plasmic/landing_page_starter/images/tracy.png",
+                      fullWidth: 500,
+                      fullHeight: 500,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
+
+                <div
+                  className={classNames(
+                    defaultcss.all,
+                    projectcss.all,
+                    sty.column__lrL1
+                  )}
+                >
+                  <Testimonial
+                    className={classNames(
+                      "__wab_instance",
+                      sty.testimonial__ussQz
+                    )}
+                    image={{
+                      src: "/plasmic/landing_page_starter/images/elaine.png",
+                      fullWidth: 460,
+                      fullHeight: 280,
+                      aspectRatio: undefined
+                    }}
+                    name={"Elaine Benes"}
+                    quote={
+                      <React.Fragment>
+                        <div
+                          className={classNames(
+                            defaultcss.all,
+                            projectcss.all,
+                            defaultcss.__wab_text,
+                            sty.text__z0AWr
+                          )}
+                        >
+                          {'"Vestibulum lacinia varius habitant dis aenean.'}
+                        </div>
+
+                        <div
+                          className={classNames(
+                            defaultcss.all,
+                            projectcss.all,
+                            defaultcss.__wab_text,
+                            sty.text__yHTlW
+                          )}
+                        >
+                          {
+                            'A parturient non ultricies a parturient leo a nascetur at consectetur turpis praesent mus ornare nulla posuere vel parturient."'
+                          }
+                        </div>
+                      </React.Fragment>
+                    }
+                    title={"Editor, Pendant Publishing"}
+                  />
+                </div>
+
+                <div
+                  className={classNames(
+                    defaultcss.all,
+                    projectcss.all,
+                    sty.column__jbL9P
+                  )}
+                >
+                  <Testimonial
+                    className={classNames(
+                      "__wab_instance",
+                      sty.testimonial__hHhb
+                    )}
+                    image={{
+                      src: "/plasmic/landing_page_starter/images/louis.jpeg",
+                      fullWidth: 2249,
+                      fullHeight: 3000,
+                      aspectRatio: undefined
+                    }}
+                    name={"Louis Huang"}
+                    quote={
+                      '"Purus dis a primis rhoncus blandit velit suspendisse porta at ullamcorper suscipit a scelerisque sed pharetra facilisi vitae."'
+                    }
+                    title={
                       <div
                         className={classNames(
                           defaultcss.all,
                           projectcss.all,
                           defaultcss.__wab_text,
-                          sty.text__z0AWr
+                          sty.text__gpeoP
                         )}
                       >
-                        {'"Vestibulum lacinia varius habitant dis aenean.'}
+                        {"Restaurant Owner, Cattleman's Ranch"}
                       </div>
-
-                      <div
-                        className={classNames(
-                          defaultcss.all,
-                          projectcss.all,
-                          defaultcss.__wab_text,
-                          sty.text__yHTlW
-                        )}
-                      >
-                        {
-                          'A parturient non ultricies a parturient leo a nascetur at consectetur turpis praesent mus ornare nulla posuere vel parturient."'
-                        }
-                      </div>
-                    </React.Fragment>
-                  }
-                  title={"Editor, Pendant Publishing"}
-                />
-              </div>
-
-              <div
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.column__jbL9P
-                )}
-              >
-                <Testimonial
-                  className={classNames(
-                    "__wab_instance",
-                    sty.testimonial__hHhb
-                  )}
-                  image={{
-                    src: "/plasmic/landing_page_starter/images/louis.jpeg",
-                    fullWidth: 2249,
-                    fullHeight: 3000,
-                    aspectRatio: undefined
-                  }}
-                  name={"Louis Huang"}
-                  quote={
-                    '"Purus dis a primis rhoncus blandit velit suspendisse porta at ullamcorper suscipit a scelerisque sed pharetra facilisi vitae."'
-                  }
-                  title={
-                    <div
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        defaultcss.__wab_text,
-                        sty.text__gpeoP
-                      )}
-                    >
-                      {"Restaurant Owner, Cattleman's Ranch"}
-                    </div>
-                  }
-                />
-              </div>
-            </p.Stack>
-          </Section>
+                    }
+                  />
+                </div>
+              </p.Stack>
+            </Section>
+          ) : null}
 
           <CallToActionSection
             data-plasmic-name={"callToActionSection"}

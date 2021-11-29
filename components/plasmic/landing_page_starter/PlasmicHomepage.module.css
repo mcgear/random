@@ -1421,6 +1421,7 @@
 }
 .logoCloudSection:global(.__wab_instance) {
   position: relative;
+  display: none;
 }
 .freeBox__hhPwB {
   max-width: 1080px /* plasmic-token: biAU1d8H1CXy */;
@@ -1519,6 +1520,7 @@
 }
 .testimonialsSection:global(.__wab_instance) {
   position: relative;
+  display: none;
 }
 .columns__onWf {
   max-width: 1080px /* plasmic-token: biAU1d8H1CXy */;
