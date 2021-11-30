@@ -2,6 +2,8 @@
 name: Build and deploy Plasmic app
 
 on:
+  repository_dispatch:
+    types: [plasmic]
   push:
     branches:
       - main
