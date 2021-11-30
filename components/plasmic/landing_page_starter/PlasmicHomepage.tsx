@@ -765,6 +765,34 @@ function PlasmicHomepage__RenderFunc(props: {
                       {"Modern web projects"}
                     </div>
                   </ListItem>
+
+                  <ListItem
+                    className={classNames(
+                      "__wab_instance",
+                      sty.listItem__inDc1
+                    )}
+                    icon={
+                      <CheckCircleIcon
+                        className={classNames(
+                          defaultcss.all,
+                          projectcss.all,
+                          sty.svg__yzHcy
+                        )}
+                        role={"img"}
+                      />
+                    }
+                  >
+                    <div
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        defaultcss.__wab_text,
+                        sty.text__piv56
+                      )}
+                    >
+                      {"Automated DevOps"}
+                    </div>
+                  </ListItem>
                 </div>
               </div>
             </p.Stack>

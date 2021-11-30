@@ -779,6 +779,22 @@
   height: 28px;
   color: #32d74b /* plasmic-token: noE7zQJbN-4i */;
 }
+.listItem__inDc1:global(.__wab_instance) {
+  position: relative;
+  width: 100%;
+  min-width: 0;
+}
+.text__piv56 {
+  height: auto;
+  color: #ffffffd9 /* plasmic-token: Ja5pQwF3dbca */;
+}
+.svg__yzHcy {
+  position: relative;
+  object-fit: cover;
+  width: 28px;
+  height: 28px;
+  color: #32d74b /* plasmic-token: noE7zQJbN-4i */;
+}
 .pricingSection:global(.__wab_instance) {
   position: relative;
 }
