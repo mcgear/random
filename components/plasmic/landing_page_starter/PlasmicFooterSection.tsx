@@ -196,27 +196,30 @@ function PlasmicFooterSection__RenderFunc(props: {
             {"Product"}
           </div>
 
-          <Button
-            className={classNames("__wab_instance", sty.button__tGoa1)}
-            color={"navLink" as const}
-            flat={"flat" as const}
-          >
-            <div
-              className={classNames(
-                defaultcss.all,
-                projectcss.all,
-                defaultcss.__wab_text,
-                sty.text__yv1R8
-              )}
+          {true ? (
+            <Button
+              className={classNames("__wab_instance", sty.button__tGoa1)}
+              color={"navLink" as const}
+              flat={"flat" as const}
             >
-              {"Pricing"}
-            </div>
-          </Button>
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  projectcss.all,
+                  defaultcss.__wab_text,
+                  sty.text__yv1R8
+                )}
+              >
+                {"Pricing"}
+              </div>
+            </Button>
+          ) : null}
 
           <Button
             className={classNames("__wab_instance", sty.button__gFwLl)}
             color={"navLink" as const}
             flat={"flat" as const}
+            link={"/dashboard" as const}
           >
             <div
               className={classNames(
@@ -231,62 +234,7 @@ function PlasmicFooterSection__RenderFunc(props: {
           </Button>
 
           <Button
-            className={classNames("__wab_instance", sty.button__s88Cu)}
-            color={"navLink" as const}
-            flat={"flat" as const}
-          >
-            <div
-              className={classNames(
-                defaultcss.all,
-                projectcss.all,
-                defaultcss.__wab_text,
-                sty.text__xO6Tw
-              )}
-            >
-              {"Integrations"}
-            </div>
-          </Button>
-
-          <Button
-            className={classNames("__wab_instance", sty.button__vpTnX)}
-            color={"navLink" as const}
-            flat={"flat" as const}
-          >
-            <div
-              className={classNames(
-                defaultcss.all,
-                projectcss.all,
-                defaultcss.__wab_text,
-                sty.text__jmSjY
-              )}
-            >
-              {"Insights"}
-            </div>
-          </Button>
-        </p.Stack>
-
-        <p.Stack
-          as={"div"}
-          hasGap={true}
-          className={classNames(
-            defaultcss.all,
-            projectcss.all,
-            sty.freeBox___2CiC3
-          )}
-        >
-          <div
-            className={classNames(
-              defaultcss.all,
-              projectcss.all,
-              defaultcss.__wab_text,
-              sty.text__f40Kj
-            )}
-          >
-            {"Support"}
-          </div>
-
-          <Button
-            className={classNames("__wab_instance", sty.button__tX3Zg)}
+            className={classNames("__wab_instance", sty.button__vvfWx)}
             color={"navLink" as const}
             flat={"flat" as const}
             link={"/docs" as const}
@@ -296,20 +244,38 @@ function PlasmicFooterSection__RenderFunc(props: {
 
           {true ? (
             <Button
-              className={classNames("__wab_instance", sty.button__g5Apb)}
+              className={classNames("__wab_instance", sty.button__s88Cu)}
               color={"navLink" as const}
               flat={"flat" as const}
             >
-              {"FAQs"}
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  projectcss.all,
+                  defaultcss.__wab_text,
+                  sty.text__xO6Tw
+                )}
+              >
+                {"Integrations"}
+              </div>
             </Button>
           ) : null}
           {true ? (
             <Button
-              className={classNames("__wab_instance", sty.button__g6XVu)}
+              className={classNames("__wab_instance", sty.button__vpTnX)}
               color={"navLink" as const}
               flat={"flat" as const}
             >
-              {"Status"}
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  projectcss.all,
+                  defaultcss.__wab_text,
+                  sty.text__jmSjY
+                )}
+              >
+                {"Insights"}
+              </div>
             </Button>
           ) : null}
         </p.Stack>
@@ -334,36 +300,41 @@ function PlasmicFooterSection__RenderFunc(props: {
             {"Company"}
           </div>
 
-          <Button
-            className={classNames("__wab_instance", sty.button__fO03)}
-            color={"navLink" as const}
-            flat={"flat" as const}
-          >
-            {"About"}
-          </Button>
-
-          <Button
-            className={classNames("__wab_instance", sty.button__nViHn)}
-            color={"navLink" as const}
-            flat={"flat" as const}
-          >
-            {"Contact us"}
-          </Button>
-
-          <Button
-            className={classNames("__wab_instance", sty.button__rx9Bh)}
-            color={"navLink" as const}
-            flat={"flat" as const}
-          >
-            {"Careers"}
-          </Button>
+          {true ? (
+            <Button
+              className={classNames("__wab_instance", sty.button__fO03)}
+              color={"navLink" as const}
+              flat={"flat" as const}
+            >
+              {"About"}
+            </Button>
+          ) : null}
+          {true ? (
+            <Button
+              className={classNames("__wab_instance", sty.button__nViHn)}
+              color={"navLink" as const}
+              flat={"flat" as const}
+            >
+              {"Contact us"}
+            </Button>
+          ) : null}
+          {true ? (
+            <Button
+              className={classNames("__wab_instance", sty.button__rx9Bh)}
+              color={"navLink" as const}
+              flat={"flat" as const}
+            >
+              {"Careers"}
+            </Button>
+          ) : null}
 
           <Button
             className={classNames("__wab_instance", sty.button___4XmSe)}
             color={"navLink" as const}
             flat={"flat" as const}
+            link={"/blog" as const}
           >
-            {"Media"}
+            {"Blog"}
           </Button>
         </p.Stack>
       </p.Stack>
