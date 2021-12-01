@@ -92,10 +92,9 @@
   line-height: 32px;
   color: #000000d9 /* plasmic-token: vOPQIfd2vRc9 */;
   width: auto;
-  display: inline-block;
 }
 .freeBox___7Oimo {
-  display: inline-flex;
+  display: flex;
   position: relative;
   width: auto;
 }
