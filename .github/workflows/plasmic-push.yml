@@ -47,6 +47,7 @@ jobs:
       # publish github artifacts
       - name: Archive production artifacts
         uses: actions/upload-artifact@v2
+        if: ${{ steps.build.outputs.publish_dir }}
         with:
           name: mcgear-random
           path: ${{ steps.build.outputs.publish_dir }}
