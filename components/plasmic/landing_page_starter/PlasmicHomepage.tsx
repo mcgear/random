@@ -854,6 +854,34 @@ function PlasmicHomepage__RenderFunc(props: {
                       "Start now, scale later.  No vendor lock with open-source technology and Fathym's virtual development team.   \n\nUnlimited sites during beta, lifetime shared hosting for your beta created sites, one custom domain and free SSL."
                     }
                   </div>
+
+                  <Button
+                    className={classNames("__wab_instance", sty.button__zfW9T)}
+                    color={"blue" as const}
+                    endIcon={
+                      <ChevronRightIcon
+                        className={classNames(
+                          defaultcss.all,
+                          projectcss.all,
+                          sty.svg___5A5Yr
+                        )}
+                        role={"img"}
+                      />
+                    }
+                    link={"/dashboard" as const}
+                    showEndIcon={"showEndIcon" as const}
+                  >
+                    <div
+                      className={classNames(
+                        defaultcss.all,
+                        projectcss.all,
+                        defaultcss.__wab_text,
+                        sty.text__iTbBp
+                      )}
+                    >
+                      {"Start now"}
+                    </div>
+                  </Button>
                 </p.Stack>
 
                 {true ? (
