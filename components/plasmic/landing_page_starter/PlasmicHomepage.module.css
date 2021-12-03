@@ -898,10 +898,8 @@
   text-align: center;
   line-height: 28px;
   height: auto;
-  padding-right: 0px;
 }
 .columns__a13GM {
-  display: flex;
   position: relative;
   flex-direction: row;
   max-width: 1920px;
@@ -909,6 +907,7 @@
   height: auto;
   flex-shrink: 1;
   min-width: 0;
+  display: none;
   padding: 8px;
 }
 .columns__a13GM > :global(.__wab_flex-container) {
@@ -929,7 +928,6 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .columns__a13GM {
-    display: flex;
     flex-direction: row;
     position: relative;
     max-width: 1920px;
@@ -1033,6 +1031,7 @@
   height: auto;
 }
 .column__pfB9D {
+  display: flex;
   position: relative;
   flex-direction: column;
   width: 100%;
@@ -1041,7 +1040,6 @@
   justify-content: center;
   align-items: center;
   min-width: 0;
-  display: none;
 }
 .priceCard___1Ifm3:global(.__wab_instance) {
   position: relative;
@@ -1133,6 +1131,7 @@
   height: auto;
 }
 .column__tKkdO {
+  display: flex;
   position: relative;
   flex-direction: column;
   width: 100%;
@@ -1141,7 +1140,6 @@
   justify-content: center;
   align-items: center;
   min-width: 0;
-  display: none;
 }
 .priceCard__adloa:global(.__wab_instance) {
   position: relative;
