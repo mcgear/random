@@ -838,7 +838,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         sty.text__lys9Y
                       )}
                     >
-                      {"Pricing plans"}
+                      {"Free During BETA"}
                     </div>
                   </div>
 
@@ -851,143 +851,26 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                   >
                     {
-                      "Start now, scale later.  No vendor lock with open-source technology and Fathym's virtual development team. "
+                      "Start now, scale later.  No vendor lock with open-source technology and Fathym's virtual development team.   \n\nUnlimited sites during beta, lifetime shared hosting for your beta created sites, one custom domain and free SSL."
                     }
                   </div>
                 </p.Stack>
 
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(
-                    defaultcss.all,
-                    projectcss.all,
-                    sty.columns__a13GM
-                  )}
-                >
-                  <div
+                {true ? (
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
                     className={classNames(
                       defaultcss.all,
                       projectcss.all,
-                      sty.column__tsysE
+                      sty.columns__a13GM
                     )}
                   >
-                    <PriceCard
-                      action={
-                        <div
-                          className={classNames(
-                            defaultcss.all,
-                            projectcss.all,
-                            defaultcss.__wab_text,
-                            sty.text__kXiWk
-                          )}
-                        >
-                          {"Get Started Now"}
-                        </div>
-                      }
-                      borders={
-                        hasVariant(globalVariants, "screen", "mobileOnly")
-                          ? []
-                          : ["flatRight"]
-                      }
-                      className={classNames(
-                        "__wab_instance",
-                        sty.priceCard__sOPzv
-                      )}
-                      description={
-                        <React.Fragment>
-                          <ValueProp
-                            className={classNames(
-                              "__wab_instance",
-                              sty.valueProp__mCmvt
-                            )}
-                            description={"Unlimited sites during beta"}
-                            flatIcon={"flatIcon" as const}
-                            icon={
-                              <CheckIcon
-                                className={classNames(
-                                  defaultcss.all,
-                                  projectcss.all,
-                                  sty.svg__gzm6
-                                )}
-                                role={"img"}
-                              />
-                            }
-                            noTitle={"noTitle" as const}
-                          />
-
-                          <ValueProp
-                            className={classNames(
-                              "__wab_instance",
-                              sty.valueProp___6Ifyf
-                            )}
-                            description={"Lifetime Shared Hosting Access"}
-                            flatIcon={"flatIcon" as const}
-                            icon={
-                              <CheckIcon
-                                className={classNames(
-                                  defaultcss.all,
-                                  projectcss.all,
-                                  sty.svg__dIzk
-                                )}
-                                role={"img"}
-                              />
-                            }
-                            noTitle={"noTitle" as const}
-                          />
-
-                          <ValueProp
-                            className={classNames(
-                              "__wab_instance",
-                              sty.valueProp__o8IsP
-                            )}
-                            description={"One custom domain and Free SSL"}
-                            flatIcon={"flatIcon" as const}
-                            icon={
-                              <CheckIcon
-                                className={classNames(
-                                  defaultcss.all,
-                                  projectcss.all,
-                                  sty.svg__znhtd
-                                )}
-                                role={"img"}
-                              />
-                            }
-                            noTitle={"noTitle" as const}
-                          />
-
-                          <ValueProp
-                            className={classNames(
-                              "__wab_instance",
-                              sty.valueProp__j6HN
-                            )}
-                            description={"Shared Single Sign On"}
-                            flatIcon={"flatIcon" as const}
-                            icon={
-                              <CheckIcon
-                                className={classNames(
-                                  defaultcss.all,
-                                  projectcss.all,
-                                  sty.svg__saZ6
-                                )}
-                                role={"img"}
-                              />
-                            }
-                            noTitle={"noTitle" as const}
-                          />
-                        </React.Fragment>
-                      }
-                      dollars={"0"}
-                      label={"BETA"}
-                    />
-                  </div>
-
-                  {true ? (
                     <div
                       className={classNames(
                         defaultcss.all,
                         projectcss.all,
-                        sty.column__pfB9D
+                        sty.column__tsysE
                       )}
                     >
                       <PriceCard
@@ -997,268 +880,36 @@ function PlasmicHomepage__RenderFunc(props: {
                               defaultcss.all,
                               projectcss.all,
                               defaultcss.__wab_text,
-                              sty.text__ckmQu
+                              sty.text__kXiWk
                             )}
                           >
-                            {"Contact Us"}
-                          </div>
-                        }
-                        borders={[]}
-                        className={classNames(
-                          "__wab_instance",
-                          sty.priceCard___1Ifm3
-                        )}
-                        description={
-                          <React.Fragment>
-                            <ValueProp
-                              className={classNames(
-                                "__wab_instance",
-                                sty.valueProp__eG6T
-                              )}
-                              description={
-                                <div
-                                  className={classNames(
-                                    defaultcss.all,
-                                    projectcss.all,
-                                    defaultcss.__wab_text,
-                                    sty.text__j7K61
-                                  )}
-                                >
-                                  {"Everything in Starter, plus"}
-                                </div>
-                              }
-                              flatIcon={"flatIcon" as const}
-                              icon={
-                                <CheckIcon
-                                  className={classNames(
-                                    defaultcss.all,
-                                    projectcss.all,
-                                    sty.svg__orE4
-                                  )}
-                                  role={"img"}
-                                />
-                              }
-                              noTitle={"noTitle" as const}
-                            />
-
-                            <ValueProp
-                              className={classNames(
-                                "__wab_instance",
-                                sty.valueProp__htJ3J
-                              )}
-                              description={
-                                <div
-                                  className={classNames(
-                                    defaultcss.all,
-                                    projectcss.all,
-                                    defaultcss.__wab_text,
-                                    sty.text__jsptW
-                                  )}
-                                >
-                                  {"Team tools"}
-                                </div>
-                              }
-                              flatIcon={"flatIcon" as const}
-                              icon={
-                                <CheckIcon
-                                  className={classNames(
-                                    defaultcss.all,
-                                    projectcss.all,
-                                    sty.svg__pxcFs
-                                  )}
-                                  role={"img"}
-                                />
-                              }
-                              noTitle={"noTitle" as const}
-                            />
-
-                            <ValueProp
-                              className={classNames(
-                                "__wab_instance",
-                                sty.valueProp__q1Kxp
-                              )}
-                              description={
-                                <div
-                                  className={classNames(
-                                    defaultcss.all,
-                                    projectcss.all,
-                                    defaultcss.__wab_text,
-                                    sty.text__bD5V
-                                  )}
-                                >
-                                  {"Unlimited Custom domains and Free SSL"}
-                                </div>
-                              }
-                              flatIcon={"flatIcon" as const}
-                              icon={
-                                <CheckIcon
-                                  className={classNames(
-                                    defaultcss.all,
-                                    projectcss.all,
-                                    sty.svg___7BpFd
-                                  )}
-                                  role={"img"}
-                                />
-                              }
-                              noTitle={"noTitle" as const}
-                            />
-
-                            <ValueProp
-                              className={classNames(
-                                "__wab_instance",
-                                sty.valueProp__os7V3
-                              )}
-                              description={
-                                <div
-                                  className={classNames(
-                                    defaultcss.all,
-                                    projectcss.all,
-                                    defaultcss.__wab_text,
-                                    sty.text__eokDw
-                                  )}
-                                >
-                                  {"User Authentication and Authorization"}
-                                </div>
-                              }
-                              flatIcon={"flatIcon" as const}
-                              icon={
-                                <CheckIcon
-                                  className={classNames(
-                                    defaultcss.all,
-                                    projectcss.all,
-                                    sty.svg__ueiRc
-                                  )}
-                                  role={"img"}
-                                />
-                              }
-                              noTitle={"noTitle" as const}
-                            />
-
-                            <ValueProp
-                              className={classNames(
-                                "__wab_instance",
-                                sty.valueProp__nkd24
-                              )}
-                              description={
-                                <div
-                                  className={classNames(
-                                    defaultcss.all,
-                                    projectcss.all,
-                                    defaultcss.__wab_text,
-                                    sty.text__op4ZN
-                                  )}
-                                >
-                                  {"Unlimited modifiers and routes"}
-                                </div>
-                              }
-                              flatIcon={"flatIcon" as const}
-                              icon={
-                                <CheckIcon
-                                  className={classNames(
-                                    defaultcss.all,
-                                    projectcss.all,
-                                    sty.svg__wsztC
-                                  )}
-                                  role={"img"}
-                                />
-                              }
-                              noTitle={"noTitle" as const}
-                            />
-
-                            <ValueProp
-                              className={classNames(
-                                "__wab_instance",
-                                sty.valueProp__nm25W
-                              )}
-                              description={
-                                <div
-                                  className={classNames(
-                                    defaultcss.all,
-                                    projectcss.all,
-                                    defaultcss.__wab_text,
-                                    sty.text__wCMtq
-                                  )}
-                                >
-                                  {"Custom Single Sign On"}
-                                </div>
-                              }
-                              flatIcon={"flatIcon" as const}
-                              icon={
-                                <CheckIcon
-                                  className={classNames(
-                                    defaultcss.all,
-                                    projectcss.all,
-                                    sty.svg__x1E8T
-                                  )}
-                                  role={"img"}
-                                />
-                              }
-                              noTitle={"noTitle" as const}
-                            />
-                          </React.Fragment>
-                        }
-                        dollars={"100"}
-                        label={"PRO"}
-                        primary={"primary" as const}
-                      />
-                    </div>
-                  ) : null}
-                  {true ? (
-                    <div
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.column__tKkdO
-                      )}
-                    >
-                      <PriceCard
-                        action={
-                          <div
-                            className={classNames(
-                              defaultcss.all,
-                              projectcss.all,
-                              defaultcss.__wab_text,
-                              sty.text___0HMvu
-                            )}
-                          >
-                            {"Contact Us"}
+                            {"Get Started Now"}
                           </div>
                         }
                         borders={
                           hasVariant(globalVariants, "screen", "mobileOnly")
                             ? []
-                            : ["flatLeft"]
+                            : ["flatRight"]
                         }
                         className={classNames(
                           "__wab_instance",
-                          sty.priceCard__adloa
+                          sty.priceCard__sOPzv
                         )}
                         description={
                           <React.Fragment>
                             <ValueProp
                               className={classNames(
                                 "__wab_instance",
-                                sty.valueProp__buQSr
+                                sty.valueProp__mCmvt
                               )}
-                              description={
-                                <div
-                                  className={classNames(
-                                    defaultcss.all,
-                                    projectcss.all,
-                                    defaultcss.__wab_text,
-                                    sty.text__pdYnP
-                                  )}
-                                >
-                                  {"Managed private, hybrid cloud hosting."}
-                                </div>
-                              }
+                              description={"Unlimited sites during beta"}
                               flatIcon={"flatIcon" as const}
                               icon={
                                 <CheckIcon
                                   className={classNames(
                                     defaultcss.all,
                                     projectcss.all,
-                                    sty.svg__wDua0
+                                    sty.svg__gzm6
                                   )}
                                   role={"img"}
                                 />
@@ -1269,18 +920,16 @@ function PlasmicHomepage__RenderFunc(props: {
                             <ValueProp
                               className={classNames(
                                 "__wab_instance",
-                                sty.valueProp__uPlvp
+                                sty.valueProp___6Ifyf
                               )}
-                              description={
-                                "Cost control and savings automation"
-                              }
+                              description={"Lifetime Shared Hosting Access"}
                               flatIcon={"flatIcon" as const}
                               icon={
                                 <CheckIcon
                                   className={classNames(
                                     defaultcss.all,
                                     projectcss.all,
-                                    sty.svg__zmOcc
+                                    sty.svg__dIzk
                                   )}
                                   role={"img"}
                                 />
@@ -1291,16 +940,36 @@ function PlasmicHomepage__RenderFunc(props: {
                             <ValueProp
                               className={classNames(
                                 "__wab_instance",
-                                sty.valueProp__prZEj
+                                sty.valueProp__o8IsP
                               )}
-                              description={"Unlimited team seats"}
+                              description={"One custom domain and Free SSL"}
                               flatIcon={"flatIcon" as const}
                               icon={
                                 <CheckIcon
                                   className={classNames(
                                     defaultcss.all,
                                     projectcss.all,
-                                    sty.svg__yx4BU
+                                    sty.svg__znhtd
+                                  )}
+                                  role={"img"}
+                                />
+                              }
+                              noTitle={"noTitle" as const}
+                            />
+
+                            <ValueProp
+                              className={classNames(
+                                "__wab_instance",
+                                sty.valueProp__j6HN
+                              )}
+                              description={"Shared Single Sign On"}
+                              flatIcon={"flatIcon" as const}
+                              icon={
+                                <CheckIcon
+                                  className={classNames(
+                                    defaultcss.all,
+                                    projectcss.all,
+                                    sty.svg__saZ6
                                   )}
                                   role={"img"}
                                 />
@@ -1309,23 +978,356 @@ function PlasmicHomepage__RenderFunc(props: {
                             />
                           </React.Fragment>
                         }
-                        dollars={
-                          <div
-                            className={classNames(
-                              defaultcss.all,
-                              projectcss.all,
-                              defaultcss.__wab_text,
-                              sty.text__zg3P
-                            )}
-                          >
-                            {"5,000"}
-                          </div>
-                        }
-                        label={"Enterprise"}
+                        dollars={"0"}
+                        label={"BETA"}
                       />
                     </div>
-                  ) : null}
-                </p.Stack>
+
+                    {true ? (
+                      <div
+                        className={classNames(
+                          defaultcss.all,
+                          projectcss.all,
+                          sty.column__pfB9D
+                        )}
+                      >
+                        <PriceCard
+                          action={
+                            <div
+                              className={classNames(
+                                defaultcss.all,
+                                projectcss.all,
+                                defaultcss.__wab_text,
+                                sty.text__ckmQu
+                              )}
+                            >
+                              {"Contact Us"}
+                            </div>
+                          }
+                          borders={[]}
+                          className={classNames(
+                            "__wab_instance",
+                            sty.priceCard___1Ifm3
+                          )}
+                          description={
+                            <React.Fragment>
+                              <ValueProp
+                                className={classNames(
+                                  "__wab_instance",
+                                  sty.valueProp__eG6T
+                                )}
+                                description={
+                                  <div
+                                    className={classNames(
+                                      defaultcss.all,
+                                      projectcss.all,
+                                      defaultcss.__wab_text,
+                                      sty.text__j7K61
+                                    )}
+                                  >
+                                    {"Everything in Starter, plus"}
+                                  </div>
+                                }
+                                flatIcon={"flatIcon" as const}
+                                icon={
+                                  <CheckIcon
+                                    className={classNames(
+                                      defaultcss.all,
+                                      projectcss.all,
+                                      sty.svg__orE4
+                                    )}
+                                    role={"img"}
+                                  />
+                                }
+                                noTitle={"noTitle" as const}
+                              />
+
+                              <ValueProp
+                                className={classNames(
+                                  "__wab_instance",
+                                  sty.valueProp__htJ3J
+                                )}
+                                description={
+                                  <div
+                                    className={classNames(
+                                      defaultcss.all,
+                                      projectcss.all,
+                                      defaultcss.__wab_text,
+                                      sty.text__jsptW
+                                    )}
+                                  >
+                                    {"Team tools"}
+                                  </div>
+                                }
+                                flatIcon={"flatIcon" as const}
+                                icon={
+                                  <CheckIcon
+                                    className={classNames(
+                                      defaultcss.all,
+                                      projectcss.all,
+                                      sty.svg__pxcFs
+                                    )}
+                                    role={"img"}
+                                  />
+                                }
+                                noTitle={"noTitle" as const}
+                              />
+
+                              <ValueProp
+                                className={classNames(
+                                  "__wab_instance",
+                                  sty.valueProp__q1Kxp
+                                )}
+                                description={
+                                  <div
+                                    className={classNames(
+                                      defaultcss.all,
+                                      projectcss.all,
+                                      defaultcss.__wab_text,
+                                      sty.text__bD5V
+                                    )}
+                                  >
+                                    {"Unlimited Custom domains and Free SSL"}
+                                  </div>
+                                }
+                                flatIcon={"flatIcon" as const}
+                                icon={
+                                  <CheckIcon
+                                    className={classNames(
+                                      defaultcss.all,
+                                      projectcss.all,
+                                      sty.svg___7BpFd
+                                    )}
+                                    role={"img"}
+                                  />
+                                }
+                                noTitle={"noTitle" as const}
+                              />
+
+                              <ValueProp
+                                className={classNames(
+                                  "__wab_instance",
+                                  sty.valueProp__os7V3
+                                )}
+                                description={
+                                  <div
+                                    className={classNames(
+                                      defaultcss.all,
+                                      projectcss.all,
+                                      defaultcss.__wab_text,
+                                      sty.text__eokDw
+                                    )}
+                                  >
+                                    {"User Authentication and Authorization"}
+                                  </div>
+                                }
+                                flatIcon={"flatIcon" as const}
+                                icon={
+                                  <CheckIcon
+                                    className={classNames(
+                                      defaultcss.all,
+                                      projectcss.all,
+                                      sty.svg__ueiRc
+                                    )}
+                                    role={"img"}
+                                  />
+                                }
+                                noTitle={"noTitle" as const}
+                              />
+
+                              <ValueProp
+                                className={classNames(
+                                  "__wab_instance",
+                                  sty.valueProp__nkd24
+                                )}
+                                description={
+                                  <div
+                                    className={classNames(
+                                      defaultcss.all,
+                                      projectcss.all,
+                                      defaultcss.__wab_text,
+                                      sty.text__op4ZN
+                                    )}
+                                  >
+                                    {"Unlimited modifiers and routes"}
+                                  </div>
+                                }
+                                flatIcon={"flatIcon" as const}
+                                icon={
+                                  <CheckIcon
+                                    className={classNames(
+                                      defaultcss.all,
+                                      projectcss.all,
+                                      sty.svg__wsztC
+                                    )}
+                                    role={"img"}
+                                  />
+                                }
+                                noTitle={"noTitle" as const}
+                              />
+
+                              <ValueProp
+                                className={classNames(
+                                  "__wab_instance",
+                                  sty.valueProp__nm25W
+                                )}
+                                description={
+                                  <div
+                                    className={classNames(
+                                      defaultcss.all,
+                                      projectcss.all,
+                                      defaultcss.__wab_text,
+                                      sty.text__wCMtq
+                                    )}
+                                  >
+                                    {"Custom Single Sign On"}
+                                  </div>
+                                }
+                                flatIcon={"flatIcon" as const}
+                                icon={
+                                  <CheckIcon
+                                    className={classNames(
+                                      defaultcss.all,
+                                      projectcss.all,
+                                      sty.svg__x1E8T
+                                    )}
+                                    role={"img"}
+                                  />
+                                }
+                                noTitle={"noTitle" as const}
+                              />
+                            </React.Fragment>
+                          }
+                          dollars={"100"}
+                          label={"PRO"}
+                          primary={"primary" as const}
+                        />
+                      </div>
+                    ) : null}
+                    {true ? (
+                      <div
+                        className={classNames(
+                          defaultcss.all,
+                          projectcss.all,
+                          sty.column__tKkdO
+                        )}
+                      >
+                        <PriceCard
+                          action={
+                            <div
+                              className={classNames(
+                                defaultcss.all,
+                                projectcss.all,
+                                defaultcss.__wab_text,
+                                sty.text___0HMvu
+                              )}
+                            >
+                              {"Contact Us"}
+                            </div>
+                          }
+                          borders={
+                            hasVariant(globalVariants, "screen", "mobileOnly")
+                              ? []
+                              : ["flatLeft"]
+                          }
+                          className={classNames(
+                            "__wab_instance",
+                            sty.priceCard__adloa
+                          )}
+                          description={
+                            <React.Fragment>
+                              <ValueProp
+                                className={classNames(
+                                  "__wab_instance",
+                                  sty.valueProp__buQSr
+                                )}
+                                description={
+                                  <div
+                                    className={classNames(
+                                      defaultcss.all,
+                                      projectcss.all,
+                                      defaultcss.__wab_text,
+                                      sty.text__pdYnP
+                                    )}
+                                  >
+                                    {"Managed private, hybrid cloud hosting."}
+                                  </div>
+                                }
+                                flatIcon={"flatIcon" as const}
+                                icon={
+                                  <CheckIcon
+                                    className={classNames(
+                                      defaultcss.all,
+                                      projectcss.all,
+                                      sty.svg__wDua0
+                                    )}
+                                    role={"img"}
+                                  />
+                                }
+                                noTitle={"noTitle" as const}
+                              />
+
+                              <ValueProp
+                                className={classNames(
+                                  "__wab_instance",
+                                  sty.valueProp__uPlvp
+                                )}
+                                description={
+                                  "Cost control and savings automation"
+                                }
+                                flatIcon={"flatIcon" as const}
+                                icon={
+                                  <CheckIcon
+                                    className={classNames(
+                                      defaultcss.all,
+                                      projectcss.all,
+                                      sty.svg__zmOcc
+                                    )}
+                                    role={"img"}
+                                  />
+                                }
+                                noTitle={"noTitle" as const}
+                              />
+
+                              <ValueProp
+                                className={classNames(
+                                  "__wab_instance",
+                                  sty.valueProp__prZEj
+                                )}
+                                description={"Unlimited team seats"}
+                                flatIcon={"flatIcon" as const}
+                                icon={
+                                  <CheckIcon
+                                    className={classNames(
+                                      defaultcss.all,
+                                      projectcss.all,
+                                      sty.svg__yx4BU
+                                    )}
+                                    role={"img"}
+                                  />
+                                }
+                                noTitle={"noTitle" as const}
+                              />
+                            </React.Fragment>
+                          }
+                          dollars={
+                            <div
+                              className={classNames(
+                                defaultcss.all,
+                                projectcss.all,
+                                defaultcss.__wab_text,
+                                sty.text__zg3P
+                              )}
+                            >
+                              {"5,000"}
+                            </div>
+                          }
+                          label={"Enterprise"}
+                        />
+                      </div>
+                    ) : null}
+                  </p.Stack>
+                ) : null}
               </p.Stack>
             </Section>
           ) : null}

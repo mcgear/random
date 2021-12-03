@@ -286,6 +286,7 @@ function PlasmicPriceCard__RenderFunc(props: {
               : ("white" as const)
           }
           extraSmallShadow={"extraSmallShadow" as const}
+          link={"/dashboard" as const}
         >
           {p.renderPlasmicSlot({
             defaultContents: (
