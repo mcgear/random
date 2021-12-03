@@ -1,5 +1,5 @@
 # Plasmic push workflow v1
-name: Build and deploy Plasmic app
+name: Build and Deploy Plasmic App
 
 on:
   repository_dispatch:
