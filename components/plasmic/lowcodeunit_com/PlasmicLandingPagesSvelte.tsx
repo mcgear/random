@@ -70,8 +70,6 @@ export type PlasmicLandingPagesSvelte__OverridesType = {
   foreground?: p.Flex<"div">;
   img?: p.Flex<typeof p.PlasmicImg>;
   foreground2?: p.Flex<"div">;
-  button?: p.Flex<typeof Button>;
-  link?: p.Flex<"a"> & Partial<LinkProps>;
   section?: p.Flex<"section">;
   foreground3?: p.Flex<"div">;
   h2?: p.Flex<"h2">;
@@ -196,9 +194,7 @@ function PlasmicLandingPagesSvelte__RenderFunc(props: {
               <div className={classNames(projectcss.all, sty.columns__et1IW)}>
                 <div className={classNames(projectcss.all, sty.column___2Tx0F)}>
                   <Button
-                    data-plasmic-name={"button"}
-                    data-plasmic-override={overrides.button}
-                    className={classNames("__wab_instance", sty.button)}
+                    className={classNames("__wab_instance", sty.button__fSbr4)}
                     color={"darkGray" as const}
                     link={"/dashboard" as const}
                   >
@@ -208,12 +204,10 @@ function PlasmicLandingPagesSvelte__RenderFunc(props: {
 
                 <div className={classNames(projectcss.all, sty.column__nEuLp)}>
                   <p.PlasmicLink
-                    data-plasmic-name={"link"}
-                    data-plasmic-override={overrides.link}
                     className={classNames(
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link
+                      sty.link__xl72F
                     )}
                     component={Link}
                     href={"/docs/guides/hosting/frameworks/svelte" as const}
@@ -427,6 +421,33 @@ function PlasmicLandingPagesSvelte__RenderFunc(props: {
                   </p.Stack>
                 ) : null}
               </p.Stack>
+
+              <div className={classNames(projectcss.all, sty.columns__t9Sfm)}>
+                <div className={classNames(projectcss.all, sty.column___5QkD2)}>
+                  <Button
+                    className={classNames("__wab_instance", sty.button___3T1Or)}
+                    color={"darkGray" as const}
+                    link={"/dashboard" as const}
+                  >
+                    {"Get started for free"}
+                  </Button>
+                </div>
+
+                <div className={classNames(projectcss.all, sty.column___2JUaa)}>
+                  <p.PlasmicLink
+                    className={classNames(
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link__yXebm
+                    )}
+                    component={Link}
+                    href={"/docs/guides/hosting/frameworks/svelte" as const}
+                    platform={"nextjs"}
+                  >
+                    {"Learn more >"}
+                  </p.PlasmicLink>
+                </div>
+              </div>
             </p.Stack>
           </section>
 
@@ -858,8 +879,6 @@ const PlasmicDescendants = {
     "foreground",
     "img",
     "foreground2",
-    "button",
-    "link",
     "section",
     "foreground3",
     "h2",
@@ -868,9 +887,7 @@ const PlasmicDescendants = {
   navbar: ["navbar"],
   foreground: ["foreground"],
   img: ["img"],
-  foreground2: ["foreground2", "button", "link"],
-  button: ["button"],
-  link: ["link"],
+  foreground2: ["foreground2"],
   section: ["section", "foreground3", "h2"],
   foreground3: ["foreground3", "h2"],
   h2: ["h2"],
@@ -885,8 +902,6 @@ type NodeDefaultElementType = {
   foreground: "div";
   img: typeof p.PlasmicImg;
   foreground2: "div";
-  button: typeof Button;
-  link: "a";
   section: "section";
   foreground3: "div";
   h2: "h2";
@@ -958,8 +973,6 @@ export const PlasmicLandingPagesSvelte = Object.assign(
     foreground: makeNodeComponent("foreground"),
     img: makeNodeComponent("img"),
     foreground2: makeNodeComponent("foreground2"),
-    button: makeNodeComponent("button"),
-    link: makeNodeComponent("link"),
     section: makeNodeComponent("section"),
     foreground3: makeNodeComponent("foreground3"),
     h2: makeNodeComponent("h2"),
