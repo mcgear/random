@@ -1222,7 +1222,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           sty.text__nPvO
                         )}
                       >
-                        {"Get started"}
+                        {"Docs Coming Soon"}
                       </div>
                     </Button>
                   </React.Fragment>
@@ -1288,6 +1288,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           />
                         }
                         flat={"flat" as const}
+                        link={"/svelte-deployment" as const}
                         showEndIcon={"showEndIcon" as const}
                       >
                         <div
@@ -1297,7 +1298,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             sty.text___79LnD
                           )}
                         >
-                          {"Docs Coming Soon"}
+                          {"Get Started"}
                         </div>
                       </Button>
                     </React.Fragment>
