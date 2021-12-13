@@ -24,7 +24,7 @@
     {
       "projectId": "bNJjNc2NbC4jfBdycy75o8",
       "projectApiToken": "e7VjLeWVajwWsEcQ1rFkxKrQHB5w7CepomdgiYg9NVh1tl7FbiqZD1UdbH2Q4gtmFQsYvISDH5lxGJ93Dg7iw",
-      "projectName": "Landing Page Starter",
+      "projectName": "lowcodeunit.com",
       "version": "latest",
       "cssFilePath": "plasmic/landing_page_starter/plasmic_landing_page_starter.module.css",
       "components": [
@@ -38,19 +38,6 @@
             "modulePath": "../pages/index.tsx"
           },
           "cssFilePath": "plasmic/landing_page_starter/PlasmicHomepage.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
-          "id": "UZaPkpLSomxt",
-          "name": "Services",
-          "type": "managed",
-          "projectId": "bNJjNc2NbC4jfBdycy75o8",
-          "renderModuleFilePath": "plasmic/landing_page_starter/PlasmicServices.tsx",
-          "importSpec": {
-            "modulePath": "../pages/services.tsx"
-          },
-          "cssFilePath": "plasmic/landing_page_starter/PlasmicServices.module.css",
           "scheme": "blackbox",
           "componentType": "page"
         },
@@ -237,6 +224,19 @@
           "cssFilePath": "plasmic/landing_page_starter/PlasmicSection.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "UZaPkpLSomxt",
+          "name": "LandingPagesSvelte",
+          "type": "managed",
+          "projectId": "bNJjNc2NbC4jfBdycy75o8",
+          "renderModuleFilePath": "plasmic/lowcodeunit_com/PlasmicLandingPagesSvelte.tsx",
+          "importSpec": {
+            "modulePath": "../pages/svelte-deployment.tsx"
+          },
+          "cssFilePath": "plasmic/lowcodeunit_com/PlasmicLandingPagesSvelte.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -471,6 +471,11 @@
           "id": "Vc1KQZImW",
           "name": "image 9",
           "filePath": "../public/plasmic/landing_page_starter/images/image9.png"
+        },
+        {
+          "id": "Rgd5cUI3A",
+          "name": "image 10",
+          "filePath": "../public/plasmic/lowcodeunit_com/images/image10.png"
         }
       ],
       "indirect": false,

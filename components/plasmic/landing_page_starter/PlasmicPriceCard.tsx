@@ -38,7 +38,7 @@ import ValueProp from "../../ValueProp"; // plasmic-import: 7Osq_1lpBJMp/compone
 import Button from "../../Button"; // plasmic-import: 9tG1OyZAVIis/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
+
 import * as projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
 import * as sty from "./PlasmicPriceCard.module.css"; // plasmic-import: 7SzxSSEbWsst/css
 
@@ -107,49 +107,27 @@ function PlasmicPriceCard__RenderFunc(props: {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(
-        defaultcss.all,
-        projectcss.all,
-        projectcss.root_reset,
-        sty.root,
-        {
-          [sty.root__borders_flatLeft]: hasVariant(
-            variants,
-            "borders",
-            "flatLeft"
-          ),
-          [sty.root__borders_flatRight]: hasVariant(
-            variants,
-            "borders",
-            "flatRight"
-          ),
-          [sty.root__primary]: hasVariant(variants, "primary", "primary")
-        }
-      )}
+      className={classNames(projectcss.all, projectcss.root_reset, sty.root, {
+        [sty.root__borders_flatLeft]: hasVariant(
+          variants,
+          "borders",
+          "flatLeft"
+        ),
+        [sty.root__borders_flatRight]: hasVariant(
+          variants,
+          "borders",
+          "flatRight"
+        ),
+        [sty.root__primary]: hasVariant(variants, "primary", "primary")
+      })}
     >
       <p.Stack
         as={"div"}
         hasGap={true}
-        className={classNames(
-          defaultcss.all,
-          projectcss.all,
-          sty.freeBox___9LYw1
-        )}
+        className={classNames(projectcss.all, sty.freeBox___9LYw1)}
       >
-        <div
-          className={classNames(
-            defaultcss.all,
-            projectcss.all,
-            sty.freeBox__icAdw
-          )}
-        >
-          <div
-            className={classNames(
-              defaultcss.all,
-              projectcss.all,
-              sty.freeBox__k21Rm
-            )}
-          >
+        <div className={classNames(projectcss.all, sty.freeBox__icAdw)}>
+          <div className={classNames(projectcss.all, sty.freeBox__k21Rm)}>
             {p.renderPlasmicSlot({
               defaultContents: "Starter",
               value: args.label,
@@ -161,37 +139,20 @@ function PlasmicPriceCard__RenderFunc(props: {
         <p.Stack
           as={"div"}
           hasGap={true}
-          className={classNames(
-            defaultcss.all,
-            projectcss.all,
-            sty.freeBox__pseSl
-          )}
+          className={classNames(projectcss.all, sty.freeBox__pseSl)}
         >
-          <div
-            className={classNames(
-              defaultcss.all,
-              projectcss.all,
-              sty.freeBox__i5Yhf
-            )}
-          >
+          <div className={classNames(projectcss.all, sty.freeBox__i5Yhf)}>
             <div
               className={classNames(
-                defaultcss.all,
                 projectcss.all,
-                defaultcss.__wab_text,
+                projectcss.__wab_text,
                 sty.text__uFCc
               )}
             >
               {"$"}
             </div>
 
-            <div
-              className={classNames(
-                defaultcss.all,
-                projectcss.all,
-                sty.freeBox___7Oimo
-              )}
-            >
+            <div className={classNames(projectcss.all, sty.freeBox___7Oimo)}>
               {p.renderPlasmicSlot({
                 defaultContents: "8",
                 value: args.dollars,
@@ -202,9 +163,8 @@ function PlasmicPriceCard__RenderFunc(props: {
 
           <div
             className={classNames(
-              defaultcss.all,
               projectcss.all,
-              defaultcss.__wab_text,
+              projectcss.__wab_text,
               sty.text__yXjsN
             )}
           >
@@ -222,20 +182,12 @@ function PlasmicPriceCard__RenderFunc(props: {
       <p.Stack
         as={"div"}
         hasGap={true}
-        className={classNames(
-          defaultcss.all,
-          projectcss.all,
-          sty.freeBox__vhjJ
-        )}
+        className={classNames(projectcss.all, sty.freeBox__vhjJ)}
       >
         <p.Stack
           as={"div"}
           hasGap={true}
-          className={classNames(
-            defaultcss.all,
-            projectcss.all,
-            sty.freeBox__ncKv5
-          )}
+          className={classNames(projectcss.all, sty.freeBox__ncKv5)}
         >
           {p.renderPlasmicSlot({
             defaultContents: (
@@ -247,11 +199,7 @@ function PlasmicPriceCard__RenderFunc(props: {
                   }
                   icon={
                     <CheckIcon
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.svg___8QYDb
-                      )}
+                      className={classNames(projectcss.all, sty.svg___8QYDb)}
                       role={"img"}
                     />
                   }
@@ -262,11 +210,7 @@ function PlasmicPriceCard__RenderFunc(props: {
                   description={"Mus consequat a justo"}
                   icon={
                     <CheckIcon
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.svg__iUcZd
-                      )}
+                      className={classNames(projectcss.all, sty.svg__iUcZd)}
                       role={"img"}
                     />
                   }
@@ -292,9 +236,8 @@ function PlasmicPriceCard__RenderFunc(props: {
             defaultContents: (
               <div
                 className={classNames(
-                  defaultcss.all,
                   projectcss.all,
-                  defaultcss.__wab_text,
+                  projectcss.__wab_text,
                   sty.text__aSamt
                 )}
               >

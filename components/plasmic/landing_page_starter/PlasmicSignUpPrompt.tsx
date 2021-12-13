@@ -38,7 +38,7 @@ import Divider from "../../Divider"; // plasmic-import: oCAlBrknrkLn/component
 import TextInput from "../../TextInput"; // plasmic-import: W8d-SKhm83xS/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
+
 import * as projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
 import * as sty from "./PlasmicSignUpPrompt.module.css"; // plasmic-import: yrt3dRfNFL8K/css
 
@@ -83,34 +83,18 @@ function PlasmicSignUpPrompt__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       hasGap={true}
-      className={classNames(
-        defaultcss.all,
-        projectcss.all,
-        projectcss.root_reset,
-        sty.root
-      )}
+      className={classNames(projectcss.all, projectcss.root_reset, sty.root)}
     >
-      <div
-        className={classNames(
-          defaultcss.all,
-          projectcss.all,
-          sty.freeBox__aOx2P
-        )}
-      >
+      <div className={classNames(projectcss.all, sty.freeBox__aOx2P)}>
         <p.Stack
           as={"div"}
           hasGap={true}
-          className={classNames(
-            defaultcss.all,
-            projectcss.all,
-            sty.freeBox__xuSw5
-          )}
+          className={classNames(projectcss.all, sty.freeBox__xuSw5)}
         >
           <div
             className={classNames(
-              defaultcss.all,
               projectcss.all,
-              defaultcss.__wab_text,
+              projectcss.__wab_text,
               sty.text___06Eiu
             )}
           >
@@ -120,11 +104,7 @@ function PlasmicSignUpPrompt__RenderFunc(props: {
           <p.Stack
             as={"div"}
             hasGap={true}
-            className={classNames(
-              defaultcss.all,
-              projectcss.all,
-              sty.freeBox__usfqB
-            )}
+            className={classNames(projectcss.all, sty.freeBox__usfqB)}
           >
             <Button
               className={classNames("__wab_instance", sty.button__iNnM)}
@@ -140,11 +120,7 @@ function PlasmicSignUpPrompt__RenderFunc(props: {
               showStartIcon={"showStartIcon" as const}
               startIcon={
                 <GoogleIcon
-                  className={classNames(
-                    defaultcss.all,
-                    projectcss.all,
-                    sty.svg___9HHra
-                  )}
+                  className={classNames(projectcss.all, sty.svg___9HHra)}
                   role={"img"}
                 />
               }
@@ -156,11 +132,7 @@ function PlasmicSignUpPrompt__RenderFunc(props: {
           <p.Stack
             as={"div"}
             hasGap={true}
-            className={classNames(
-              defaultcss.all,
-              projectcss.all,
-              sty.freeBox___8G2AC
-            )}
+            className={classNames(projectcss.all, sty.freeBox___8G2AC)}
           >
             <Divider
               className={classNames("__wab_instance", sty.divider___3W49Z)}
@@ -168,9 +140,8 @@ function PlasmicSignUpPrompt__RenderFunc(props: {
 
             <div
               className={classNames(
-                defaultcss.all,
                 projectcss.all,
-                defaultcss.__wab_text,
+                projectcss.__wab_text,
                 sty.text__oE3A
               )}
             >
@@ -185,11 +156,7 @@ function PlasmicSignUpPrompt__RenderFunc(props: {
           <p.Stack
             as={"div"}
             hasGap={true}
-            className={classNames(
-              defaultcss.all,
-              projectcss.all,
-              sty.freeBox__umM4T
-            )}
+            className={classNames(projectcss.all, sty.freeBox__umM4T)}
           >
             <TextInput
               className={classNames("__wab_instance", sty.textInput__rX6Ld)}
@@ -212,11 +179,7 @@ function PlasmicSignUpPrompt__RenderFunc(props: {
             color={"indigo" as const}
             endIcon={
               <WandIcon
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.svg__cmzE
-                )}
+                className={classNames(projectcss.all, sty.svg__cmzE)}
                 role={"img"}
               />
             }
@@ -227,18 +190,11 @@ function PlasmicSignUpPrompt__RenderFunc(props: {
 
         <Divider className={classNames("__wab_instance", sty.divider__hcI8Q)} />
 
-        <div
-          className={classNames(
-            defaultcss.all,
-            projectcss.all,
-            sty.freeBox__p0M1W
-          )}
-        >
+        <div className={classNames(projectcss.all, sty.freeBox__p0M1W)}>
           <div
             className={classNames(
-              defaultcss.all,
               projectcss.all,
-              defaultcss.__wab_text,
+              projectcss.__wab_text,
               sty.text__se0Xr
             )}
           >

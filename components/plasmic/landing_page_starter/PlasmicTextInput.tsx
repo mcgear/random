@@ -35,7 +35,7 @@ import {
 } from "@plasmicapp/react-web";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
+
 import * as projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
 import * as sty from "./PlasmicTextInput.module.css"; // plasmic-import: W8d-SKhm83xS/css
 
@@ -112,25 +112,19 @@ function PlasmicTextInput__RenderFunc(props: {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(
-        defaultcss.all,
-        projectcss.all,
-        projectcss.root_reset,
-        sty.root,
-        {
-          [sty.root_____focusVisibleWithin]: triggers.focusVisibleWithin_root,
-          [sty.root__isDisabled]: hasVariant(
-            variants,
-            "isDisabled",
-            "isDisabled"
-          ),
-          [sty.root__showStartIcon]: hasVariant(
-            variants,
-            "showStartIcon",
-            "showStartIcon"
-          )
-        }
-      )}
+      className={classNames(projectcss.all, projectcss.root_reset, sty.root, {
+        [sty.root_____focusVisibleWithin]: triggers.focusVisibleWithin_root,
+        [sty.root__isDisabled]: hasVariant(
+          variants,
+          "isDisabled",
+          "isDisabled"
+        ),
+        [sty.root__showStartIcon]: hasVariant(
+          variants,
+          "showStartIcon",
+          "showStartIcon"
+        )
+      })}
       data-plasmic-trigger-props={[triggerRootFocusVisibleWithinProps]}
     >
       {(
@@ -139,34 +133,25 @@ function PlasmicTextInput__RenderFunc(props: {
         <div
           data-plasmic-name={"startIconContainer"}
           data-plasmic-override={overrides.startIconContainer}
-          className={classNames(
-            defaultcss.all,
-            projectcss.all,
-            sty.startIconContainer,
-            {
-              [sty.startIconContainer_____focusVisibleWithin]:
-                triggers.focusVisibleWithin_root,
-              [sty.startIconContainer__isDisabled]: hasVariant(
-                variants,
-                "isDisabled",
-                "isDisabled"
-              ),
-              [sty.startIconContainer__showStartIcon]: hasVariant(
-                variants,
-                "showStartIcon",
-                "showStartIcon"
-              )
-            }
-          )}
+          className={classNames(projectcss.all, sty.startIconContainer, {
+            [sty.startIconContainer_____focusVisibleWithin]:
+              triggers.focusVisibleWithin_root,
+            [sty.startIconContainer__isDisabled]: hasVariant(
+              variants,
+              "isDisabled",
+              "isDisabled"
+            ),
+            [sty.startIconContainer__showStartIcon]: hasVariant(
+              variants,
+              "showStartIcon",
+              "showStartIcon"
+            )
+          })}
         >
           {p.renderPlasmicSlot({
             defaultContents: (
               <SearchIcon
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.svg__chbzc
-                )}
+                className={classNames(projectcss.all, sty.svg__chbzc)}
                 role={"img"}
               />
             ),
@@ -186,7 +171,7 @@ function PlasmicTextInput__RenderFunc(props: {
       <input
         data-plasmic-name={"input"}
         data-plasmic-override={overrides.input}
-        className={classNames(defaultcss.input, projectcss.input, sty.input, {
+        className={classNames(projectcss.input, sty.input, {
           [sty.input_____focusVisibleWithin]: triggers.focusVisibleWithin_root,
           [sty.input__isDisabled]: hasVariant(
             variants,
@@ -215,27 +200,18 @@ function PlasmicTextInput__RenderFunc(props: {
         <div
           data-plasmic-name={"endIconContainer"}
           data-plasmic-override={overrides.endIconContainer}
-          className={classNames(
-            defaultcss.all,
-            projectcss.all,
-            sty.endIconContainer,
-            {
-              [sty.endIconContainer__showEndIcon]: hasVariant(
-                variants,
-                "showEndIcon",
-                "showEndIcon"
-              )
-            }
-          )}
+          className={classNames(projectcss.all, sty.endIconContainer, {
+            [sty.endIconContainer__showEndIcon]: hasVariant(
+              variants,
+              "showEndIcon",
+              "showEndIcon"
+            )
+          })}
         >
           {p.renderPlasmicSlot({
             defaultContents: (
               <CheckIcon
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.svg__u6OFp
-                )}
+                className={classNames(projectcss.all, sty.svg__u6OFp)}
                 role={"img"}
               />
             ),

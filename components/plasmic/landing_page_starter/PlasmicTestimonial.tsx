@@ -35,7 +35,7 @@ import {
 } from "@plasmicapp/react-web";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
+
 import * as projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
 import * as sty from "./PlasmicTestimonial.module.css"; // plasmic-import: ehiWvKp_fzme/css
 
@@ -90,21 +90,12 @@ function PlasmicTestimonial__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       hasGap={true}
-      className={classNames(
-        defaultcss.all,
-        projectcss.all,
-        projectcss.root_reset,
-        sty.root
-      )}
+      className={classNames(projectcss.all, projectcss.root_reset, sty.root)}
     >
       <p.Stack
         as={"div"}
         hasGap={true}
-        className={classNames(
-          defaultcss.all,
-          projectcss.all,
-          sty.freeBox__lDyLj
-        )}
+        className={classNames(projectcss.all, sty.freeBox__lDyLj)}
       >
         {p.renderPlasmicSlot({
           defaultContents:
@@ -117,11 +108,7 @@ function PlasmicTestimonial__RenderFunc(props: {
       <p.Stack
         as={"div"}
         hasGap={true}
-        className={classNames(
-          defaultcss.all,
-          projectcss.all,
-          sty.freeBox__wbBhM
-        )}
+        className={classNames(projectcss.all, sty.freeBox__wbBhM)}
       >
         <p.PlasmicImg
           data-plasmic-name={"authorPicture"}
@@ -149,19 +136,9 @@ function PlasmicTestimonial__RenderFunc(props: {
         <p.Stack
           as={"div"}
           hasGap={true}
-          className={classNames(
-            defaultcss.all,
-            projectcss.all,
-            sty.freeBox__cRiUr
-          )}
+          className={classNames(projectcss.all, sty.freeBox__cRiUr)}
         >
-          <div
-            className={classNames(
-              defaultcss.all,
-              projectcss.all,
-              sty.freeBox__fwwNv
-            )}
-          >
+          <div className={classNames(projectcss.all, sty.freeBox__fwwNv)}>
             {p.renderPlasmicSlot({
               defaultContents: "Tracy Jordan",
               value: args.name,

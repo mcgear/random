@@ -35,7 +35,7 @@ import {
 } from "@plasmicapp/react-web";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
+
 import * as projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
 import * as sty from "./PlasmicValueProp.module.css"; // plasmic-import: 7Osq_1lpBJMp/css
 
@@ -112,46 +112,35 @@ function PlasmicValueProp__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       hasGap={true}
-      className={classNames(
-        defaultcss.all,
-        projectcss.all,
-        projectcss.root_reset,
-        sty.root,
-        {
-          [sty.root__card]: hasVariant(variants, "card", "card"),
-          [sty.root__card_vertical]:
-            hasVariant(variants, "card", "card") &&
-            hasVariant(variants, "vertical", "vertical"),
-          [sty.root__flatIcon]: hasVariant(variants, "flatIcon", "flatIcon"),
-          [sty.root__noTitle]: hasVariant(variants, "noTitle", "noTitle"),
-          [sty.root__vertical]: hasVariant(variants, "vertical", "vertical")
-        }
-      )}
+      className={classNames(projectcss.all, projectcss.root_reset, sty.root, {
+        [sty.root__card]: hasVariant(variants, "card", "card"),
+        [sty.root__card_vertical]:
+          hasVariant(variants, "card", "card") &&
+          hasVariant(variants, "vertical", "vertical"),
+        [sty.root__flatIcon]: hasVariant(variants, "flatIcon", "flatIcon"),
+        [sty.root__noTitle]: hasVariant(variants, "noTitle", "noTitle"),
+        [sty.root__vertical]: hasVariant(variants, "vertical", "vertical")
+      })}
     >
       <div
         data-plasmic-name={"iconContainer"}
         data-plasmic-override={overrides.iconContainer}
-        className={classNames(
-          defaultcss.all,
-          projectcss.all,
-          sty.iconContainer,
-          {
-            [sty.iconContainer__card]: hasVariant(variants, "card", "card"),
-            [sty.iconContainer__card_vertical]:
-              hasVariant(variants, "card", "card") &&
-              hasVariant(variants, "vertical", "vertical"),
-            [sty.iconContainer__flatIcon]: hasVariant(
-              variants,
-              "flatIcon",
-              "flatIcon"
-            ),
-            [sty.iconContainer__vertical]: hasVariant(
-              variants,
-              "vertical",
-              "vertical"
-            )
-          }
-        )}
+        className={classNames(projectcss.all, sty.iconContainer, {
+          [sty.iconContainer__card]: hasVariant(variants, "card", "card"),
+          [sty.iconContainer__card_vertical]:
+            hasVariant(variants, "card", "card") &&
+            hasVariant(variants, "vertical", "vertical"),
+          [sty.iconContainer__flatIcon]: hasVariant(
+            variants,
+            "flatIcon",
+            "flatIcon"
+          ),
+          [sty.iconContainer__vertical]: hasVariant(
+            variants,
+            "vertical",
+            "vertical"
+          )
+        })}
       >
         {p.renderPlasmicSlot({
           defaultContents: (
@@ -179,23 +168,18 @@ function PlasmicValueProp__RenderFunc(props: {
         data-plasmic-name={"contentContainer"}
         data-plasmic-override={overrides.contentContainer}
         hasGap={true}
-        className={classNames(
-          defaultcss.all,
-          projectcss.all,
-          sty.contentContainer,
-          {
-            [sty.contentContainer__flatIcon]: hasVariant(
-              variants,
-              "flatIcon",
-              "flatIcon"
-            ),
-            [sty.contentContainer__noTitle]: hasVariant(
-              variants,
-              "noTitle",
-              "noTitle"
-            )
-          }
-        )}
+        className={classNames(projectcss.all, sty.contentContainer, {
+          [sty.contentContainer__flatIcon]: hasVariant(
+            variants,
+            "flatIcon",
+            "flatIcon"
+          ),
+          [sty.contentContainer__noTitle]: hasVariant(
+            variants,
+            "noTitle",
+            "noTitle"
+          )
+        })}
       >
         {(hasVariant(variants, "noTitle", "noTitle") ? false : true)
           ? p.renderPlasmicSlot({

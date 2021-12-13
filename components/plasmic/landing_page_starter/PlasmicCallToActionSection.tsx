@@ -35,10 +35,10 @@ import {
 } from "@plasmicapp/react-web";
 import Button from "../../Button"; // plasmic-import: 9tG1OyZAVIis/component
 
-import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: XS8lqfxZhwLY/globalVariant
+import { useScreenVariants as useScreenVariantsxs8LqfxZhwLy } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: XS8lqfxZhwLY/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
+
 import * as projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
 import * as sty from "./PlasmicCallToActionSection.module.css"; // plasmic-import: T0bbL5EU2k3r/css
 
@@ -87,7 +87,7 @@ function PlasmicCallToActionSection__RenderFunc(props: {
   const { variants, args, overrides, forNode, dataFetches } = props;
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariants()
+    screen: useScreenVariantsxs8LqfxZhwLy()
   });
 
   return (
@@ -98,24 +98,13 @@ function PlasmicCallToActionSection__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       hasGap={true}
-      className={classNames(
-        defaultcss.all,
-        projectcss.all,
-        projectcss.root_reset,
-        sty.root
-      )}
+      className={classNames(projectcss.all, projectcss.root_reset, sty.root)}
     >
-      <div
-        className={classNames(
-          defaultcss.all,
-          projectcss.all,
-          sty.freeBox__lDa6F
-        )}
-      >
+      <div className={classNames(projectcss.all, sty.freeBox__lDa6F)}>
         <div
           data-plasmic-name={"art"}
           data-plasmic-override={overrides.art}
-          className={classNames(defaultcss.all, projectcss.all, sty.art)}
+          className={classNames(projectcss.all, sty.art)}
         >
           <p.PlasmicImg
             data-plasmic-name={"img"}
@@ -144,33 +133,23 @@ function PlasmicCallToActionSection__RenderFunc(props: {
             <div
               data-plasmic-name={"blend"}
               data-plasmic-override={overrides.blend}
-              className={classNames(defaultcss.all, projectcss.all, sty.blend)}
+              className={classNames(projectcss.all, sty.blend)}
             />
           ) : null}
         </div>
 
-        <div
-          className={classNames(
-            defaultcss.all,
-            projectcss.all,
-            sty.freeBox__fr5Ut
-          )}
-        >
+        <div className={classNames(projectcss.all, sty.freeBox__fr5Ut)}>
           <p.Stack
             as={"div"}
             hasGap={true}
-            className={classNames(
-              defaultcss.all,
-              projectcss.all,
-              sty.freeBox__hxmcY
-            )}
+            className={classNames(projectcss.all, sty.freeBox__hxmcY)}
           >
             <p.Stack
               as={"div"}
               data-plasmic-name={"copy"}
               data-plasmic-override={overrides.copy}
               hasGap={true}
-              className={classNames(defaultcss.all, projectcss.all, sty.copy)}
+              className={classNames(projectcss.all, sty.copy)}
             >
               {p.renderPlasmicSlot({
                 defaultContents: (
@@ -178,17 +157,12 @@ function PlasmicCallToActionSection__RenderFunc(props: {
                     <p.Stack
                       as={"div"}
                       hasGap={true}
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.freeBox__agwzK
-                      )}
+                      className={classNames(projectcss.all, sty.freeBox__agwzK)}
                     >
                       <div
                         className={classNames(
-                          defaultcss.all,
                           projectcss.all,
-                          defaultcss.__wab_text,
+                          projectcss.__wab_text,
                           sty.text__cyoi9
                         )}
                       >
@@ -197,9 +171,8 @@ function PlasmicCallToActionSection__RenderFunc(props: {
 
                       <div
                         className={classNames(
-                          defaultcss.all,
                           projectcss.all,
-                          defaultcss.__wab_text,
+                          projectcss.__wab_text,
                           sty.text__re9LY
                         )}
                       >
@@ -208,9 +181,8 @@ function PlasmicCallToActionSection__RenderFunc(props: {
 
                       <div
                         className={classNames(
-                          defaultcss.all,
                           projectcss.all,
-                          defaultcss.__wab_text,
+                          projectcss.__wab_text,
                           sty.text___26KTc
                         )}
                       >
@@ -223,11 +195,7 @@ function PlasmicCallToActionSection__RenderFunc(props: {
                     <p.Stack
                       as={"div"}
                       hasGap={true}
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.freeBox__jznKd
-                      )}
+                      className={classNames(projectcss.all, sty.freeBox__jznKd)}
                     >
                       <Button
                         className={classNames(
@@ -238,7 +206,6 @@ function PlasmicCallToActionSection__RenderFunc(props: {
                         endIcon={
                           <ChevronRightIcon
                             className={classNames(
-                              defaultcss.all,
                               projectcss.all,
                               sty.svg__s5RNk
                             )}
@@ -259,9 +226,8 @@ function PlasmicCallToActionSection__RenderFunc(props: {
                       >
                         <div
                           className={classNames(
-                            defaultcss.all,
                             projectcss.all,
-                            defaultcss.__wab_text,
+                            projectcss.__wab_text,
                             sty.text__hgHrl
                           )}
                         >

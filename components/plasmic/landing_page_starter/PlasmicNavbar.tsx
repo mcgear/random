@@ -36,10 +36,10 @@ import {
 import Logo from "../../Logo"; // plasmic-import: dbGVEXIYhu_f/component
 import Button from "../../Button"; // plasmic-import: 9tG1OyZAVIis/component
 
-import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: XS8lqfxZhwLY/globalVariant
+import { useScreenVariants as useScreenVariantsxs8LqfxZhwLy } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: XS8lqfxZhwLY/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
+
 import * as projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
 import * as sty from "./PlasmicNavbar.module.css"; // plasmic-import: ThexOuedbks1/css
 
@@ -75,7 +75,7 @@ function PlasmicNavbar__RenderFunc(props: {
   const { variants, args, overrides, forNode, dataFetches } = props;
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariants()
+    screen: useScreenVariantsxs8LqfxZhwLy()
   });
 
   return (
@@ -86,21 +86,12 @@ function PlasmicNavbar__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       hasGap={true}
-      className={classNames(
-        defaultcss.all,
-        projectcss.all,
-        projectcss.root_reset,
-        sty.root
-      )}
+      className={classNames(projectcss.all, projectcss.root_reset, sty.root)}
     >
       <p.Stack
         as={"div"}
         hasGap={true}
-        className={classNames(
-          defaultcss.all,
-          projectcss.all,
-          sty.freeBox__ebi1
-        )}
+        className={classNames(projectcss.all, sty.freeBox__ebi1)}
       >
         <Logo
           data-plasmic-name={"logo"}
@@ -112,9 +103,8 @@ function PlasmicNavbar__RenderFunc(props: {
           data-plasmic-name={"text"}
           data-plasmic-override={overrides.text}
           className={classNames(
-            defaultcss.all,
             projectcss.all,
-            defaultcss.__wab_text,
+            projectcss.__wab_text,
             sty.text
           )}
         >
@@ -124,11 +114,7 @@ function PlasmicNavbar__RenderFunc(props: {
         <p.Stack
           as={"div"}
           hasGap={true}
-          className={classNames(
-            defaultcss.all,
-            projectcss.all,
-            sty.freeBox__uYXg7
-          )}
+          className={classNames(projectcss.all, sty.freeBox__uYXg7)}
         >
           <Button
             className={classNames("__wab_instance", sty.button__rzg65)}
@@ -159,23 +145,16 @@ function PlasmicNavbar__RenderFunc(props: {
             color={"darkGray" as const}
             link={"/dashboard" as const}
           >
-            {"Sign up"}
+            {"Get started for free"}
           </Button>
         </p.Stack>
 
         {false ? (
-          <div
-            className={classNames(
-              defaultcss.all,
-              projectcss.all,
-              sty.freeBox__bagxe
-            )}
-          >
+          <div className={classNames(projectcss.all, sty.freeBox__bagxe)}>
             <button
               className={classNames(
-                defaultcss.button,
                 projectcss.button,
-                defaultcss.__wab_text,
+                projectcss.__wab_text,
                 sty.button__hagt6
               )}
             >
