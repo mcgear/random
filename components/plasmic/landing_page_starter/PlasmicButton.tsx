@@ -35,7 +35,7 @@ import {
 } from "@plasmicapp/react-web";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
+
 import * as projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
 import * as sty from "./PlasmicButton.module.css"; // plasmic-import: 9tG1OyZAVIis/css
 
@@ -158,7 +158,6 @@ function PlasmicButton__RenderFunc(props: {
       data-plasmic-for-node={forNode}
       hasGap={true}
       className={classNames(
-        defaultcss.button,
         projectcss.button,
         projectcss.root_reset,
         sty.root,
@@ -213,11 +212,7 @@ function PlasmicButton__RenderFunc(props: {
         ? p.renderPlasmicSlot({
             defaultContents: (
               <AppleIcon
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.svg__qPzmk
-                )}
+                className={classNames(projectcss.all, sty.svg__qPzmk)}
                 role={"img"}
               />
             ),
@@ -379,11 +374,7 @@ function PlasmicButton__RenderFunc(props: {
         ? p.renderPlasmicSlot({
             defaultContents: (
               <AppleIcon
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.svg__xJ1
-                )}
+                className={classNames(projectcss.all, sty.svg__xJ1)}
                 role={"img"}
               />
             ),
@@ -461,7 +452,7 @@ function useBehavior<P extends pp.BaseButtonProps>(
   props: P,
   ref: pp.ButtonRef
 ) {
-  return pp.useButton<P, typeof PlasmicButton>(
+  const b = pp.useButton<P, typeof PlasmicButton>(
     PlasmicButton,
     props,
     {
@@ -479,6 +470,13 @@ function useBehavior<P extends pp.BaseButtonProps>(
 
     ref
   );
+
+  if (b.plasmicProps.overrides.root.as === "a") {
+    b.plasmicProps.overrides.root.as = p.PlasmicLink;
+    b.plasmicProps.overrides.root.props.component = Link;
+    b.plasmicProps.overrides.root.props.platform = "nextjs";
+  }
+  return b;
 }
 
 const PlasmicDescendants = {

@@ -35,7 +35,7 @@ import {
 } from "@plasmicapp/react-web";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
+
 import * as projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
 import * as sty from "./PlasmicListItem.module.css"; // plasmic-import: NsK2QjXT7pcM/css
 
@@ -97,25 +97,19 @@ function PlasmicListItem__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       hasGap={true}
-      className={classNames(
-        defaultcss.all,
-        projectcss.all,
-        projectcss.root_reset,
-        sty.root,
-        {
-          [sty.root__bottomBorder_dark]: hasVariant(
-            variants,
-            "bottomBorder",
-            "dark"
-          ),
-          [sty.root__bottomBorder_light]: hasVariant(
-            variants,
-            "bottomBorder",
-            "light"
-          ),
-          [sty.root__leftCheck]: hasVariant(variants, "leftCheck", "leftCheck")
-        }
-      )}
+      className={classNames(projectcss.all, projectcss.root_reset, sty.root, {
+        [sty.root__bottomBorder_dark]: hasVariant(
+          variants,
+          "bottomBorder",
+          "dark"
+        ),
+        [sty.root__bottomBorder_light]: hasVariant(
+          variants,
+          "bottomBorder",
+          "light"
+        ),
+        [sty.root__leftCheck]: hasVariant(variants, "leftCheck", "leftCheck")
+      })}
     >
       {p.renderPlasmicSlot({
         defaultContents: "Something amazing",
@@ -126,11 +120,7 @@ function PlasmicListItem__RenderFunc(props: {
       {p.renderPlasmicSlot({
         defaultContents: (
           <CheckCircleIcon
-            className={classNames(
-              defaultcss.all,
-              projectcss.all,
-              sty.svg__gm7Uw
-            )}
+            className={classNames(projectcss.all, sty.svg__gm7Uw)}
             role={"img"}
           />
         ),

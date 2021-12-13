@@ -36,10 +36,10 @@ import {
 import Logo from "../../Logo"; // plasmic-import: dbGVEXIYhu_f/component
 import Button from "../../Button"; // plasmic-import: 9tG1OyZAVIis/component
 
-import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: XS8lqfxZhwLY/globalVariant
+import { useScreenVariants as useScreenVariantsxs8LqfxZhwLy } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: XS8lqfxZhwLY/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
+
 import * as projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
 import * as sty from "./PlasmicFooterSection.module.css"; // plasmic-import: iXxSJX956e4d/css
 
@@ -77,7 +77,7 @@ function PlasmicFooterSection__RenderFunc(props: {
   const { variants, args, overrides, forNode, dataFetches } = props;
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariants()
+    screen: useScreenVariantsxs8LqfxZhwLy()
   });
 
   return (
@@ -86,30 +86,17 @@ function PlasmicFooterSection__RenderFunc(props: {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(
-        defaultcss.all,
-        projectcss.all,
-        projectcss.root_reset,
-        sty.root
-      )}
+      className={classNames(projectcss.all, projectcss.root_reset, sty.root)}
     >
       <p.Stack
         as={"div"}
         hasGap={true}
-        className={classNames(
-          defaultcss.all,
-          projectcss.all,
-          sty.freeBox___8RjJ4
-        )}
+        className={classNames(projectcss.all, sty.freeBox___8RjJ4)}
       >
         <p.Stack
           as={"div"}
           hasGap={true}
-          className={classNames(
-            defaultcss.all,
-            projectcss.all,
-            sty.freeBox__ezOj3
-          )}
+          className={classNames(projectcss.all, sty.freeBox__ezOj3)}
         >
           <Logo
             data-plasmic-name={"logo"}
@@ -120,17 +107,12 @@ function PlasmicFooterSection__RenderFunc(props: {
           <p.Stack
             as={"div"}
             hasGap={true}
-            className={classNames(
-              defaultcss.all,
-              projectcss.all,
-              sty.freeBox__b2XVw
-            )}
+            className={classNames(projectcss.all, sty.freeBox__b2XVw)}
           >
             <div
               className={classNames(
-                defaultcss.all,
                 projectcss.all,
-                defaultcss.__wab_text,
+                projectcss.__wab_text,
                 sty.text__hC0E
               )}
             >
@@ -140,36 +122,20 @@ function PlasmicFooterSection__RenderFunc(props: {
             <p.Stack
               as={"div"}
               hasGap={true}
-              className={classNames(
-                defaultcss.all,
-                projectcss.all,
-                sty.freeBox__eoeYd
-              )}
+              className={classNames(projectcss.all, sty.freeBox__eoeYd)}
             >
               <TwitterIcon
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.svg__f81D6
-                )}
+                className={classNames(projectcss.all, sty.svg__f81D6)}
                 role={"img"}
               />
 
               <GithubIcon
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.svg__eZhSm
-                )}
+                className={classNames(projectcss.all, sty.svg__eZhSm)}
                 role={"img"}
               />
 
               <LinkedinIcon
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.svg___3JwXt
-                )}
+                className={classNames(projectcss.all, sty.svg___3JwXt)}
                 role={"img"}
               />
             </p.Stack>
@@ -179,17 +145,12 @@ function PlasmicFooterSection__RenderFunc(props: {
         <p.Stack
           as={"div"}
           hasGap={true}
-          className={classNames(
-            defaultcss.all,
-            projectcss.all,
-            sty.freeBox__ej5Y
-          )}
+          className={classNames(projectcss.all, sty.freeBox__ej5Y)}
         >
           <div
             className={classNames(
-              defaultcss.all,
               projectcss.all,
-              defaultcss.__wab_text,
+              projectcss.__wab_text,
               sty.text___1RCgQ
             )}
           >
@@ -204,9 +165,8 @@ function PlasmicFooterSection__RenderFunc(props: {
             >
               <div
                 className={classNames(
-                  defaultcss.all,
                   projectcss.all,
-                  defaultcss.__wab_text,
+                  projectcss.__wab_text,
                   sty.text__yv1R8
                 )}
               >
@@ -223,9 +183,8 @@ function PlasmicFooterSection__RenderFunc(props: {
           >
             <div
               className={classNames(
-                defaultcss.all,
                 projectcss.all,
-                defaultcss.__wab_text,
+                projectcss.__wab_text,
                 sty.text__ztX8Y
               )}
             >
@@ -250,9 +209,8 @@ function PlasmicFooterSection__RenderFunc(props: {
             >
               <div
                 className={classNames(
-                  defaultcss.all,
                   projectcss.all,
-                  defaultcss.__wab_text,
+                  projectcss.__wab_text,
                   sty.text__xO6Tw
                 )}
               >
@@ -268,9 +226,8 @@ function PlasmicFooterSection__RenderFunc(props: {
             >
               <div
                 className={classNames(
-                  defaultcss.all,
                   projectcss.all,
-                  defaultcss.__wab_text,
+                  projectcss.__wab_text,
                   sty.text__jmSjY
                 )}
               >
@@ -283,17 +240,12 @@ function PlasmicFooterSection__RenderFunc(props: {
         <p.Stack
           as={"div"}
           hasGap={true}
-          className={classNames(
-            defaultcss.all,
-            projectcss.all,
-            sty.freeBox__adWjy
-          )}
+          className={classNames(projectcss.all, sty.freeBox__adWjy)}
         >
           <div
             className={classNames(
-              defaultcss.all,
               projectcss.all,
-              defaultcss.__wab_text,
+              projectcss.__wab_text,
               sty.text__p4Z5R
             )}
           >

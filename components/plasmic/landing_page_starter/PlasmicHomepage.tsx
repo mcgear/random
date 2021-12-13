@@ -44,10 +44,10 @@ import Testimonial from "../../Testimonial"; // plasmic-import: ehiWvKp_fzme/com
 import CallToActionSection from "../../CallToActionSection"; // plasmic-import: T0bbL5EU2k3r/component
 import FooterSection from "../../FooterSection"; // plasmic-import: iXxSJX956e4d/component
 
-import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: XS8lqfxZhwLY/globalVariant
+import { useScreenVariants as useScreenVariantsxs8LqfxZhwLy } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: XS8lqfxZhwLY/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
+
 import * as projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
 import * as sty from "./PlasmicHomepage.module.css"; // plasmic-import: Ess5kdNBQke/css
 
@@ -94,7 +94,7 @@ function PlasmicHomepage__RenderFunc(props: {
   const { variants, args, overrides, forNode, dataFetches } = props;
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariants()
+    screen: useScreenVariantsxs8LqfxZhwLy()
   });
 
   return (
@@ -111,14 +111,13 @@ function PlasmicHomepage__RenderFunc(props: {
         }
       `}</style>
 
-      <div className={defaultcss.plasmic_page_wrapper}>
+      <div className={projectcss.plasmic_page_wrapper}>
         <div
           data-plasmic-name={"root"}
           data-plasmic-override={overrides.root}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
           className={classNames(
-            defaultcss.all,
             projectcss.all,
             projectcss.root_reset,
             sty.root
@@ -129,11 +128,7 @@ function PlasmicHomepage__RenderFunc(props: {
             data-plasmic-name={"headerHeroSection"}
             data-plasmic-override={overrides.headerHeroSection}
             hasGap={true}
-            className={classNames(
-              defaultcss.all,
-              projectcss.all,
-              sty.headerHeroSection
-            )}
+            className={classNames(projectcss.all, sty.headerHeroSection)}
           >
             <Navbar
               data-plasmic-name={"navbar"}
@@ -144,49 +139,26 @@ function PlasmicHomepage__RenderFunc(props: {
             <p.Stack
               as={"div"}
               hasGap={true}
-              className={classNames(
-                defaultcss.all,
-                projectcss.all,
-                sty.columns__nVmJy
-              )}
+              className={classNames(projectcss.all, sty.columns__nVmJy)}
             >
-              <div
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.column__uhjuo
-                )}
-              >
+              <div className={classNames(projectcss.all, sty.column__uhjuo)}>
                 <p.Stack
                   as={"div"}
                   hasGap={true}
-                  className={classNames(
-                    defaultcss.all,
-                    projectcss.all,
-                    sty.freeBox__vcd8Q
-                  )}
+                  className={classNames(projectcss.all, sty.freeBox__vcd8Q)}
                 >
                   <p.Stack
                     as={"div"}
                     hasGap={true}
-                    className={classNames(
-                      defaultcss.all,
-                      projectcss.all,
-                      sty.freeBox__gWhhY
-                    )}
+                    className={classNames(projectcss.all, sty.freeBox__gWhhY)}
                   >
                     <div
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.freeBox__nQc0P
-                      )}
+                      className={classNames(projectcss.all, sty.freeBox__nQc0P)}
                     >
                       <div
                         className={classNames(
-                          defaultcss.all,
                           projectcss.all,
-                          defaultcss.__wab_text,
+                          projectcss.__wab_text,
                           sty.text___5KJuZ
                         )}
                       >
@@ -196,9 +168,8 @@ function PlasmicHomepage__RenderFunc(props: {
 
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text__bAdTn
                       )}
                     >
@@ -207,9 +178,8 @@ function PlasmicHomepage__RenderFunc(props: {
 
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text__zKop
                       )}
                     >
@@ -222,11 +192,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   <p.Stack
                     as={"div"}
                     hasGap={true}
-                    className={classNames(
-                      defaultcss.all,
-                      projectcss.all,
-                      sty.freeBox__mycgO
-                    )}
+                    className={classNames(projectcss.all, sty.freeBox__mycgO)}
                   >
                     <Button
                       className={classNames(
@@ -236,11 +202,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       color={"darkGray" as const}
                       endIcon={
                         <ChevronRightIcon
-                          className={classNames(
-                            defaultcss.all,
-                            projectcss.all,
-                            sty.svg__wuT7
-                          )}
+                          className={classNames(projectcss.all, sty.svg__wuT7)}
                           role={"img"}
                         />
                       }
@@ -249,9 +211,8 @@ function PlasmicHomepage__RenderFunc(props: {
                     >
                       <div
                         className={classNames(
-                          defaultcss.all,
                           projectcss.all,
-                          defaultcss.__wab_text,
+                          projectcss.__wab_text,
                           sty.text__boBwT
                         )}
                       >
@@ -270,9 +231,8 @@ function PlasmicHomepage__RenderFunc(props: {
                     >
                       <div
                         className={classNames(
-                          defaultcss.all,
                           projectcss.all,
-                          defaultcss.__wab_text,
+                          projectcss.__wab_text,
                           sty.text__oh0Jd
                         )}
                       >
@@ -283,13 +243,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 </p.Stack>
               </div>
 
-              <div
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.column__h9V0M
-                )}
-              >
+              <div className={classNames(projectcss.all, sty.column__h9V0M)}>
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__b2Ghp)}
@@ -319,24 +273,13 @@ function PlasmicHomepage__RenderFunc(props: {
             <p.Stack
               as={"div"}
               hasGap={true}
-              className={classNames(
-                defaultcss.all,
-                projectcss.all,
-                sty.freeBox__mu13
-              )}
+              className={classNames(projectcss.all, sty.freeBox__mu13)}
             >
-              <div
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.freeBox__kP668
-                )}
-              >
+              <div className={classNames(projectcss.all, sty.freeBox__kP668)}>
                 <h2
                   className={classNames(
-                    defaultcss.h2,
                     projectcss.h2,
-                    defaultcss.__wab_text,
+                    projectcss.__wab_text,
                     sty.h2__uhf72
                   )}
                 >
@@ -346,9 +289,8 @@ function PlasmicHomepage__RenderFunc(props: {
 
               <div
                 className={classNames(
-                  defaultcss.all,
                   projectcss.all,
-                  defaultcss.__wab_text,
+                  projectcss.__wab_text,
                   sty.text__mTaDc
                 )}
               >
@@ -361,20 +303,12 @@ function PlasmicHomepage__RenderFunc(props: {
             <p.Stack
               as={"div"}
               hasGap={true}
-              className={classNames(
-                defaultcss.all,
-                projectcss.all,
-                sty.freeBox__kO3Mc
-              )}
+              className={classNames(projectcss.all, sty.freeBox__kO3Mc)}
             >
               <p.Stack
                 as={"div"}
                 hasGap={true}
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.freeBox__nuOoY
-                )}
+                className={classNames(projectcss.all, sty.freeBox__nuOoY)}
               >
                 <ValueProp
                   className={classNames("__wab_instance", sty.valueProp__abLjc)}
@@ -384,11 +318,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   flatIcon={"flatIcon" as const}
                   icon={
                     <CheckIcon
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.svg__zzJ8
-                      )}
+                      className={classNames(projectcss.all, sty.svg__zzJ8)}
                       role={"img"}
                     />
                   }
@@ -403,11 +333,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   flatIcon={"flatIcon" as const}
                   icon={
                     <CheckIcon
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.svg__gbSlp
-                      )}
+                      className={classNames(projectcss.all, sty.svg__gbSlp)}
                       role={"img"}
                     />
                   }
@@ -419,9 +345,8 @@ function PlasmicHomepage__RenderFunc(props: {
                   description={
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text__jyQhh
                       )}
                     >
@@ -431,11 +356,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   flatIcon={"flatIcon" as const}
                   icon={
                     <CheckIcon
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.svg__gxU2D
-                      )}
+                      className={classNames(projectcss.all, sty.svg__gxU2D)}
                       role={"img"}
                     />
                   }
@@ -446,11 +367,7 @@ function PlasmicHomepage__RenderFunc(props: {
               <p.Stack
                 as={"div"}
                 hasGap={true}
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.freeBox___1OEyf
-                )}
+                className={classNames(projectcss.all, sty.freeBox___1OEyf)}
               >
                 <ValueProp
                   className={classNames("__wab_instance", sty.valueProp__sNrTh)}
@@ -458,20 +375,15 @@ function PlasmicHomepage__RenderFunc(props: {
                   flatIcon={"flatIcon" as const}
                   icon={
                     <CheckIcon
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.svg__uEtP9
-                      )}
+                      className={classNames(projectcss.all, sty.svg__uEtP9)}
                       role={"img"}
                     />
                   }
                   title={
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text___3Rb1F
                       )}
                     >
@@ -485,9 +397,8 @@ function PlasmicHomepage__RenderFunc(props: {
                   description={
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text___47Cnh
                       )}
                     >
@@ -499,11 +410,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   flatIcon={"flatIcon" as const}
                   icon={
                     <CheckIcon
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.svg__oXDp9
-                      )}
+                      className={classNames(projectcss.all, sty.svg__oXDp9)}
                       role={"img"}
                     />
                   }
@@ -518,11 +425,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   flatIcon={"flatIcon" as const}
                   icon={
                     <CheckIcon
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.svg__z1Nd
-                      )}
+                      className={classNames(projectcss.all, sty.svg__z1Nd)}
                       role={"img"}
                     />
                   }
@@ -541,38 +444,23 @@ function PlasmicHomepage__RenderFunc(props: {
             <p.Stack
               as={"div"}
               hasGap={true}
-              className={classNames(
-                defaultcss.all,
-                projectcss.all,
-                sty.columns__lfepV
-              )}
+              className={classNames(projectcss.all, sty.columns__lfepV)}
               id={
                 hasVariant(globalVariants, "screen", "mobileOnly")
                   ? ("features" as const)
                   : ("features" as const)
               }
             >
-              <div
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.column__m42T0
-                )}
-              >
+              <div className={classNames(projectcss.all, sty.column__m42T0)}>
                 <p.Stack
                   as={"div"}
                   hasGap={true}
-                  className={classNames(
-                    defaultcss.all,
-                    projectcss.all,
-                    sty.freeBox__fCCm
-                  )}
+                  className={classNames(projectcss.all, sty.freeBox__fCCm)}
                 >
                   <div
                     className={classNames(
-                      defaultcss.all,
                       projectcss.all,
-                      defaultcss.__wab_text,
+                      projectcss.__wab_text,
                       sty.text__fpXaR
                     )}
                   >
@@ -581,9 +469,8 @@ function PlasmicHomepage__RenderFunc(props: {
 
                   <h2
                     className={classNames(
-                      defaultcss.h2,
                       projectcss.h2,
-                      defaultcss.__wab_text,
+                      projectcss.__wab_text,
                       sty.h2___8KWgn
                     )}
                   >
@@ -592,9 +479,8 @@ function PlasmicHomepage__RenderFunc(props: {
 
                   <div
                     className={classNames(
-                      defaultcss.all,
                       projectcss.all,
-                      defaultcss.__wab_text,
+                      projectcss.__wab_text,
                       sty.text__eclxv
                     )}
                   >
@@ -607,11 +493,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     className={classNames("__wab_instance", sty.button__n8RGu)}
                     endIcon={
                       <ChevronRightIcon
-                        className={classNames(
-                          defaultcss.all,
-                          projectcss.all,
-                          sty.svg__xlal2
-                        )}
+                        className={classNames(projectcss.all, sty.svg__xlal2)}
                         role={"img"}
                       />
                     }
@@ -621,9 +503,8 @@ function PlasmicHomepage__RenderFunc(props: {
                   >
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text__zbNzz
                       )}
                     >
@@ -633,20 +514,8 @@ function PlasmicHomepage__RenderFunc(props: {
                 </p.Stack>
               </div>
 
-              <div
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.column__iThdz
-                )}
-              >
-                <div
-                  className={classNames(
-                    defaultcss.all,
-                    projectcss.all,
-                    sty.freeBox__dg3UX
-                  )}
-                >
+              <div className={classNames(projectcss.all, sty.column__iThdz)}>
+                <div className={classNames(projectcss.all, sty.freeBox__dg3UX)}>
                   <ListItem
                     bottomBorder={
                       hasVariant(globalVariants, "screen", "mobileOnly")
@@ -659,20 +528,15 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                     icon={
                       <CheckCircleIcon
-                        className={classNames(
-                          defaultcss.all,
-                          projectcss.all,
-                          sty.svg__spNif
-                        )}
+                        className={classNames(projectcss.all, sty.svg__spNif)}
                         role={"img"}
                       />
                     }
                   >
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text__dMvab
                       )}
                     >
@@ -688,20 +552,15 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                     icon={
                       <CheckCircleIcon
-                        className={classNames(
-                          defaultcss.all,
-                          projectcss.all,
-                          sty.svg__rH2YT
-                        )}
+                        className={classNames(projectcss.all, sty.svg__rH2YT)}
                         role={"img"}
                       />
                     }
                   >
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text__qE2A3
                       )}
                     >
@@ -717,20 +576,15 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                     icon={
                       <CheckCircleIcon
-                        className={classNames(
-                          defaultcss.all,
-                          projectcss.all,
-                          sty.svg__olAte
-                        )}
+                        className={classNames(projectcss.all, sty.svg__olAte)}
                         role={"img"}
                       />
                     }
                   >
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text__xeRf1
                       )}
                     >
@@ -745,20 +599,15 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                     icon={
                       <CheckCircleIcon
-                        className={classNames(
-                          defaultcss.all,
-                          projectcss.all,
-                          sty.svg___83Uz
-                        )}
+                        className={classNames(projectcss.all, sty.svg___83Uz)}
                         role={"img"}
                       />
                     }
                   >
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text__vg6Ue
                       )}
                     >
@@ -773,20 +622,15 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                     icon={
                       <CheckCircleIcon
-                        className={classNames(
-                          defaultcss.all,
-                          projectcss.all,
-                          sty.svg__yzHcy
-                        )}
+                        className={classNames(projectcss.all, sty.svg__yzHcy)}
                         role={"img"}
                       />
                     }
                   >
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text__piv56
                       )}
                     >
@@ -808,33 +652,20 @@ function PlasmicHomepage__RenderFunc(props: {
               <p.Stack
                 as={"div"}
                 hasGap={true}
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.freeBox__x9JFp
-                )}
+                className={classNames(projectcss.all, sty.freeBox__x9JFp)}
               >
                 <p.Stack
                   as={"div"}
                   hasGap={true}
-                  className={classNames(
-                    defaultcss.all,
-                    projectcss.all,
-                    sty.freeBox__cpYbj
-                  )}
+                  className={classNames(projectcss.all, sty.freeBox__cpYbj)}
                 >
                   <div
-                    className={classNames(
-                      defaultcss.all,
-                      projectcss.all,
-                      sty.freeBox___4PP
-                    )}
+                    className={classNames(projectcss.all, sty.freeBox___4PP)}
                   >
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text__lys9Y
                       )}
                     >
@@ -844,9 +675,8 @@ function PlasmicHomepage__RenderFunc(props: {
 
                   <div
                     className={classNames(
-                      defaultcss.all,
                       projectcss.all,
-                      defaultcss.__wab_text,
+                      projectcss.__wab_text,
                       sty.text__mCne
                     )}
                   >
@@ -860,11 +690,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     color={"blue" as const}
                     endIcon={
                       <ChevronRightIcon
-                        className={classNames(
-                          defaultcss.all,
-                          projectcss.all,
-                          sty.svg___5A5Yr
-                        )}
+                        className={classNames(projectcss.all, sty.svg___5A5Yr)}
                         role={"img"}
                       />
                     }
@@ -873,9 +699,8 @@ function PlasmicHomepage__RenderFunc(props: {
                   >
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text__iTbBp
                       )}
                     >
@@ -888,26 +713,17 @@ function PlasmicHomepage__RenderFunc(props: {
                   <p.Stack
                     as={"div"}
                     hasGap={true}
-                    className={classNames(
-                      defaultcss.all,
-                      projectcss.all,
-                      sty.columns__a13GM
-                    )}
+                    className={classNames(projectcss.all, sty.columns__a13GM)}
                   >
                     <div
-                      className={classNames(
-                        defaultcss.all,
-                        projectcss.all,
-                        sty.column__tsysE
-                      )}
+                      className={classNames(projectcss.all, sty.column__tsysE)}
                     >
                       <PriceCard
                         action={
                           <div
                             className={classNames(
-                              defaultcss.all,
                               projectcss.all,
-                              defaultcss.__wab_text,
+                              projectcss.__wab_text,
                               sty.text__kXiWk
                             )}
                           >
@@ -935,7 +751,6 @@ function PlasmicHomepage__RenderFunc(props: {
                               icon={
                                 <CheckIcon
                                   className={classNames(
-                                    defaultcss.all,
                                     projectcss.all,
                                     sty.svg__gzm6
                                   )}
@@ -955,7 +770,6 @@ function PlasmicHomepage__RenderFunc(props: {
                               icon={
                                 <CheckIcon
                                   className={classNames(
-                                    defaultcss.all,
                                     projectcss.all,
                                     sty.svg__dIzk
                                   )}
@@ -975,7 +789,6 @@ function PlasmicHomepage__RenderFunc(props: {
                               icon={
                                 <CheckIcon
                                   className={classNames(
-                                    defaultcss.all,
                                     projectcss.all,
                                     sty.svg__znhtd
                                   )}
@@ -995,7 +808,6 @@ function PlasmicHomepage__RenderFunc(props: {
                               icon={
                                 <CheckIcon
                                   className={classNames(
-                                    defaultcss.all,
                                     projectcss.all,
                                     sty.svg__saZ6
                                   )}
@@ -1014,7 +826,6 @@ function PlasmicHomepage__RenderFunc(props: {
                     {true ? (
                       <div
                         className={classNames(
-                          defaultcss.all,
                           projectcss.all,
                           sty.column__pfB9D
                         )}
@@ -1023,9 +834,8 @@ function PlasmicHomepage__RenderFunc(props: {
                           action={
                             <div
                               className={classNames(
-                                defaultcss.all,
                                 projectcss.all,
-                                defaultcss.__wab_text,
+                                projectcss.__wab_text,
                                 sty.text__ckmQu
                               )}
                             >
@@ -1047,9 +857,8 @@ function PlasmicHomepage__RenderFunc(props: {
                                 description={
                                   <div
                                     className={classNames(
-                                      defaultcss.all,
                                       projectcss.all,
-                                      defaultcss.__wab_text,
+                                      projectcss.__wab_text,
                                       sty.text__j7K61
                                     )}
                                   >
@@ -1060,7 +869,6 @@ function PlasmicHomepage__RenderFunc(props: {
                                 icon={
                                   <CheckIcon
                                     className={classNames(
-                                      defaultcss.all,
                                       projectcss.all,
                                       sty.svg__orE4
                                     )}
@@ -1078,9 +886,8 @@ function PlasmicHomepage__RenderFunc(props: {
                                 description={
                                   <div
                                     className={classNames(
-                                      defaultcss.all,
                                       projectcss.all,
-                                      defaultcss.__wab_text,
+                                      projectcss.__wab_text,
                                       sty.text__jsptW
                                     )}
                                   >
@@ -1091,7 +898,6 @@ function PlasmicHomepage__RenderFunc(props: {
                                 icon={
                                   <CheckIcon
                                     className={classNames(
-                                      defaultcss.all,
                                       projectcss.all,
                                       sty.svg__pxcFs
                                     )}
@@ -1109,9 +915,8 @@ function PlasmicHomepage__RenderFunc(props: {
                                 description={
                                   <div
                                     className={classNames(
-                                      defaultcss.all,
                                       projectcss.all,
-                                      defaultcss.__wab_text,
+                                      projectcss.__wab_text,
                                       sty.text__bD5V
                                     )}
                                   >
@@ -1122,7 +927,6 @@ function PlasmicHomepage__RenderFunc(props: {
                                 icon={
                                   <CheckIcon
                                     className={classNames(
-                                      defaultcss.all,
                                       projectcss.all,
                                       sty.svg___7BpFd
                                     )}
@@ -1140,9 +944,8 @@ function PlasmicHomepage__RenderFunc(props: {
                                 description={
                                   <div
                                     className={classNames(
-                                      defaultcss.all,
                                       projectcss.all,
-                                      defaultcss.__wab_text,
+                                      projectcss.__wab_text,
                                       sty.text__eokDw
                                     )}
                                   >
@@ -1153,7 +956,6 @@ function PlasmicHomepage__RenderFunc(props: {
                                 icon={
                                   <CheckIcon
                                     className={classNames(
-                                      defaultcss.all,
                                       projectcss.all,
                                       sty.svg__ueiRc
                                     )}
@@ -1171,9 +973,8 @@ function PlasmicHomepage__RenderFunc(props: {
                                 description={
                                   <div
                                     className={classNames(
-                                      defaultcss.all,
                                       projectcss.all,
-                                      defaultcss.__wab_text,
+                                      projectcss.__wab_text,
                                       sty.text__op4ZN
                                     )}
                                   >
@@ -1184,7 +985,6 @@ function PlasmicHomepage__RenderFunc(props: {
                                 icon={
                                   <CheckIcon
                                     className={classNames(
-                                      defaultcss.all,
                                       projectcss.all,
                                       sty.svg__wsztC
                                     )}
@@ -1202,9 +1002,8 @@ function PlasmicHomepage__RenderFunc(props: {
                                 description={
                                   <div
                                     className={classNames(
-                                      defaultcss.all,
                                       projectcss.all,
-                                      defaultcss.__wab_text,
+                                      projectcss.__wab_text,
                                       sty.text__wCMtq
                                     )}
                                   >
@@ -1215,7 +1014,6 @@ function PlasmicHomepage__RenderFunc(props: {
                                 icon={
                                   <CheckIcon
                                     className={classNames(
-                                      defaultcss.all,
                                       projectcss.all,
                                       sty.svg__x1E8T
                                     )}
@@ -1235,7 +1033,6 @@ function PlasmicHomepage__RenderFunc(props: {
                     {true ? (
                       <div
                         className={classNames(
-                          defaultcss.all,
                           projectcss.all,
                           sty.column__tKkdO
                         )}
@@ -1244,9 +1041,8 @@ function PlasmicHomepage__RenderFunc(props: {
                           action={
                             <div
                               className={classNames(
-                                defaultcss.all,
                                 projectcss.all,
-                                defaultcss.__wab_text,
+                                projectcss.__wab_text,
                                 sty.text___0HMvu
                               )}
                             >
@@ -1272,9 +1068,8 @@ function PlasmicHomepage__RenderFunc(props: {
                                 description={
                                   <div
                                     className={classNames(
-                                      defaultcss.all,
                                       projectcss.all,
-                                      defaultcss.__wab_text,
+                                      projectcss.__wab_text,
                                       sty.text__pdYnP
                                     )}
                                   >
@@ -1285,7 +1080,6 @@ function PlasmicHomepage__RenderFunc(props: {
                                 icon={
                                   <CheckIcon
                                     className={classNames(
-                                      defaultcss.all,
                                       projectcss.all,
                                       sty.svg__wDua0
                                     )}
@@ -1307,7 +1101,6 @@ function PlasmicHomepage__RenderFunc(props: {
                                 icon={
                                   <CheckIcon
                                     className={classNames(
-                                      defaultcss.all,
                                       projectcss.all,
                                       sty.svg__zmOcc
                                     )}
@@ -1327,7 +1120,6 @@ function PlasmicHomepage__RenderFunc(props: {
                                 icon={
                                   <CheckIcon
                                     className={classNames(
-                                      defaultcss.all,
                                       projectcss.all,
                                       sty.svg__yx4BU
                                     )}
@@ -1341,9 +1133,8 @@ function PlasmicHomepage__RenderFunc(props: {
                           dollars={
                             <div
                               className={classNames(
-                                defaultcss.all,
                                 projectcss.all,
-                                defaultcss.__wab_text,
+                                projectcss.__wab_text,
                                 sty.text__zg3P
                               )}
                             >
@@ -1369,11 +1160,7 @@ function PlasmicHomepage__RenderFunc(props: {
             <p.Stack
               as={"div"}
               hasGap={true}
-              className={classNames(
-                defaultcss.all,
-                projectcss.all,
-                sty.freeBox__mliHn
-              )}
+              className={classNames(projectcss.all, sty.freeBox__mliHn)}
             >
               <Banner
                 className={classNames("__wab_instance", sty.banner__fvJCq)}
@@ -1387,9 +1174,8 @@ function PlasmicHomepage__RenderFunc(props: {
                   <React.Fragment>
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text__jyCuk
                       )}
                     >
@@ -1398,9 +1184,8 @@ function PlasmicHomepage__RenderFunc(props: {
 
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text__j0GnU
                       )}
                     >
@@ -1409,9 +1194,8 @@ function PlasmicHomepage__RenderFunc(props: {
 
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text__rVxsW
                       )}
                     >
@@ -1424,11 +1208,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       color={"link" as const}
                       endIcon={
                         <ChevronRightIcon
-                          className={classNames(
-                            defaultcss.all,
-                            projectcss.all,
-                            sty.svg__jSbir
-                          )}
+                          className={classNames(projectcss.all, sty.svg__jSbir)}
                           role={"img"}
                         />
                       }
@@ -1437,9 +1217,8 @@ function PlasmicHomepage__RenderFunc(props: {
                     >
                       <div
                         className={classNames(
-                          defaultcss.all,
                           projectcss.all,
-                          defaultcss.__wab_text,
+                          projectcss.__wab_text,
                           sty.text__nPvO
                         )}
                       >
@@ -1453,11 +1232,7 @@ function PlasmicHomepage__RenderFunc(props: {
               <p.Stack
                 as={"div"}
                 hasGap={true}
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.freeBox__hcypQ
-                )}
+                className={classNames(projectcss.all, sty.freeBox__hcypQ)}
               >
                 <Banner
                   className={classNames("__wab_instance", sty.banner__pWnU)}
@@ -1471,9 +1246,8 @@ function PlasmicHomepage__RenderFunc(props: {
                     <React.Fragment>
                       <div
                         className={classNames(
-                          defaultcss.all,
                           projectcss.all,
-                          defaultcss.__wab_text,
+                          projectcss.__wab_text,
                           sty.text__wwPvv
                         )}
                       >
@@ -1482,9 +1256,8 @@ function PlasmicHomepage__RenderFunc(props: {
 
                       <div
                         className={classNames(
-                          defaultcss.all,
                           projectcss.all,
-                          defaultcss.__wab_text,
+                          projectcss.__wab_text,
                           sty.text__sN2VP
                         )}
                       >
@@ -1493,9 +1266,8 @@ function PlasmicHomepage__RenderFunc(props: {
 
                       <div
                         className={classNames(
-                          defaultcss.all,
                           projectcss.all,
-                          defaultcss.__wab_text,
+                          projectcss.__wab_text,
                           sty.text__elnSi
                         )}
                       >
@@ -1509,7 +1281,6 @@ function PlasmicHomepage__RenderFunc(props: {
                         endIcon={
                           <ChevronRightIcon
                             className={classNames(
-                              defaultcss.all,
                               projectcss.all,
                               sty.svg__b6LoV
                             )}
@@ -1521,9 +1292,8 @@ function PlasmicHomepage__RenderFunc(props: {
                       >
                         <div
                           className={classNames(
-                            defaultcss.all,
                             projectcss.all,
-                            defaultcss.__wab_text,
+                            projectcss.__wab_text,
                             sty.text___79LnD
                           )}
                         >
@@ -1546,9 +1316,8 @@ function PlasmicHomepage__RenderFunc(props: {
                     <React.Fragment>
                       <div
                         className={classNames(
-                          defaultcss.all,
                           projectcss.all,
-                          defaultcss.__wab_text,
+                          projectcss.__wab_text,
                           sty.text__fJWuI
                         )}
                       >
@@ -1557,9 +1326,8 @@ function PlasmicHomepage__RenderFunc(props: {
 
                       <div
                         className={classNames(
-                          defaultcss.all,
                           projectcss.all,
-                          defaultcss.__wab_text,
+                          projectcss.__wab_text,
                           sty.text__dBNjp
                         )}
                       >
@@ -1568,9 +1336,8 @@ function PlasmicHomepage__RenderFunc(props: {
 
                       <div
                         className={classNames(
-                          defaultcss.all,
                           projectcss.all,
-                          defaultcss.__wab_text,
+                          projectcss.__wab_text,
                           sty.text__cUowN
                         )}
                       >
@@ -1584,7 +1351,6 @@ function PlasmicHomepage__RenderFunc(props: {
                         endIcon={
                           <ChevronRightIcon
                             className={classNames(
-                              defaultcss.all,
                               projectcss.all,
                               sty.svg__bTRuy
                             )}
@@ -1596,9 +1362,8 @@ function PlasmicHomepage__RenderFunc(props: {
                       >
                         <div
                           className={classNames(
-                            defaultcss.all,
                             projectcss.all,
-                            defaultcss.__wab_text,
+                            projectcss.__wab_text,
                             sty.text__fvFrh
                           )}
                         >
@@ -1622,9 +1387,8 @@ function PlasmicHomepage__RenderFunc(props: {
                   <React.Fragment>
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text__lZDjs
                       )}
                     >
@@ -1633,9 +1397,8 @@ function PlasmicHomepage__RenderFunc(props: {
 
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text__tU6D
                       )}
                     >
@@ -1644,9 +1407,8 @@ function PlasmicHomepage__RenderFunc(props: {
 
                     <div
                       className={classNames(
-                        defaultcss.all,
                         projectcss.all,
-                        defaultcss.__wab_text,
+                        projectcss.__wab_text,
                         sty.text__nOoZt
                       )}
                     >
@@ -1659,11 +1421,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       color={"link" as const}
                       endIcon={
                         <ChevronRightIcon
-                          className={classNames(
-                            defaultcss.all,
-                            projectcss.all,
-                            sty.svg___4NHA
-                          )}
+                          className={classNames(projectcss.all, sty.svg___4NHA)}
                           role={"img"}
                         />
                       }
@@ -1675,9 +1433,8 @@ function PlasmicHomepage__RenderFunc(props: {
                     >
                       <div
                         className={classNames(
-                          defaultcss.all,
                           projectcss.all,
-                          defaultcss.__wab_text,
+                          projectcss.__wab_text,
                           sty.text__xRvfr
                         )}
                       >
@@ -1699,11 +1456,7 @@ function PlasmicHomepage__RenderFunc(props: {
               <p.Stack
                 as={"div"}
                 hasGap={true}
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.freeBox__hhPwB
-                )}
+                className={classNames(projectcss.all, sty.freeBox__hhPwB)}
               >
                 <p.PlasmicImg
                   alt={""}
@@ -1802,19 +1555,9 @@ function PlasmicHomepage__RenderFunc(props: {
               <p.Stack
                 as={"div"}
                 hasGap={true}
-                className={classNames(
-                  defaultcss.all,
-                  projectcss.all,
-                  sty.columns__onWf
-                )}
+                className={classNames(projectcss.all, sty.columns__onWf)}
               >
-                <div
-                  className={classNames(
-                    defaultcss.all,
-                    projectcss.all,
-                    sty.column__p2Lgp
-                  )}
-                >
+                <div className={classNames(projectcss.all, sty.column__p2Lgp)}>
                   <Testimonial
                     className={classNames(
                       "__wab_instance",
@@ -1829,13 +1572,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   />
                 </div>
 
-                <div
-                  className={classNames(
-                    defaultcss.all,
-                    projectcss.all,
-                    sty.column__lrL1
-                  )}
-                >
+                <div className={classNames(projectcss.all, sty.column__lrL1)}>
                   <Testimonial
                     className={classNames(
                       "__wab_instance",
@@ -1852,9 +1589,8 @@ function PlasmicHomepage__RenderFunc(props: {
                       <React.Fragment>
                         <div
                           className={classNames(
-                            defaultcss.all,
                             projectcss.all,
-                            defaultcss.__wab_text,
+                            projectcss.__wab_text,
                             sty.text__z0AWr
                           )}
                         >
@@ -1863,9 +1599,8 @@ function PlasmicHomepage__RenderFunc(props: {
 
                         <div
                           className={classNames(
-                            defaultcss.all,
                             projectcss.all,
-                            defaultcss.__wab_text,
+                            projectcss.__wab_text,
                             sty.text__yHTlW
                           )}
                         >
@@ -1879,13 +1614,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   />
                 </div>
 
-                <div
-                  className={classNames(
-                    defaultcss.all,
-                    projectcss.all,
-                    sty.column__jbL9P
-                  )}
-                >
+                <div className={classNames(projectcss.all, sty.column__jbL9P)}>
                   <Testimonial
                     className={classNames(
                       "__wab_instance",
@@ -1904,9 +1633,8 @@ function PlasmicHomepage__RenderFunc(props: {
                     title={
                       <div
                         className={classNames(
-                          defaultcss.all,
                           projectcss.all,
-                          defaultcss.__wab_text,
+                          projectcss.__wab_text,
                           sty.text__gpeoP
                         )}
                       >
@@ -1933,17 +1661,12 @@ function PlasmicHomepage__RenderFunc(props: {
             <p.Stack
               as={"div"}
               hasGap={true}
-              className={classNames(
-                defaultcss.all,
-                projectcss.all,
-                sty.freeBox__vnQMz
-              )}
+              className={classNames(projectcss.all, sty.freeBox__vnQMz)}
             >
               <div
                 className={classNames(
-                  defaultcss.all,
                   projectcss.all,
-                  defaultcss.__wab_text,
+                  projectcss.__wab_text,
                   sty.text__yaErR
                 )}
               >
@@ -1952,9 +1675,8 @@ function PlasmicHomepage__RenderFunc(props: {
 
               <div
                 className={classNames(
-                  defaultcss.all,
                   projectcss.all,
-                  defaultcss.__wab_text,
+                  projectcss.__wab_text,
                   sty.text___0Sb3N
                 )}
               >
@@ -1963,9 +1685,8 @@ function PlasmicHomepage__RenderFunc(props: {
 
               <div
                 className={classNames(
-                  defaultcss.all,
                   projectcss.all,
-                  defaultcss.__wab_text,
+                  projectcss.__wab_text,
                   sty.text__bGarT
                 )}
               >
@@ -1978,22 +1699,14 @@ function PlasmicHomepage__RenderFunc(props: {
             <p.Stack
               as={"div"}
               hasGap={true}
-              className={classNames(
-                defaultcss.all,
-                projectcss.all,
-                sty.freeBox__q7QsW
-              )}
+              className={classNames(projectcss.all, sty.freeBox__q7QsW)}
             >
               <Button
                 className={classNames("__wab_instance", sty.button__lsSLx)}
                 color={"blue" as const}
                 endIcon={
                   <ChevronRightIcon
-                    className={classNames(
-                      defaultcss.all,
-                      projectcss.all,
-                      sty.svg__tWuK
-                    )}
+                    className={classNames(projectcss.all, sty.svg__tWuK)}
                     role={"img"}
                   />
                 }
@@ -2009,9 +1722,8 @@ function PlasmicHomepage__RenderFunc(props: {
               >
                 <div
                   className={classNames(
-                    defaultcss.all,
                     projectcss.all,
-                    defaultcss.__wab_text,
+                    projectcss.__wab_text,
                     sty.text__gjKxq
                   )}
                 >

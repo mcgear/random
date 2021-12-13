@@ -35,7 +35,7 @@ import {
 } from "@plasmicapp/react-web";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
+
 import * as projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
 import * as sty from "./PlasmicLogo.module.css"; // plasmic-import: dbGVEXIYhu_f/css
 
@@ -81,15 +81,9 @@ function PlasmicLogo__RenderFunc(props: {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(
-        defaultcss.a,
-        projectcss.a,
-        projectcss.root_reset,
-        sty.root,
-        {
-          [sty.root___50Opaque]: hasVariant(variants, "_50Opaque", "_50Opaque")
-        }
-      )}
+      className={classNames(projectcss.a, projectcss.root_reset, sty.root, {
+        [sty.root___50Opaque]: hasVariant(variants, "_50Opaque", "_50Opaque")
+      })}
       component={Link}
       href={"/" as const}
       platform={"nextjs"}

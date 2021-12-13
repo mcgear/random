@@ -36,7 +36,7 @@ import {
 import Button from "../../Button"; // plasmic-import: 9tG1OyZAVIis/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
+
 import * as projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
 import * as sty from "./PlasmicBanner.module.css"; // plasmic-import: vcZIwAsP-PHX/css
 
@@ -85,17 +85,12 @@ function PlasmicBanner__RenderFunc(props: {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(
-        defaultcss.all,
-        projectcss.all,
-        projectcss.root_reset,
-        sty.root
-      )}
+      className={classNames(projectcss.all, projectcss.root_reset, sty.root)}
     >
       <div
         data-plasmic-name={"right"}
         data-plasmic-override={overrides.right}
-        className={classNames(defaultcss.all, projectcss.all, sty.right)}
+        className={classNames(projectcss.all, sty.right)}
       >
         <p.PlasmicImg
           data-plasmic-name={"img"}
@@ -124,7 +119,7 @@ function PlasmicBanner__RenderFunc(props: {
           <div
             data-plasmic-name={"gradient"}
             data-plasmic-override={overrides.gradient}
-            className={classNames(defaultcss.all, projectcss.all, sty.gradient)}
+            className={classNames(projectcss.all, sty.gradient)}
           />
         ) : null}
       </div>
@@ -134,16 +129,15 @@ function PlasmicBanner__RenderFunc(props: {
         data-plasmic-name={"left"}
         data-plasmic-override={overrides.left}
         hasGap={true}
-        className={classNames(defaultcss.all, projectcss.all, sty.left)}
+        className={classNames(projectcss.all, sty.left)}
       >
         {p.renderPlasmicSlot({
           defaultContents: (
             <React.Fragment>
               <div
                 className={classNames(
-                  defaultcss.all,
                   projectcss.all,
-                  defaultcss.__wab_text,
+                  projectcss.__wab_text,
                   sty.text__rwb73
                 )}
               >
@@ -152,9 +146,8 @@ function PlasmicBanner__RenderFunc(props: {
 
               <div
                 className={classNames(
-                  defaultcss.all,
                   projectcss.all,
-                  defaultcss.__wab_text,
+                  projectcss.__wab_text,
                   sty.text___505Qk
                 )}
               >
@@ -163,9 +156,8 @@ function PlasmicBanner__RenderFunc(props: {
 
               <div
                 className={classNames(
-                  defaultcss.all,
                   projectcss.all,
-                  defaultcss.__wab_text,
+                  projectcss.__wab_text,
                   sty.text__svzMr
                 )}
               >
@@ -175,9 +167,8 @@ function PlasmicBanner__RenderFunc(props: {
               <Button>
                 <div
                   className={classNames(
-                    defaultcss.all,
                     projectcss.all,
-                    defaultcss.__wab_text,
+                    projectcss.__wab_text,
                     sty.text__oN5M1
                   )}
                 >

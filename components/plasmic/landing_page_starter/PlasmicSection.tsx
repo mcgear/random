@@ -35,7 +35,7 @@ import {
 } from "@plasmicapp/react-web";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
-import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
+
 import * as projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
 import * as sty from "./PlasmicSection.module.css"; // plasmic-import: lsmUdTd1Sc6_/css
 
@@ -89,34 +89,20 @@ function PlasmicSection__RenderFunc(props: {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames(
-        defaultcss.all,
-        projectcss.all,
-        projectcss.root_reset,
-        sty.root,
-        {
-          [sty.root__background_dark]: hasVariant(
-            variants,
-            "background",
-            "dark"
-          ),
-          [sty.root__background_gray]: hasVariant(
-            variants,
-            "background",
-            "gray"
-          ),
-          [sty.root__size_fullContentWidth]: hasVariant(
-            variants,
-            "size",
-            "fullContentWidth"
-          )
-        }
-      )}
+      className={classNames(projectcss.all, projectcss.root_reset, sty.root, {
+        [sty.root__background_dark]: hasVariant(variants, "background", "dark"),
+        [sty.root__background_gray]: hasVariant(variants, "background", "gray"),
+        [sty.root__size_fullContentWidth]: hasVariant(
+          variants,
+          "size",
+          "fullContentWidth"
+        )
+      })}
     >
       <div
         data-plasmic-name={"freeBox"}
         data-plasmic-override={overrides.freeBox}
-        className={classNames(defaultcss.all, projectcss.all, sty.freeBox, {
+        className={classNames(projectcss.all, sty.freeBox, {
           [sty.freeBox__size_fullContentWidth]: hasVariant(
             variants,
             "size",
