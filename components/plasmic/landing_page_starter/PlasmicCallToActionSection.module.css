@@ -3,6 +3,7 @@
   flex-direction: row;
   position: relative;
   background: #ffffff;
+  transform-style: preserve-3d;
 }
 .root > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -10,30 +11,57 @@
   margin-left: calc(0px - 48px);
   width: calc(100% + 48px);
 }
+.root * {
+  transform-style: preserve-3d;
+}
 .root > :global(.__wab_flex-container) > *,
 .root > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
 .root > :global(.__wab_flex-container) > picture > img,
 .root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-left: 48px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .root {
+    transform-style: preserve-3d;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root * {
+    transform-style: preserve-3d;
+  }
+}
 .freeBox__lDa6F {
   display: flex;
   position: relative;
   width: 100%;
+  transform-style: preserve-3d;
   min-width: 0;
+}
+.freeBox__lDa6F * {
+  transform-style: preserve-3d;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__lDa6F {
     display: flex;
     flex-direction: column;
     flex-column-gap: 0px;
+    transform-style: preserve-3d;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox__lDa6F * {
+    transform-style: preserve-3d;
   }
 }
 .art {
   display: flex;
   position: relative;
   width: 100%;
+  transform-style: preserve-3d;
   min-width: 0;
+}
+.art * {
+  transform-style: preserve-3d;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .art {
@@ -42,6 +70,12 @@
     flex-shrink: 2;
     min-height: 320px;
     flex-column-gap: 0px;
+    transform-style: preserve-3d;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .art * {
+    transform-style: preserve-3d;
   }
 }
 .img {
@@ -53,12 +87,16 @@
   right: 0;
   bottom: 0;
   left: 0;
+  transform-style: preserve-3d;
 }
 .img > picture > img {
   object-fit: cover;
 }
 .img > .__wab_img-spacer > img {
   object-fit: cover;
+}
+.img * {
+  transform-style: preserve-3d;
 }
 .blend {
   display: block;
@@ -69,6 +107,10 @@
   bottom: 0;
   mix-blend-mode: multiply;
   background: #007aff;
+  transform-style: preserve-3d;
+}
+.blend * {
+  transform-style: preserve-3d;
 }
 .freeBox__fr5Ut {
   display: flex;
@@ -77,13 +119,18 @@
   align-items: stretch;
   justify-content: flex-start;
   width: 100%;
+  transform-style: preserve-3d;
   min-width: 0;
+}
+.freeBox__fr5Ut * {
+  transform-style: preserve-3d;
 }
 .freeBox__hxmcY {
   display: flex;
   flex-direction: column;
   width: 100%;
   background: #1c1c1e;
+  transform-style: preserve-3d;
   min-width: 0;
   padding: 64px;
 }
@@ -94,6 +141,9 @@
   min-width: 0;
   margin-top: calc(0px - 32px);
   height: calc(100% + 32px);
+}
+.freeBox__hxmcY * {
+  transform-style: preserve-3d;
 }
 .freeBox__hxmcY > :global(.__wab_flex-container) > *,
 .freeBox__hxmcY > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
@@ -107,7 +157,13 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__hxmcY {
+    transform-style: preserve-3d;
     padding: 128px 32px;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox__hxmcY * {
+    transform-style: preserve-3d;
   }
 }
 .copy {
@@ -115,6 +171,7 @@
   flex-direction: column;
   width: 100%;
   max-width: 800px;
+  transform-style: preserve-3d;
   min-width: 0;
 }
 .copy > :global(.__wab_flex-container) {
@@ -123,16 +180,30 @@
   margin-top: calc(0px - 32px);
   height: calc(100% + 32px);
 }
+.copy * {
+  transform-style: preserve-3d;
+}
 .copy > :global(.__wab_flex-container) > *,
 .copy > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
 .copy > :global(.__wab_flex-container) > picture > img,
 .copy > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-top: 32px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .copy {
+    transform-style: preserve-3d;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .copy * {
+    transform-style: preserve-3d;
+  }
+}
 .freeBox__agwzK {
   display: flex;
   position: relative;
   flex-direction: column;
+  transform-style: preserve-3d;
 }
 .freeBox__agwzK > :global(.__wab_flex-container) {
   flex-direction: column;
@@ -140,6 +211,9 @@
   justify-content: flex-start;
   margin-top: calc(0px - 16px);
   height: calc(100% + 16px);
+}
+.freeBox__agwzK * {
+  transform-style: preserve-3d;
 }
 .freeBox__agwzK > :global(.__wab_flex-container) > *,
 .freeBox__agwzK > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
@@ -159,28 +233,44 @@
   letter-spacing: 0.03em;
   height: auto;
   color: #ffffffd9 /* plasmic-token: Ja5pQwF3dbca */;
+  transform-style: preserve-3d;
+}
+.text__cyoi9 * {
+  transform-style: preserve-3d;
 }
 .text__re9LY {
   font-size: 48px;
   font-weight: 800;
   color: #ffffffd9 /* plasmic-token: Ja5pQwF3dbca */;
   line-height: 1;
+  transform-style: preserve-3d;
+}
+.text__re9LY * {
+  transform-style: preserve-3d;
 }
 .text___26KTc {
   font-size: 20px;
   color: #ffffff80 /* plasmic-token: SXmmUfAk0hDK */;
   line-height: 28px;
+  transform-style: preserve-3d;
+}
+.text___26KTc * {
+  transform-style: preserve-3d;
 }
 .freeBox__jznKd {
   display: flex;
   position: relative;
   flex-direction: row;
+  transform-style: preserve-3d;
 }
 .freeBox__jznKd > :global(.__wab_flex-container) {
   flex-direction: row;
   justify-content: flex-start;
   margin-left: calc(0px - 16px);
   width: calc(100% + 16px);
+}
+.freeBox__jznKd * {
+  transform-style: preserve-3d;
 }
 .freeBox__jznKd > :global(.__wab_flex-container) > *,
 .freeBox__jznKd > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
@@ -194,35 +284,69 @@
 }
 .button__bIEa:global(.__wab_instance) {
   position: relative;
+  transform-style: preserve-3d;
+}
+.button__bIEa * {
+  transform-style: preserve-3d;
 }
 .svg__yiom5 {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
+  transform-style: preserve-3d;
+}
+.svg__yiom5 * {
+  transform-style: preserve-3d;
+}
+.text__buvQ {
+  transform-style: preserve-3d;
+}
+.text__buvQ * {
+  transform-style: preserve-3d;
 }
 .svg__s5RNk {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
+  transform-style: preserve-3d;
+}
+.svg__s5RNk * {
+  transform-style: preserve-3d;
 }
 .button__a98Lf:global(.__wab_instance) {
   position: relative;
+  transform-style: preserve-3d;
+}
+.button__a98Lf * {
+  transform-style: preserve-3d;
 }
 .svg__jOuHo {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
+  transform-style: preserve-3d;
+}
+.svg__jOuHo * {
+  transform-style: preserve-3d;
 }
 .text__hgHrl {
   height: auto;
   font-weight: 400;
+  transform-style: preserve-3d;
+}
+.text__hgHrl * {
+  transform-style: preserve-3d;
 }
 .svg__dqKQ {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
+  transform-style: preserve-3d;
+}
+.svg__dqKQ * {
+  transform-style: preserve-3d;
 }

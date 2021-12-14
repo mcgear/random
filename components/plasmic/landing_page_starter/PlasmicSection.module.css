@@ -7,19 +7,43 @@
   position: relative;
   width: auto;
   height: auto;
+  transform-style: preserve-3d;
   padding: 64px;
+}
+.root * {
+  transform-style: preserve-3d;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .root {
     padding-left: 20px;
     padding-right: 20px;
+    transform-style: preserve-3d;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root * {
+    transform-style: preserve-3d;
   }
 }
 .root__background_dark {
   background: #1c1c1e;
+  transform-style: preserve-3d;
+}
+.root__background_dark * {
+  transform-style: preserve-3d;
 }
 .root__background_gray {
   background: #f2f2f7;
+  transform-style: preserve-3d;
+}
+.root__background_gray * {
+  transform-style: preserve-3d;
+}
+.root__size_fullContentWidth {
+  transform-style: preserve-3d;
+}
+.root__size_fullContentWidth * {
+  transform-style: preserve-3d;
 }
 .freeBox {
   max-width: 1080px /* plasmic-token: biAU1d8H1CXy */;
@@ -31,9 +55,17 @@
   width: 100%;
   height: auto;
   background: none;
+  transform-style: preserve-3d;
   min-width: 0;
   padding: 8px;
 }
+.freeBox * {
+  transform-style: preserve-3d;
+}
 .freeBox__size_fullContentWidth {
   max-width: none;
+  transform-style: preserve-3d;
+}
+.freeBox__size_fullContentWidth * {
+  transform-style: preserve-3d;
 }

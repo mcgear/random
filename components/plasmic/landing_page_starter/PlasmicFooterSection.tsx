@@ -288,6 +288,24 @@ function PlasmicFooterSection__RenderFunc(props: {
           >
             {"Blog"}
           </Button>
+
+          <Button
+            className={classNames("__wab_instance", sty.button___1Gtq3)}
+            color={"navLink" as const}
+            flat={"flat" as const}
+            link={"https://fathym.com/privacy-policy/" as const}
+          >
+            {"Privacy"}
+          </Button>
+
+          <Button
+            className={classNames("__wab_instance", sty.button__n8JQ)}
+            color={"navLink" as const}
+            flat={"flat" as const}
+            link={"https://fathym.com/terms-of-services/" as const}
+          >
+            {"Terms"}
+          </Button>
         </p.Stack>
       </p.Stack>
     </div>
