@@ -45,7 +45,7 @@ jobs:
           branch: gh-pages
           folder: ${{ steps.build.outputs.publish_dir }}
       # publish github artifacts
-      - name: Archive production artifacts
+      - name: archive production artifacts
         uses: actions/upload-artifact@v2
         if: ${{ steps.build.outputs.publish_dir }}
         with:
