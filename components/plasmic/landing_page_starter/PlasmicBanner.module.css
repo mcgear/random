@@ -8,22 +8,8 @@
   overflow: hidden;
   position: relative;
   background: #f2f2f7;
-  transform-style: preserve-3d;
   min-width: 0;
   border-radius: 16px;
-}
-.root * {
-  transform-style: preserve-3d;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .root {
-    transform-style: preserve-3d;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .root * {
-    transform-style: preserve-3d;
-  }
 }
 .right {
   display: flex;
@@ -35,20 +21,10 @@
   justify-content: center;
   overflow: hidden;
   flex-direction: column;
-  transform-style: preserve-3d;
-}
-.right * {
-  transform-style: preserve-3d;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .right {
     opacity: 0.25;
-    transform-style: preserve-3d;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .right * {
-    transform-style: preserve-3d;
   }
 }
 .img {
@@ -57,16 +33,12 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform-style: preserve-3d;
 }
 .img > picture > img {
   object-fit: cover;
 }
 .img > .__wab_img-spacer > img {
   object-fit: cover;
-}
-.img * {
-  transform-style: preserve-3d;
 }
 .gradient {
   display: block;
@@ -78,27 +50,12 @@
   right: 0;
   bottom: 0;
   background: linear-gradient(90deg, #f2f2f7 0%, #c7c2c2bf 70%);
-  transform-style: preserve-3d;
-}
-.gradient * {
-  transform-style: preserve-3d;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .gradient {
-    transform-style: preserve-3d;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .gradient * {
-    transform-style: preserve-3d;
-  }
 }
 .left {
   display: flex;
   position: relative;
   flex-direction: column;
   width: 72.05%;
-  transform-style: preserve-3d;
   padding: 128px 31px 128px 128px;
 }
 .left > :global(.__wab_flex-container) {
@@ -106,9 +63,6 @@
   align-items: flex-start;
   margin-top: calc(0px - 32px);
   height: calc(100% + 32px);
-}
-.left * {
-  transform-style: preserve-3d;
 }
 .left > :global(.__wab_flex-container) > *,
 .left > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
@@ -118,13 +72,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .left {
-    transform-style: preserve-3d;
     padding: 32px;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .left * {
-    transform-style: preserve-3d;
   }
 }
 .text__rwb73 {
@@ -134,10 +82,6 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   height: auto;
-  transform-style: preserve-3d;
-}
-.text__rwb73 * {
-  transform-style: preserve-3d;
 }
 .text___505Qk {
   font-size: 48px;
@@ -145,54 +89,28 @@
   color: #000000d9 /* plasmic-token: vOPQIfd2vRc9 */;
   line-height: 1;
   height: auto;
-  transform-style: preserve-3d;
-}
-.text___505Qk * {
-  transform-style: preserve-3d;
 }
 .text__svzMr {
   position: relative;
   width: 100%;
   height: auto;
   max-width: 800px;
-  transform-style: preserve-3d;
   min-width: 0;
-}
-.text__svzMr * {
-  transform-style: preserve-3d;
-}
-.button__dahzI:global(.__wab_instance) {
-  transform-style: preserve-3d;
-}
-.button__dahzI * {
-  transform-style: preserve-3d;
 }
 .svg__de3TG {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
-  transform-style: preserve-3d;
-}
-.svg__de3TG * {
-  transform-style: preserve-3d;
 }
 .text__oN5M1 {
   height: auto;
   width: auto;
   color: #007aff /* plasmic-token: NET4LCfsGfzR */;
-  transform-style: preserve-3d;
-}
-.text__oN5M1 * {
-  transform-style: preserve-3d;
 }
 .svg__g0Qzy {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
-  transform-style: preserve-3d;
-}
-.svg__g0Qzy * {
-  transform-style: preserve-3d;
 }

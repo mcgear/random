@@ -7,51 +7,23 @@
   justify-content: flex-start;
   background: #ffffff;
   position: sticky;
-  transform-style: preserve-3d;
   min-width: 0;
   border-radius: 6px;
   padding: 7px 11px;
   border: 1px solid #dbdbd7;
 }
-.root * {
-  transform-style: preserve-3d;
-}
-.root__showStartIcon {
-  transform-style: preserve-3d;
-}
-.root__showStartIcon * {
-  transform-style: preserve-3d;
-}
-.root__isDisabled {
-  transform-style: preserve-3d;
-}
-.root__isDisabled * {
-  transform-style: preserve-3d;
-}
 .root:hover {
-  transform-style: preserve-3d;
   border-color: #c8c7c1;
-}
-.root:hover * {
-  transform-style: preserve-3d;
 }
 .root:focus-within {
   box-shadow: 0px 0px 0px 3px #96c7f2;
-  transform-style: preserve-3d;
   outline: none;
   border-radius: 6px;
-}
-.root:focus-within * {
-  transform-style: preserve-3d;
 }
 .root_____focusVisibleWithin {
   box-shadow: 0px 0px 0px 3px #96c7f2;
-  transform-style: preserve-3d;
   outline: none;
   border-radius: 6px;
-}
-.root_____focusVisibleWithin * {
-  transform-style: preserve-3d;
 }
 .startIconContainer {
   position: relative;
@@ -61,159 +33,52 @@
   left: auto;
   top: auto;
   margin-right: 8px;
-  transform-style: preserve-3d;
   display: none;
 }
-.startIconContainer * {
-  transform-style: preserve-3d;
-}
 .startIconContainer__showStartIcon {
-  transform-style: preserve-3d;
   display: flex;
 }
-.startIconContainer__showStartIcon * {
-  transform-style: preserve-3d;
-}
-.startIconContainer__isDisabled {
-  transform-style: preserve-3d;
-}
-.startIconContainer__isDisabled * {
-  transform-style: preserve-3d;
-}
-.root:hover .startIconContainer {
-  transform-style: preserve-3d;
-}
-.root:hover .startIconContainer * {
-  transform-style: preserve-3d;
-}
 .root .startIconContainer_____focusVisibleWithin {
-  transform-style: preserve-3d;
   outline: none;
-}
-.root .startIconContainer_____focusVisibleWithin * {
-  transform-style: preserve-3d;
-}
-.slotTargetStartIcon * {
-  transform-style: preserve-3d;
-}
-.slotTargetStartIcon > *,
-.slotTargetStartIcon > .__wab_slot > *,
-.slotTargetStartIcon > .__wab_slot > .__wab_slot > *,
-.slotTargetStartIcon > .__wab_slot > .__wab_slot > .__wab_slot > *,
-.slotTargetStartIcon > picture > img,
-.slotTargetStartIcon > .__wab_slot > picture > img,
-.slotTargetStartIcon > .__wab_slot > .__wab_slot > picture > img,
-.slotTargetStartIcon > .__wab_slot > .__wab_slot > .__wab_slot > picture > img {
-  transform-style: preserve-3d;
 }
 .slotTargetStartIcon__showStartIcon {
   color: #90908c;
-}
-.slotTargetStartIcon__showStartIcon * {
-  transform-style: preserve-3d;
-}
-.slotTargetStartIcon__showStartIcon > *,
-.slotTargetStartIcon__showStartIcon > .__wab_slot > *,
-.slotTargetStartIcon__showStartIcon > .__wab_slot > .__wab_slot > *,
-.slotTargetStartIcon__showStartIcon
-  > .__wab_slot
-  > .__wab_slot
-  > .__wab_slot
-  > *,
-.slotTargetStartIcon__showStartIcon > picture > img,
-.slotTargetStartIcon__showStartIcon > .__wab_slot > picture > img,
-.slotTargetStartIcon__showStartIcon > .__wab_slot > .__wab_slot > picture > img,
-.slotTargetStartIcon__showStartIcon
-  > .__wab_slot
-  > .__wab_slot
-  > .__wab_slot
-  > picture
-  > img {
-  transform-style: preserve-3d;
 }
 .svg__chbzc {
   position: relative;
   object-fit: cover;
   width: 24px;
   height: 24px;
-  transform-style: preserve-3d;
   flex-shrink: 0;
-}
-.svg__chbzc * {
-  transform-style: preserve-3d;
 }
 .input {
   width: 100%;
   left: auto;
   top: auto;
-  transform-style: preserve-3d;
   min-width: 0;
   padding: 0px;
   border-width: 0px;
 }
-.input * {
-  transform-style: preserve-3d;
-}
-.input__showStartIcon {
-  transform-style: preserve-3d;
-}
-.input__showStartIcon * {
-  transform-style: preserve-3d;
-}
 .input__isDisabled {
   cursor: not-allowed;
-  transform-style: preserve-3d;
-}
-.input__isDisabled * {
-  transform-style: preserve-3d;
-}
-.root:hover .input {
-  transform-style: preserve-3d;
-}
-.root:hover .input * {
-  transform-style: preserve-3d;
 }
 .root:focus-within .input {
-  transform-style: preserve-3d;
   outline: none;
-}
-.root:focus-within .input * {
-  transform-style: preserve-3d;
 }
 .root .input_____focusVisibleWithin {
-  transform-style: preserve-3d;
   outline: none;
-}
-.root .input_____focusVisibleWithin * {
-  transform-style: preserve-3d;
 }
 .root .input:focus {
-  transform-style: preserve-3d;
   outline: none;
-}
-.root .input:focus * {
-  transform-style: preserve-3d;
 }
 .root:focus-within .input:focus {
-  transform-style: preserve-3d;
   outline: none;
-}
-.root:focus-within .input:focus * {
-  transform-style: preserve-3d;
 }
 .root .input::placeholder {
   color: #706f6c;
-  transform-style: preserve-3d;
-}
-.root .input::placeholder * {
-  transform-style: preserve-3d;
 }
 .root:focus-within .input::placeholder {
-  transform-style: preserve-3d;
   outline: none;
-}
-.root:focus-within .input::placeholder * {
-  transform-style: preserve-3d;
 }
 .endIconContainer {
   position: relative;
@@ -223,61 +88,18 @@
   left: auto;
   top: auto;
   margin-left: 8px;
-  transform-style: preserve-3d;
   display: none;
 }
-.endIconContainer * {
-  transform-style: preserve-3d;
-}
 .endIconContainer__showEndIcon {
-  transform-style: preserve-3d;
   display: flex;
-}
-.endIconContainer__showEndIcon * {
-  transform-style: preserve-3d;
-}
-.slotTargetEndIcon * {
-  transform-style: preserve-3d;
-}
-.slotTargetEndIcon > *,
-.slotTargetEndIcon > .__wab_slot > *,
-.slotTargetEndIcon > .__wab_slot > .__wab_slot > *,
-.slotTargetEndIcon > .__wab_slot > .__wab_slot > .__wab_slot > *,
-.slotTargetEndIcon > picture > img,
-.slotTargetEndIcon > .__wab_slot > picture > img,
-.slotTargetEndIcon > .__wab_slot > .__wab_slot > picture > img,
-.slotTargetEndIcon > .__wab_slot > .__wab_slot > .__wab_slot > picture > img {
-  transform-style: preserve-3d;
 }
 .slotTargetEndIcon__showEndIcon {
   color: #90908c;
-}
-.slotTargetEndIcon__showEndIcon * {
-  transform-style: preserve-3d;
-}
-.slotTargetEndIcon__showEndIcon > *,
-.slotTargetEndIcon__showEndIcon > .__wab_slot > *,
-.slotTargetEndIcon__showEndIcon > .__wab_slot > .__wab_slot > *,
-.slotTargetEndIcon__showEndIcon > .__wab_slot > .__wab_slot > .__wab_slot > *,
-.slotTargetEndIcon__showEndIcon > picture > img,
-.slotTargetEndIcon__showEndIcon > .__wab_slot > picture > img,
-.slotTargetEndIcon__showEndIcon > .__wab_slot > .__wab_slot > picture > img,
-.slotTargetEndIcon__showEndIcon
-  > .__wab_slot
-  > .__wab_slot
-  > .__wab_slot
-  > picture
-  > img {
-  transform-style: preserve-3d;
 }
 .svg__u6OFp {
   position: relative;
   object-fit: cover;
   width: 24px;
   height: 24px;
-  transform-style: preserve-3d;
   flex-shrink: 0;
-}
-.svg__u6OFp * {
-  transform-style: preserve-3d;
 }

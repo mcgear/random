@@ -58,7 +58,6 @@ export const PlasmicNavbar__ArgProps = new Array<ArgPropType>();
 export type PlasmicNavbar__OverridesType = {
   root?: p.Flex<"div">;
   logo?: p.Flex<typeof Logo>;
-  text?: p.Flex<"div">;
 };
 
 export interface DefaultNavbarProps {
@@ -79,102 +78,145 @@ function PlasmicNavbar__RenderFunc(props: {
   });
 
   return (
-    <p.Stack
-      as={"div"}
-      data-plasmic-name={"root"}
-      data-plasmic-override={overrides.root}
-      data-plasmic-root={true}
-      data-plasmic-for-node={forNode}
-      hasGap={true}
-      className={classNames(projectcss.all, projectcss.root_reset, sty.root)}
-    >
-      <p.Stack
-        as={"div"}
-        hasGap={true}
-        className={classNames(projectcss.all, sty.freeBox__ebi1)}
+    true ? (
+      <div
+        data-plasmic-name={"root"}
+        data-plasmic-override={overrides.root}
+        data-plasmic-root={true}
+        data-plasmic-for-node={forNode}
+        className={classNames(projectcss.all, projectcss.root_reset, sty.root)}
       >
-        <Logo
-          data-plasmic-name={"logo"}
-          data-plasmic-override={overrides.logo}
-          className={classNames("__wab_instance", sty.logo)}
-        />
-
-        <div
-          data-plasmic-name={"text"}
-          data-plasmic-override={overrides.text}
-          className={classNames(
-            projectcss.all,
-            projectcss.__wab_text,
-            sty.text
-          )}
-        >
-          {"LowCodeUnit"}
-        </div>
-
         <p.Stack
           as={"div"}
           hasGap={true}
-          className={classNames(projectcss.all, sty.freeBox__uYXg7)}
+          className={classNames(projectcss.all, sty.freeBox__vRq4)}
         >
-          <Button
-            className={classNames("__wab_instance", sty.button__rzg65)}
-            color={"navLink" as const}
-            link={"/docs" as const}
-          >
-            {"Docs"}
-          </Button>
+          <Logo
+            data-plasmic-name={"logo"}
+            data-plasmic-override={overrides.logo}
+            className={classNames("__wab_instance", sty.logo)}
+          />
 
-          <Button
-            className={classNames("__wab_instance", sty.button__whAnc)}
-            color={"navLink" as const}
-            link={"/blog" as const}
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text___56QFu
+            )}
           >
-            {"Blog"}
-          </Button>
+            {hasVariant(globalVariants, "screen", "mobileOnly")
+              ? "LCU"
+              : "LowCodeUnit"}
+          </div>
 
-          <Button
-            className={classNames("__wab_instance", sty.button__cgYjx)}
-            color={"navLink" as const}
-            link={"/dashboard" as const}
-          >
-            {"Log in"}
-          </Button>
+          {(
+            hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+          ) ? (
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__uYXg7)}
+            >
+              <Button
+                className={classNames("__wab_instance", sty.button__rzg65)}
+                color={"navLink" as const}
+                link={"/docs" as const}
+              >
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___0MChk
+                  )}
+                >
+                  {"Docs"}
+                </div>
+              </Button>
+
+              <Button
+                className={classNames("__wab_instance", sty.button__whAnc)}
+                color={"navLink" as const}
+                link={"/blog" as const}
+              >
+                {"Blog"}
+              </Button>
+
+              <Button
+                className={classNames("__wab_instance", sty.button__cgYjx)}
+                color={"navLink" as const}
+                link={"/dashboard" as const}
+              >
+                {"Log in"}
+              </Button>
+            </p.Stack>
+          ) : null}
 
           <Button
             className={classNames("__wab_instance", sty.button___6J8J7)}
             color={"darkGray" as const}
             link={"/dashboard" as const}
           >
-            {"Get started for free"}
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__k5Q2E
+              )}
+            >
+              {hasVariant(globalVariants, "screen", "mobileOnly")
+                ? "Get started for free"
+                : "Get started for free"}
+            </div>
           </Button>
         </p.Stack>
 
-        {false ? (
-          <div className={classNames(projectcss.all, sty.freeBox__bagxe)}>
-            <button
-              className={classNames(
-                projectcss.button,
-                projectcss.__wab_text,
-                sty.button__hagt6
-              )}
+        {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : false) ? (
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__eSaaZ)}
+          >
+            <Button
+              className={classNames("__wab_instance", sty.button__pAZe)}
+              color={"navLink" as const}
+              link={"/docs" as const}
             >
-              {"Sign up"}
-            </button>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__o0S3Q
+                )}
+              >
+                {"Docs"}
+              </div>
+            </Button>
 
-            <Button className={classNames("__wab_instance", sty.button__tXyhR)}>
+            <Button
+              className={classNames("__wab_instance", sty.button__hKLjm)}
+              color={"navLink" as const}
+              link={"/blog" as const}
+            >
+              {"Blog"}
+            </Button>
+
+            <Button
+              className={classNames("__wab_instance", sty.button__mydJu)}
+              color={"navLink" as const}
+              link={"/dashboard" as const}
+            >
               {"Log in"}
             </Button>
-          </div>
+          </p.Stack>
         ) : null}
-      </p.Stack>
-    </p.Stack>
+      </div>
+    ) : null
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "logo", "text"],
-  logo: ["logo"],
-  text: ["text"]
+  root: ["root", "logo"],
+  logo: ["logo"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -182,7 +224,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   logo: typeof Logo;
-  text: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -247,7 +288,6 @@ export const PlasmicNavbar = Object.assign(
   {
     // Helper components rendering sub-elements
     logo: makeNodeComponent("logo"),
-    text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicNavbar
     internalVariantProps: PlasmicNavbar__VariantProps,

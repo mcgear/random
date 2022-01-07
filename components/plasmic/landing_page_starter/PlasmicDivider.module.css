@@ -4,9 +4,5 @@
   height: 1px;
   position: relative;
   background: #e5e5ea;
-  transform-style: preserve-3d;
   min-width: 0;
-}
-.root * {
-  transform-style: preserve-3d;
 }

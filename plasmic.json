@@ -237,6 +237,45 @@
           "cssFilePath": "plasmic/lowcodeunit_com/PlasmicLandingPagesSvelte.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "_NBJ5cGV7HT",
+          "name": "LandingPagesMicroFrontends",
+          "type": "managed",
+          "projectId": "bNJjNc2NbC4jfBdycy75o8",
+          "renderModuleFilePath": "plasmic/lowcodeunit_com/PlasmicLandingPagesMicroFrontends.tsx",
+          "importSpec": {
+            "modulePath": "../pages/micro-frontends.tsx"
+          },
+          "cssFilePath": "plasmic/lowcodeunit_com/PlasmicLandingPagesMicroFrontends.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "H-dsaslh12",
+          "name": "HamburgerMenu",
+          "type": "managed",
+          "projectId": "bNJjNc2NbC4jfBdycy75o8",
+          "renderModuleFilePath": "plasmic/lowcodeunit_com/PlasmicHamburgerMenu.tsx",
+          "importSpec": {
+            "modulePath": "HamburgerMenu.tsx"
+          },
+          "cssFilePath": "plasmic/lowcodeunit_com/PlasmicHamburgerMenu.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "ccuH2KJJLzf",
+          "name": "LandingPagesDocusaurus",
+          "type": "managed",
+          "projectId": "bNJjNc2NbC4jfBdycy75o8",
+          "renderModuleFilePath": "plasmic/lowcodeunit_com/PlasmicLandingPagesDocusaurus.tsx",
+          "importSpec": {
+            "modulePath": "../pages/docusaurus.tsx"
+          },
+          "cssFilePath": "plasmic/lowcodeunit_com/PlasmicLandingPagesDocusaurus.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -476,6 +515,11 @@
           "id": "Rgd5cUI3A",
           "name": "image 10",
           "filePath": "../public/plasmic/lowcodeunit_com/images/image10.png"
+        },
+        {
+          "id": "DYb3__wKe",
+          "name": "image 11",
+          "filePath": "../public/plasmic/lowcodeunit_com/images/image11.png"
         }
       ],
       "indirect": false,

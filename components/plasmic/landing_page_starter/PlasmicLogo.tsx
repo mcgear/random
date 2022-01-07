@@ -34,6 +34,8 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 
+import { useScreenVariants as useScreenVariantsxs8LqfxZhwLy } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: XS8lqfxZhwLY/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import * as projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
@@ -75,6 +77,10 @@ function PlasmicLogo__RenderFunc(props: {
 }) {
   const { variants, args, overrides, forNode, dataFetches } = props;
 
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsxs8LqfxZhwLy()
+  });
+
   return (
     <p.PlasmicLink
       data-plasmic-name={"root"}
@@ -95,7 +101,11 @@ function PlasmicLogo__RenderFunc(props: {
         className={classNames(sty.img, {
           [sty.img___50Opaque]: hasVariant(variants, "_50Opaque", "_50Opaque")
         })}
-        displayHeight={"75px" as const}
+        displayHeight={
+          hasVariant(globalVariants, "screen", "mobileOnly")
+            ? ("50px" as const)
+            : ("75px" as const)
+        }
         displayMaxHeight={"none" as const}
         displayMaxWidth={"none" as const}
         displayMinHeight={"0" as const}

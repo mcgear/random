@@ -4,22 +4,11 @@
   flex-direction: row;
   align-items: stretch;
   justify-content: flex-start;
-  transform-style: preserve-3d;
-}
-.root * {
-  transform-style: preserve-3d;
-}
-.root___50Opaque {
-  transform-style: preserve-3d;
-}
-.root___50Opaque * {
-  transform-style: preserve-3d;
 }
 .img {
   object-fit: cover;
   width: auto;
   height: 75px;
-  transform-style: preserve-3d;
 }
 .img > picture > img {
   object-fit: cover;
@@ -27,13 +16,11 @@
 .img > .__wab_img-spacer > img {
   object-fit: cover;
 }
-.img * {
-  transform-style: preserve-3d;
+@media (min-width: 0px) and (max-width: 768px) {
+  .img {
+    height: 50px;
+  }
 }
 .img___50Opaque {
   opacity: 0.5;
-  transform-style: preserve-3d;
-}
-.img___50Opaque * {
-  transform-style: preserve-3d;
 }

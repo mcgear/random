@@ -3,11 +3,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  transform-style: preserve-3d;
   padding: 64px;
-}
-.root * {
-  transform-style: preserve-3d;
 }
 .freeBox___8RjJ4 {
   display: flex;
@@ -15,7 +11,6 @@
   max-width: 960px;
   flex-direction: row;
   width: 100%;
-  transform-style: preserve-3d;
   min-width: 0;
 }
 .freeBox___8RjJ4 > :global(.__wab_flex-container) {
@@ -23,9 +18,6 @@
   min-width: 0;
   margin-left: calc(0px - 64px);
   width: calc(100% + 64px);
-}
-.freeBox___8RjJ4 * {
-  transform-style: preserve-3d;
 }
 .freeBox___8RjJ4 > :global(.__wab_flex-container) > *,
 .freeBox___8RjJ4 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
@@ -41,7 +33,6 @@
   .freeBox___8RjJ4 {
     display: flex;
     flex-direction: column;
-    transform-style: preserve-3d;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -51,11 +42,6 @@
     width: calc(100% + 0px);
     margin-top: calc(0px - 64px);
     height: calc(100% + 64px);
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .freeBox___8RjJ4 * {
-    transform-style: preserve-3d;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -78,7 +64,6 @@
   top: auto;
   left: auto;
   width: 100%;
-  transform-style: preserve-3d;
   min-width: 0;
 }
 .freeBox__ezOj3 > :global(.__wab_flex-container) {
@@ -88,9 +73,6 @@
   min-width: 0;
   margin-top: calc(0px - 32px);
   height: calc(100% + 32px);
-}
-.freeBox__ezOj3 * {
-  transform-style: preserve-3d;
 }
 .freeBox__ezOj3 > :global(.__wab_flex-container) > *,
 .freeBox__ezOj3 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
@@ -102,25 +84,15 @@
   > img {
   margin-top: 32px;
 }
-.logo:global(.__wab_instance) {
-  transform-style: preserve-3d;
-}
-.logo * {
-  transform-style: preserve-3d;
-}
 .freeBox__b2XVw {
   display: flex;
   position: relative;
   flex-direction: column;
-  transform-style: preserve-3d;
 }
 .freeBox__b2XVw > :global(.__wab_flex-container) {
   flex-direction: column;
   margin-top: calc(0px - 16px);
   height: calc(100% + 16px);
-}
-.freeBox__b2XVw * {
-  transform-style: preserve-3d;
 }
 .freeBox__b2XVw > :global(.__wab_flex-container) > *,
 .freeBox__b2XVw > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
@@ -132,17 +104,10 @@
   > img {
   margin-top: 16px;
 }
-.text__hC0E {
-  transform-style: preserve-3d;
-}
-.text__hC0E * {
-  transform-style: preserve-3d;
-}
 .freeBox__eoeYd {
   display: flex;
   position: relative;
   flex-direction: row;
-  transform-style: preserve-3d;
 }
 .freeBox__eoeYd > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -150,9 +115,6 @@
   justify-content: flex-start;
   margin-left: calc(0px - 16px);
   width: calc(100% + 16px);
-}
-.freeBox__eoeYd * {
-  transform-style: preserve-3d;
 }
 .freeBox__eoeYd > :global(.__wab_flex-container) > *,
 .freeBox__eoeYd > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
@@ -169,33 +131,21 @@
   width: 24px;
   height: 24px;
   color: #05050599 /* plasmic-token: ElTzqu9JEMiu */;
-  transform-style: preserve-3d;
   flex-shrink: 0;
-}
-.svg__f81D6 * {
-  transform-style: preserve-3d;
 }
 .svg__eZhSm {
   object-fit: cover;
   width: 24px;
   height: 24px;
   color: #05050599 /* plasmic-token: ElTzqu9JEMiu */;
-  transform-style: preserve-3d;
   flex-shrink: 0;
-}
-.svg__eZhSm * {
-  transform-style: preserve-3d;
 }
 .svg___3JwXt {
   object-fit: cover;
   width: 24px;
   height: 24px;
   color: #05050599 /* plasmic-token: ElTzqu9JEMiu */;
-  transform-style: preserve-3d;
   flex-shrink: 0;
-}
-.svg___3JwXt * {
-  transform-style: preserve-3d;
 }
 .freeBox__ej5Y {
   display: flex;
@@ -204,7 +154,6 @@
   left: auto;
   top: auto;
   flex-direction: column;
-  transform-style: preserve-3d;
   min-width: 0;
 }
 .freeBox__ej5Y > :global(.__wab_flex-container) {
@@ -213,9 +162,6 @@
   min-width: 0;
   margin-top: calc(0px - 16px);
   height: calc(100% + 16px);
-}
-.freeBox__ej5Y * {
-  transform-style: preserve-3d;
 }
 .freeBox__ej5Y > :global(.__wab_flex-container) > *,
 .freeBox__ej5Y > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
@@ -238,182 +184,96 @@
   top: auto;
   color: #05050599 /* plasmic-token: ElTzqu9JEMiu */;
   height: auto;
-  transform-style: preserve-3d;
-}
-.text___1RCgQ * {
-  transform-style: preserve-3d;
 }
 .button__tGoa1:global(.__wab_instance) {
   position: relative;
-  transform-style: preserve-3d;
   display: none;
-}
-.button__tGoa1 * {
-  transform-style: preserve-3d;
 }
 .svg___40FGc {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
-  transform-style: preserve-3d;
-}
-.svg___40FGc * {
-  transform-style: preserve-3d;
 }
 .text__yv1R8 {
   height: auto;
-  transform-style: preserve-3d;
-}
-.text__yv1R8 * {
-  transform-style: preserve-3d;
 }
 .svg__oBe7L {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
-  transform-style: preserve-3d;
-}
-.svg__oBe7L * {
-  transform-style: preserve-3d;
 }
 .button__gFwLl:global(.__wab_instance) {
   position: relative;
-  transform-style: preserve-3d;
-}
-.button__gFwLl * {
-  transform-style: preserve-3d;
 }
 .svg__ePs3U {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
-  transform-style: preserve-3d;
-}
-.svg__ePs3U * {
-  transform-style: preserve-3d;
 }
 .text__ztX8Y {
   height: auto;
-  transform-style: preserve-3d;
-}
-.text__ztX8Y * {
-  transform-style: preserve-3d;
 }
 .svg__kdUD {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
-  transform-style: preserve-3d;
-}
-.svg__kdUD * {
-  transform-style: preserve-3d;
 }
 .button__vvfWx:global(.__wab_instance) {
   position: relative;
-  transform-style: preserve-3d;
-}
-.button__vvfWx * {
-  transform-style: preserve-3d;
 }
 .svg__fBcXr {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
-  transform-style: preserve-3d;
-}
-.svg__fBcXr * {
-  transform-style: preserve-3d;
-}
-.text___6BQ6 {
-  transform-style: preserve-3d;
-}
-.text___6BQ6 * {
-  transform-style: preserve-3d;
 }
 .svg__ahfq8 {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
-  transform-style: preserve-3d;
-}
-.svg__ahfq8 * {
-  transform-style: preserve-3d;
 }
 .button__s88Cu:global(.__wab_instance) {
   position: relative;
-  transform-style: preserve-3d;
   display: none;
-}
-.button__s88Cu * {
-  transform-style: preserve-3d;
 }
 .svg__btZkg {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
-  transform-style: preserve-3d;
-}
-.svg__btZkg * {
-  transform-style: preserve-3d;
 }
 .text__xO6Tw {
   height: auto;
-  transform-style: preserve-3d;
-}
-.text__xO6Tw * {
-  transform-style: preserve-3d;
 }
 .svg___5N9Fy {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
-  transform-style: preserve-3d;
-}
-.svg___5N9Fy * {
-  transform-style: preserve-3d;
 }
 .button__vpTnX:global(.__wab_instance) {
   position: relative;
-  transform-style: preserve-3d;
   display: none;
-}
-.button__vpTnX * {
-  transform-style: preserve-3d;
 }
 .svg___9Zgp2 {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
-  transform-style: preserve-3d;
-}
-.svg___9Zgp2 * {
-  transform-style: preserve-3d;
 }
 .text__jmSjY {
   height: auto;
-  transform-style: preserve-3d;
-}
-.text__jmSjY * {
-  transform-style: preserve-3d;
 }
 .svg__ksjiG {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
-  transform-style: preserve-3d;
-}
-.svg__ksjiG * {
-  transform-style: preserve-3d;
 }
 .freeBox__adWjy {
   display: flex;
@@ -422,7 +282,6 @@
   left: auto;
   top: auto;
   flex-direction: column;
-  transform-style: preserve-3d;
   min-width: 0;
 }
 .freeBox__adWjy > :global(.__wab_flex-container) {
@@ -431,9 +290,6 @@
   min-width: 0;
   margin-top: calc(0px - 16px);
   height: calc(100% + 16px);
-}
-.freeBox__adWjy * {
-  transform-style: preserve-3d;
 }
 .freeBox__adWjy > :global(.__wab_flex-container) > *,
 .freeBox__adWjy > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
@@ -456,209 +312,97 @@
   top: auto;
   color: #05050599 /* plasmic-token: ElTzqu9JEMiu */;
   height: auto;
-  transform-style: preserve-3d;
-}
-.text__p4Z5R * {
-  transform-style: preserve-3d;
 }
 .button__fO03:global(.__wab_instance) {
   position: relative;
-  transform-style: preserve-3d;
   display: none;
-}
-.button__fO03 * {
-  transform-style: preserve-3d;
 }
 .svg__hJfqO {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
-  transform-style: preserve-3d;
-}
-.svg__hJfqO * {
-  transform-style: preserve-3d;
-}
-.text__yNiMh {
-  transform-style: preserve-3d;
-}
-.text__yNiMh * {
-  transform-style: preserve-3d;
 }
 .svg__v59Ta {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
-  transform-style: preserve-3d;
-}
-.svg__v59Ta * {
-  transform-style: preserve-3d;
 }
 .button__nViHn:global(.__wab_instance) {
   position: relative;
-  transform-style: preserve-3d;
   display: none;
-}
-.button__nViHn * {
-  transform-style: preserve-3d;
 }
 .svg__c8Wvu {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
-  transform-style: preserve-3d;
-}
-.svg__c8Wvu * {
-  transform-style: preserve-3d;
-}
-.text__q2KBc {
-  transform-style: preserve-3d;
-}
-.text__q2KBc * {
-  transform-style: preserve-3d;
 }
 .svg__yEgKx {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
-  transform-style: preserve-3d;
-}
-.svg__yEgKx * {
-  transform-style: preserve-3d;
 }
 .button__rx9Bh:global(.__wab_instance) {
   position: relative;
-  transform-style: preserve-3d;
   display: none;
-}
-.button__rx9Bh * {
-  transform-style: preserve-3d;
 }
 .svg__bOilc {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
-  transform-style: preserve-3d;
-}
-.svg__bOilc * {
-  transform-style: preserve-3d;
-}
-.text___0C762 {
-  transform-style: preserve-3d;
-}
-.text___0C762 * {
-  transform-style: preserve-3d;
 }
 .svg__gma8I {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
-  transform-style: preserve-3d;
-}
-.svg__gma8I * {
-  transform-style: preserve-3d;
 }
 .button___4XmSe:global(.__wab_instance) {
   position: relative;
-  transform-style: preserve-3d;
-}
-.button___4XmSe * {
-  transform-style: preserve-3d;
 }
 .svg__erqEc {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
-  transform-style: preserve-3d;
-}
-.svg__erqEc * {
-  transform-style: preserve-3d;
-}
-.text__xuuxh {
-  transform-style: preserve-3d;
-}
-.text__xuuxh * {
-  transform-style: preserve-3d;
 }
 .svg__ghkQ {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
-  transform-style: preserve-3d;
-}
-.svg__ghkQ * {
-  transform-style: preserve-3d;
 }
 .button___1Gtq3:global(.__wab_instance) {
   position: relative;
-  transform-style: preserve-3d;
-}
-.button___1Gtq3 * {
-  transform-style: preserve-3d;
 }
 .svg__wg0Qn {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
-  transform-style: preserve-3d;
-}
-.svg__wg0Qn * {
-  transform-style: preserve-3d;
-}
-.text___0OFkv {
-  transform-style: preserve-3d;
-}
-.text___0OFkv * {
-  transform-style: preserve-3d;
 }
 .svg__uFTpq {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
-  transform-style: preserve-3d;
-}
-.svg__uFTpq * {
-  transform-style: preserve-3d;
 }
 .button__n8JQ:global(.__wab_instance) {
   position: relative;
-  transform-style: preserve-3d;
-}
-.button__n8JQ * {
-  transform-style: preserve-3d;
 }
 .svg___68QZk {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
-  transform-style: preserve-3d;
-}
-.svg___68QZk * {
-  transform-style: preserve-3d;
-}
-.text__wuAfO {
-  transform-style: preserve-3d;
-}
-.text__wuAfO * {
-  transform-style: preserve-3d;
 }
 .svg__l4Yk6 {
   width: 24px;
   height: 24px;
   position: relative;
   object-fit: cover;
-  transform-style: preserve-3d;
-}
-.svg__l4Yk6 * {
-  transform-style: preserve-3d;
 }
