@@ -211,7 +211,9 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                       sty.link__tE2W
                     )}
                     component={Link}
-                    href={"/docs/guides/hosting/frameworks/svelte" as const}
+                    href={
+                      "/docs/guides/hosting/site-builders/docusaurus-sites" as const
+                    }
                     platform={"nextjs"}
                   >
                     {"Learn more >"}
@@ -256,7 +258,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                   )}
                   component={Link}
                   href={
-                    "https://www.lowcodeunit.com/docs/guides/hosting/site-builders/docusaurus-sites" as const
+                    "/docs/guides/hosting/site-builders/docusaurus-sites" as const
                   }
                   platform={"nextjs"}
                 >
@@ -489,7 +491,9 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                       sty.link__eJrpS
                     )}
                     component={Link}
-                    href={"/docs/guides/hosting/frameworks/svelte" as const}
+                    href={
+                      "/docs/guides/hosting/site-builders/docusaurus-sites" as const
+                    }
                     platform={"nextjs"}
                   >
                     {"Learn more >"}
