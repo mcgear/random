@@ -98,11 +98,15 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary" />
-        <title key="title">{"Landing Pages - Docusaurus"}</title>
+        <title key="title">
+          {"LowCodeUnit - Docusaurus Development & Deployments in record time"}
+        </title>
         <meta
           key="og:title"
           property="og:title"
-          content={"Landing Pages - Docusaurus"}
+          content={
+            "LowCodeUnit - Docusaurus Development & Deployments in record time"
+          }
         />
       </Head>
 
@@ -245,7 +249,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                     )}
                   >
                     {
-                      "Get started now following the simple Docusaurus deployment guide, have docusaurus hosted on your domain in minutes."
+                      "Get started now following the simple Docusaurus deployment guide, have Docusaurus hosted on your domain in minutes."
                     }
                   </div>
                 </div>

@@ -101,8 +101,18 @@ function PlasmicHomepage__RenderFunc(props: {
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary" />
-        <title key="title">{"Home"}</title>
-        <meta key="og:title" property="og:title" content={"Home"} />
+        <title key="title">
+          {
+            "LowCodeUnit - Develop & Deploy modern web experiences with your team"
+          }
+        </title>
+        <meta
+          key="og:title"
+          property="og:title"
+          content={
+            "LowCodeUnit - Develop & Deploy modern web experiences with your team"
+          }
+        />
       </Head>
 
       <style>{`

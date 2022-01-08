@@ -98,11 +98,17 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary" />
-        <title key="title">{"Landing Pages - Micro Frontends"}</title>
+        <title key="title">
+          {
+            "LowCodeUnit - Micro Frontend Development & Deployments in record time"
+          }
+        </title>
         <meta
           key="og:title"
           property="og:title"
-          content={"Landing Pages - Micro Frontends"}
+          content={
+            "LowCodeUnit - Micro Frontend Development & Deployments in record time"
+          }
         />
       </Head>
 
