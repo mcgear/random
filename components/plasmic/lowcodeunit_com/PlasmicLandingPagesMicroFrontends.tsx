@@ -211,7 +211,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                       sty.link__rzjE1
                     )}
                     component={Link}
-                    href={"/docs/guides/hosting/frameworks/svelte" as const}
+                    href={"/docs/guides/micro-frontends/overview" as const}
                     platform={"nextjs"}
                   >
                     {"Learn more >"}
@@ -259,7 +259,9 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                     sty.text__nMaA
                   )}
                 >
-                  {"Take "}
+                  {
+                    "With micro frontends, applications are broken apart into a series of feature based projects that are owned by independent teams. These smaller, and more cohesive codebases are then composed into a final delivered product. This allows for team autonomy and focus on specific business needs, making for more scalable feature implementation. The architectural approach is rooted in strong DevOps practices to ensure upgrades, updates, and rewrites can be applied in an incremental way that does not disrupt the entire product or business.\n\nLeverage LowCodeUnit for your next micro frontent project."
+                  }
                 </div>
               </p.Stack>
 
@@ -440,7 +442,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                       sty.link__a74Iv
                     )}
                     component={Link}
-                    href={"/docs/guides/hosting/frameworks/svelte" as const}
+                    href={"/docs/guides/micro-frontends/overview" as const}
                     platform={"nextjs"}
                   >
                     {"Learn more >"}
