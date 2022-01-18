@@ -212,7 +212,7 @@ function PlasmicLandingPagesSvelte__RenderFunc(props: {
                       sty.link__xl72F
                     )}
                     component={Link}
-                    href={"/docs/guides/hosting/frameworks/svelte" as const}
+                    href={"/docs/guides/deploying/frameworks/svelte" as const}
                     platform={"nextjs"}
                   >
                     {"Learn more >"}
@@ -443,7 +443,7 @@ function PlasmicLandingPagesSvelte__RenderFunc(props: {
                       sty.link__yXebm
                     )}
                     component={Link}
-                    href={"/docs/guides/hosting/frameworks/svelte" as const}
+                    href={"/docs/guides/deploying/frameworks/svelte" as const}
                     platform={"nextjs"}
                   >
                     {"Learn more >"}
