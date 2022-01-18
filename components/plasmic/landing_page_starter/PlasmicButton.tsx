@@ -36,8 +36,8 @@ import {
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import * as projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
-import * as sty from "./PlasmicButton.module.css"; // plasmic-import: 9tG1OyZAVIis/css
+import projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
+import sty from "./PlasmicButton.module.css"; // plasmic-import: 9tG1OyZAVIis/css
 
 import AppleIcon from "./icons/PlasmicIcon__Apple"; // plasmic-import: MwxVTyBYf-O_/icon
 
@@ -105,7 +105,7 @@ export type PlasmicButton__ArgsType = {
   startIcon?: React.ReactNode;
   children?: React.ReactNode;
   endIcon?: React.ReactNode;
-  link?: string | PageHref;
+  link?: string;
 };
 
 type ArgPropType = keyof PlasmicButton__ArgsType;
@@ -144,10 +144,10 @@ function PlasmicButton__RenderFunc(props: {
   variants: PlasmicButton__VariantsArgs;
   args: PlasmicButton__ArgsType;
   overrides: PlasmicButton__OverridesType;
-  dataFetches?: PlasmicButton__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   return (
     <p.Stack
@@ -500,7 +500,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicButton__VariantsArgs;
     args?: PlasmicButton__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicButton__Fetches;
   } & Omit<PlasmicButton__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicButton__ArgsType, ReservedPropsType> &
@@ -527,13 +526,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicButton__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicButton__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

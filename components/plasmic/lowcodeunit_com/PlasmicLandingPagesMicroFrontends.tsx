@@ -43,8 +43,8 @@ import { useScreenVariants as useScreenVariantsxs8LqfxZhwLy } from "../landing_p
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import * as projectcss from "../landing_page_starter/plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
-import * as sty from "./PlasmicLandingPagesMicroFrontends.module.css"; // plasmic-import: _NBJ5cGV7HT/css
+import projectcss from "../landing_page_starter/plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
+import sty from "./PlasmicLandingPagesMicroFrontends.module.css"; // plasmic-import: _NBJ5cGV7HT/css
 
 import AppleIcon from "../landing_page_starter/icons/PlasmicIcon__Apple"; // plasmic-import: MwxVTyBYf-O_/icon
 import HammerIcon from "../landing_page_starter/icons/PlasmicIcon__Hammer"; // plasmic-import: ePabL_LXTnk1/icon
@@ -77,18 +77,16 @@ export type PlasmicLandingPagesMicroFrontends__OverridesType = {
   footerSection?: p.Flex<typeof FooterSection>;
 };
 
-export interface DefaultLandingPagesMicroFrontendsProps {
-  dataFetches: PlasmicLandingPagesMicroFrontends__Fetches;
-}
+export interface DefaultLandingPagesMicroFrontendsProps {}
 
 function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
   variants: PlasmicLandingPagesMicroFrontends__VariantsArgs;
   args: PlasmicLandingPagesMicroFrontends__ArgsType;
   overrides: PlasmicLandingPagesMicroFrontends__OverridesType;
-  dataFetches?: PlasmicLandingPagesMicroFrontends__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsxs8LqfxZhwLy()
@@ -290,7 +288,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                           "__wab_instance",
                           sty.valueProp__dc3W
                         )}
-                        darkBackground={"darkBackground" as const}
+                        darkBackground={true}
                         description={
                           <div
                             className={classNames(
@@ -314,7 +312,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                           />
                         }
                         title={"Harder"}
-                        vertical={"vertical" as const}
+                        vertical={true}
                       />
                     </div>
 
@@ -326,7 +324,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                           "__wab_instance",
                           sty.valueProp___9Ev7D
                         )}
-                        darkBackground={"darkBackground" as const}
+                        darkBackground={true}
                         description={
                           <div
                             className={classNames(
@@ -350,7 +348,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                           />
                         }
                         title={"Better"}
-                        vertical={"vertical" as const}
+                        vertical={true}
                       />
                     </div>
 
@@ -362,7 +360,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                           "__wab_instance",
                           sty.valueProp__erqC6
                         )}
-                        darkBackground={"darkBackground" as const}
+                        darkBackground={true}
                         description={
                           <div
                             className={classNames(
@@ -386,7 +384,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                           />
                         }
                         title={"Faster"}
-                        vertical={"vertical" as const}
+                        vertical={true}
                       />
                     </div>
 
@@ -398,7 +396,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                           "__wab_instance",
                           sty.valueProp__k1Df1
                         )}
-                        darkBackground={"darkBackground" as const}
+                        darkBackground={true}
                         description={
                           <div
                             className={classNames(
@@ -422,7 +420,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                           />
                         }
                         title={"Stronger"}
-                        vertical={"vertical" as const}
+                        vertical={true}
                       />
                     </div>
                   </p.Stack>
@@ -519,7 +517,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                             sty.valueProp__t0SsC
                           )}
                           description={"Nulla odio mauris."}
-                          flatIcon={"flatIcon" as const}
+                          flatIcon={true}
                           icon={
                             <CheckIcon
                               className={classNames(
@@ -529,7 +527,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                               role={"img"}
                             />
                           }
-                          noTitle={"noTitle" as const}
+                          noTitle={true}
                         />
 
                         <ValueProp
@@ -538,7 +536,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                             sty.valueProp__hZlOj
                           )}
                           description={"Nulla odio mauris."}
-                          flatIcon={"flatIcon" as const}
+                          flatIcon={true}
                           icon={
                             <CheckIcon
                               className={classNames(
@@ -548,7 +546,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                               role={"img"}
                             />
                           }
-                          noTitle={"noTitle" as const}
+                          noTitle={true}
                         />
                       </React.Fragment>
                     }
@@ -579,7 +577,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                             sty.valueProp___3MH3G
                           )}
                           description={"Nulla odio mauris."}
-                          flatIcon={"flatIcon" as const}
+                          flatIcon={true}
                           icon={
                             <CheckIcon
                               className={classNames(
@@ -589,7 +587,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                               role={"img"}
                             />
                           }
-                          noTitle={"noTitle" as const}
+                          noTitle={true}
                         />
 
                         <ValueProp
@@ -598,7 +596,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                             sty.valueProp__dNvG1
                           )}
                           description={"Nulla odio mauris."}
-                          flatIcon={"flatIcon" as const}
+                          flatIcon={true}
                           icon={
                             <CheckIcon
                               className={classNames(
@@ -608,7 +606,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                               role={"img"}
                             />
                           }
-                          noTitle={"noTitle" as const}
+                          noTitle={true}
                         />
 
                         <ValueProp
@@ -617,7 +615,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                             sty.valueProp__hBEa
                           )}
                           description={"Nulla odio mauris."}
-                          flatIcon={"flatIcon" as const}
+                          flatIcon={true}
                           icon={
                             <CheckIcon
                               className={classNames(
@@ -627,7 +625,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                               role={"img"}
                             />
                           }
-                          noTitle={"noTitle" as const}
+                          noTitle={true}
                         />
                       </React.Fragment>
                     }
@@ -669,7 +667,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                             sty.valueProp__c3FyZ
                           )}
                           description={"Nulla odio mauris."}
-                          flatIcon={"flatIcon" as const}
+                          flatIcon={true}
                           icon={
                             <CheckIcon
                               className={classNames(
@@ -679,7 +677,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                               role={"img"}
                             />
                           }
-                          noTitle={"noTitle" as const}
+                          noTitle={true}
                         />
 
                         <ValueProp
@@ -688,7 +686,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                             sty.valueProp___7Z4Lg
                           )}
                           description={"Nulla odio mauris."}
-                          flatIcon={"flatIcon" as const}
+                          flatIcon={true}
                           icon={
                             <CheckIcon
                               className={classNames(
@@ -698,7 +696,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                               role={"img"}
                             />
                           }
-                          noTitle={"noTitle" as const}
+                          noTitle={true}
                         />
 
                         <ValueProp
@@ -707,7 +705,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                             sty.valueProp___9KLQw
                           )}
                           description={"Nulla odio mauris."}
-                          flatIcon={"flatIcon" as const}
+                          flatIcon={true}
                           icon={
                             <CheckIcon
                               className={classNames(
@@ -717,7 +715,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                               role={"img"}
                             />
                           }
-                          noTitle={"noTitle" as const}
+                          noTitle={true}
                         />
 
                         <ValueProp
@@ -726,7 +724,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                             sty.valueProp__mFeo7
                           )}
                           description={"Nulla odio mauris."}
-                          flatIcon={"flatIcon" as const}
+                          flatIcon={true}
                           icon={
                             <CheckIcon
                               className={classNames(
@@ -736,7 +734,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                               role={"img"}
                             />
                           }
-                          noTitle={"noTitle" as const}
+                          noTitle={true}
                         />
                       </React.Fragment>
                     }
@@ -778,7 +776,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                             sty.valueProp__ugxgo
                           )}
                           description={"Nulla odio mauris."}
-                          flatIcon={"flatIcon" as const}
+                          flatIcon={true}
                           icon={
                             <CheckIcon
                               className={classNames(
@@ -788,7 +786,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                               role={"img"}
                             />
                           }
-                          noTitle={"noTitle" as const}
+                          noTitle={true}
                         />
 
                         <ValueProp
@@ -797,7 +795,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                             sty.valueProp__oXzu
                           )}
                           description={"Nulla odio mauris."}
-                          flatIcon={"flatIcon" as const}
+                          flatIcon={true}
                           icon={
                             <CheckIcon
                               className={classNames(
@@ -807,7 +805,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                               role={"img"}
                             />
                           }
-                          noTitle={"noTitle" as const}
+                          noTitle={true}
                         />
 
                         <ValueProp
@@ -816,7 +814,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                             sty.valueProp__fb8PN
                           )}
                           description={"Nulla odio mauris."}
-                          flatIcon={"flatIcon" as const}
+                          flatIcon={true}
                           icon={
                             <CheckIcon
                               className={classNames(
@@ -826,7 +824,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                               role={"img"}
                             />
                           }
-                          noTitle={"noTitle" as const}
+                          noTitle={true}
                         />
 
                         <ValueProp
@@ -835,7 +833,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                             sty.valueProp__sIdK8
                           )}
                           description={"Nulla odio mauris."}
-                          flatIcon={"flatIcon" as const}
+                          flatIcon={true}
                           icon={
                             <CheckIcon
                               className={classNames(
@@ -845,7 +843,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                               role={"img"}
                             />
                           }
-                          noTitle={"noTitle" as const}
+                          noTitle={true}
                         />
                       </React.Fragment>
                     }
@@ -861,7 +859,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                         {"Enterprise"}
                       </div>
                     }
-                    primary={"primary" as const}
+                    primary={true}
                   />
                 </p.Stack>
               </p.Stack>
@@ -926,7 +924,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicLandingPagesMicroFrontends__VariantsArgs;
     args?: PlasmicLandingPagesMicroFrontends__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicLandingPagesMicroFrontends__Fetches;
   } & Omit<PlasmicLandingPagesMicroFrontends__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicLandingPagesMicroFrontends__ArgsType, ReservedPropsType> &
@@ -953,13 +950,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicLandingPagesMicroFrontends__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicLandingPagesMicroFrontends__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

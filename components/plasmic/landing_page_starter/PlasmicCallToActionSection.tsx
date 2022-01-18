@@ -39,8 +39,8 @@ import { useScreenVariants as useScreenVariantsxs8LqfxZhwLy } from "./PlasmicGlo
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import * as projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
-import * as sty from "./PlasmicCallToActionSection.module.css"; // plasmic-import: T0bbL5EU2k3r/css
+import projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
+import sty from "./PlasmicCallToActionSection.module.css"; // plasmic-import: T0bbL5EU2k3r/css
 
 import AppleIcon from "./icons/PlasmicIcon__Apple"; // plasmic-import: MwxVTyBYf-O_/icon
 import ChevronRightIcon from "./icons/PlasmicIcon__ChevronRight"; // plasmic-import: LDeJ2smQIyiO/icon
@@ -53,7 +53,7 @@ export const PlasmicCallToActionSection__VariantProps =
   new Array<VariantPropType>();
 
 export type PlasmicCallToActionSection__ArgsType = {
-  image?: string;
+  image?: React.ComponentProps<typeof p.PlasmicImg>["src"];
   children?: React.ReactNode;
 };
 
@@ -72,7 +72,7 @@ export type PlasmicCallToActionSection__OverridesType = {
 };
 
 export interface DefaultCallToActionSectionProps {
-  image?: string;
+  image?: React.ComponentProps<typeof p.PlasmicImg>["src"];
   children?: React.ReactNode;
   className?: string;
 }
@@ -81,10 +81,10 @@ function PlasmicCallToActionSection__RenderFunc(props: {
   variants: PlasmicCallToActionSection__VariantsArgs;
   args: PlasmicCallToActionSection__ArgsType;
   overrides: PlasmicCallToActionSection__OverridesType;
-  dataFetches?: PlasmicCallToActionSection__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsxs8LqfxZhwLy()
@@ -212,13 +212,13 @@ function PlasmicCallToActionSection__RenderFunc(props: {
                             role={"img"}
                           />
                         }
-                        showEndIcon={"showEndIcon" as const}
+                        showEndIcon={true}
                       >
                         {"Start now"}
                       </Button>
 
                       <Button
-                        bgDifference={"bgDifference" as const}
+                        bgDifference={true}
                         className={classNames(
                           "__wab_instance",
                           sty.button__a98Lf
@@ -276,7 +276,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicCallToActionSection__VariantsArgs;
     args?: PlasmicCallToActionSection__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicCallToActionSection__Fetches;
   } & Omit<PlasmicCallToActionSection__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicCallToActionSection__ArgsType, ReservedPropsType> &
@@ -303,13 +302,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicCallToActionSection__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicCallToActionSection__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

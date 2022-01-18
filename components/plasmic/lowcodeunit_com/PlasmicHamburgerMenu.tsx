@@ -36,8 +36,8 @@ import {
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import * as projectcss from "../landing_page_starter/plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
-import * as sty from "./PlasmicHamburgerMenu.module.css"; // plasmic-import: H-dsaslh12/css
+import projectcss from "../landing_page_starter/plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
+import sty from "./PlasmicHamburgerMenu.module.css"; // plasmic-import: H-dsaslh12/css
 
 export type PlasmicHamburgerMenu__VariantMembers = {};
 
@@ -61,10 +61,10 @@ function PlasmicHamburgerMenu__RenderFunc(props: {
   variants: PlasmicHamburgerMenu__VariantsArgs;
   args: PlasmicHamburgerMenu__ArgsType;
   overrides: PlasmicHamburgerMenu__OverridesType;
-  dataFetches?: PlasmicHamburgerMenu__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   return (
     <div
@@ -98,7 +98,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicHamburgerMenu__VariantsArgs;
     args?: PlasmicHamburgerMenu__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicHamburgerMenu__Fetches;
   } & Omit<PlasmicHamburgerMenu__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicHamburgerMenu__ArgsType, ReservedPropsType> &
@@ -125,13 +124,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicHamburgerMenu__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicHamburgerMenu__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

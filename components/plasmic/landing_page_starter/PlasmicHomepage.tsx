@@ -48,8 +48,8 @@ import { useScreenVariants as useScreenVariantsxs8LqfxZhwLy } from "./PlasmicGlo
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import * as projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
-import * as sty from "./PlasmicHomepage.module.css"; // plasmic-import: Ess5kdNBQke/css
+import projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
+import sty from "./PlasmicHomepage.module.css"; // plasmic-import: Ess5kdNBQke/css
 
 import AppleIcon from "./icons/PlasmicIcon__Apple"; // plasmic-import: MwxVTyBYf-O_/icon
 import ChevronRightIcon from "./icons/PlasmicIcon__ChevronRight"; // plasmic-import: LDeJ2smQIyiO/icon
@@ -80,18 +80,16 @@ export type PlasmicHomepage__OverridesType = {
   footerSection?: p.Flex<typeof FooterSection>;
 };
 
-export interface DefaultHomepageProps {
-  dataFetches: PlasmicHomepage__Fetches;
-}
+export interface DefaultHomepageProps {}
 
 function PlasmicHomepage__RenderFunc(props: {
   variants: PlasmicHomepage__VariantsArgs;
   args: PlasmicHomepage__ArgsType;
   overrides: PlasmicHomepage__OverridesType;
-  dataFetches?: PlasmicHomepage__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsxs8LqfxZhwLy()
@@ -217,7 +215,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         />
                       }
                       link={"/dashboard" as const}
-                      showEndIcon={"showEndIcon" as const}
+                      showEndIcon={true}
                     >
                       <div
                         className={classNames(
@@ -231,7 +229,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     </Button>
 
                     <Button
-                      bgDifference={"bgDifference" as const}
+                      bgDifference={true}
                       className={classNames(
                         "__wab_instance",
                         sty.button__rr6Ky
@@ -325,7 +323,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   description={
                     "orchestration tools that bring open source to your solutions."
                   }
-                  flatIcon={"flatIcon" as const}
+                  flatIcon={true}
                   icon={
                     <CheckIcon
                       className={classNames(projectcss.all, sty.svg__zzJ8)}
@@ -340,7 +338,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   description={
                     "pages for your users, faster time to market for your team."
                   }
-                  flatIcon={"flatIcon" as const}
+                  flatIcon={true}
                   icon={
                     <CheckIcon
                       className={classNames(projectcss.all, sty.svg__gbSlp)}
@@ -363,7 +361,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       {"for engaging users with modern web projects."}
                     </div>
                   }
-                  flatIcon={"flatIcon" as const}
+                  flatIcon={true}
                   icon={
                     <CheckIcon
                       className={classNames(projectcss.all, sty.svg__gxU2D)}
@@ -382,7 +380,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 <ValueProp
                   className={classNames("__wab_instance", sty.valueProp__sNrTh)}
                   description={"devops powered by modern devops practices."}
-                  flatIcon={"flatIcon" as const}
+                  flatIcon={true}
                   icon={
                     <CheckIcon
                       className={classNames(projectcss.all, sty.svg__uEtP9)}
@@ -417,7 +415,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       }
                     </div>
                   }
-                  flatIcon={"flatIcon" as const}
+                  flatIcon={true}
                   icon={
                     <CheckIcon
                       className={classNames(projectcss.all, sty.svg__oXDp9)}
@@ -432,7 +430,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   description={
                     "that integrate analytics, A/B testing, engagement and more. "
                   }
-                  flatIcon={"flatIcon" as const}
+                  flatIcon={true}
                   icon={
                     <CheckIcon
                       className={classNames(projectcss.all, sty.svg__z1Nd)}
@@ -507,9 +505,9 @@ function PlasmicHomepage__RenderFunc(props: {
                         role={"img"}
                       />
                     }
-                    flat={"flat" as const}
+                    flat={true}
                     link={"/docs" as const}
-                    showEndIcon={"showEndIcon" as const}
+                    showEndIcon={true}
                   >
                     <div
                       className={classNames(
@@ -705,7 +703,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       />
                     }
                     link={"/dashboard" as const}
-                    showEndIcon={"showEndIcon" as const}
+                    showEndIcon={true}
                   >
                     <div
                       className={classNames(
@@ -757,7 +755,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                 sty.valueProp__mCmvt
                               )}
                               description={"Unlimited sites during beta"}
-                              flatIcon={"flatIcon" as const}
+                              flatIcon={true}
                               icon={
                                 <CheckIcon
                                   className={classNames(
@@ -767,7 +765,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                   role={"img"}
                                 />
                               }
-                              noTitle={"noTitle" as const}
+                              noTitle={true}
                             />
 
                             <ValueProp
@@ -776,7 +774,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                 sty.valueProp___6Ifyf
                               )}
                               description={"Lifetime Shared Hosting Access"}
-                              flatIcon={"flatIcon" as const}
+                              flatIcon={true}
                               icon={
                                 <CheckIcon
                                   className={classNames(
@@ -786,7 +784,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                   role={"img"}
                                 />
                               }
-                              noTitle={"noTitle" as const}
+                              noTitle={true}
                             />
 
                             <ValueProp
@@ -795,7 +793,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                 sty.valueProp__o8IsP
                               )}
                               description={"One custom domain and Free SSL"}
-                              flatIcon={"flatIcon" as const}
+                              flatIcon={true}
                               icon={
                                 <CheckIcon
                                   className={classNames(
@@ -805,7 +803,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                   role={"img"}
                                 />
                               }
-                              noTitle={"noTitle" as const}
+                              noTitle={true}
                             />
 
                             <ValueProp
@@ -814,7 +812,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                 sty.valueProp__j6HN
                               )}
                               description={"Shared Single Sign On"}
-                              flatIcon={"flatIcon" as const}
+                              flatIcon={true}
                               icon={
                                 <CheckIcon
                                   className={classNames(
@@ -824,7 +822,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                   role={"img"}
                                 />
                               }
-                              noTitle={"noTitle" as const}
+                              noTitle={true}
                             />
                           </React.Fragment>
                         }
@@ -875,7 +873,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                     {"Everything in Starter, plus"}
                                   </div>
                                 }
-                                flatIcon={"flatIcon" as const}
+                                flatIcon={true}
                                 icon={
                                   <CheckIcon
                                     className={classNames(
@@ -885,7 +883,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                     role={"img"}
                                   />
                                 }
-                                noTitle={"noTitle" as const}
+                                noTitle={true}
                               />
 
                               <ValueProp
@@ -904,7 +902,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                     {"Team tools"}
                                   </div>
                                 }
-                                flatIcon={"flatIcon" as const}
+                                flatIcon={true}
                                 icon={
                                   <CheckIcon
                                     className={classNames(
@@ -914,7 +912,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                     role={"img"}
                                   />
                                 }
-                                noTitle={"noTitle" as const}
+                                noTitle={true}
                               />
 
                               <ValueProp
@@ -933,7 +931,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                     {"Unlimited Custom domains and Free SSL"}
                                   </div>
                                 }
-                                flatIcon={"flatIcon" as const}
+                                flatIcon={true}
                                 icon={
                                   <CheckIcon
                                     className={classNames(
@@ -943,7 +941,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                     role={"img"}
                                   />
                                 }
-                                noTitle={"noTitle" as const}
+                                noTitle={true}
                               />
 
                               <ValueProp
@@ -962,7 +960,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                     {"User Authentication and Authorization"}
                                   </div>
                                 }
-                                flatIcon={"flatIcon" as const}
+                                flatIcon={true}
                                 icon={
                                   <CheckIcon
                                     className={classNames(
@@ -972,7 +970,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                     role={"img"}
                                   />
                                 }
-                                noTitle={"noTitle" as const}
+                                noTitle={true}
                               />
 
                               <ValueProp
@@ -991,7 +989,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                     {"Unlimited modifiers and routes"}
                                   </div>
                                 }
-                                flatIcon={"flatIcon" as const}
+                                flatIcon={true}
                                 icon={
                                   <CheckIcon
                                     className={classNames(
@@ -1001,7 +999,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                     role={"img"}
                                   />
                                 }
-                                noTitle={"noTitle" as const}
+                                noTitle={true}
                               />
 
                               <ValueProp
@@ -1020,7 +1018,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                     {"Custom Single Sign On"}
                                   </div>
                                 }
-                                flatIcon={"flatIcon" as const}
+                                flatIcon={true}
                                 icon={
                                   <CheckIcon
                                     className={classNames(
@@ -1030,13 +1028,13 @@ function PlasmicHomepage__RenderFunc(props: {
                                     role={"img"}
                                   />
                                 }
-                                noTitle={"noTitle" as const}
+                                noTitle={true}
                               />
                             </React.Fragment>
                           }
                           dollars={"100"}
                           label={"PRO"}
-                          primary={"primary" as const}
+                          primary={true}
                         />
                       </div>
                     ) : null}
@@ -1086,7 +1084,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                     {"Managed private, hybrid cloud hosting."}
                                   </div>
                                 }
-                                flatIcon={"flatIcon" as const}
+                                flatIcon={true}
                                 icon={
                                   <CheckIcon
                                     className={classNames(
@@ -1096,7 +1094,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                     role={"img"}
                                   />
                                 }
-                                noTitle={"noTitle" as const}
+                                noTitle={true}
                               />
 
                               <ValueProp
@@ -1107,7 +1105,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                 description={
                                   "Cost control and savings automation"
                                 }
-                                flatIcon={"flatIcon" as const}
+                                flatIcon={true}
                                 icon={
                                   <CheckIcon
                                     className={classNames(
@@ -1117,7 +1115,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                     role={"img"}
                                   />
                                 }
-                                noTitle={"noTitle" as const}
+                                noTitle={true}
                               />
 
                               <ValueProp
@@ -1126,7 +1124,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                   sty.valueProp__prZEj
                                 )}
                                 description={"Unlimited team seats"}
-                                flatIcon={"flatIcon" as const}
+                                flatIcon={true}
                                 icon={
                                   <CheckIcon
                                     className={classNames(
@@ -1136,7 +1134,7 @@ function PlasmicHomepage__RenderFunc(props: {
                                     role={"img"}
                                   />
                                 }
-                                noTitle={"noTitle" as const}
+                                noTitle={true}
                               />
                             </React.Fragment>
                           }
@@ -1222,8 +1220,8 @@ function PlasmicHomepage__RenderFunc(props: {
                           role={"img"}
                         />
                       }
-                      flat={"flat" as const}
-                      showEndIcon={"showEndIcon" as const}
+                      flat={true}
+                      showEndIcon={true}
                     >
                       <div
                         className={classNames(
@@ -1297,9 +1295,9 @@ function PlasmicHomepage__RenderFunc(props: {
                             role={"img"}
                           />
                         }
-                        flat={"flat" as const}
+                        flat={true}
                         link={"/svelte-deployment" as const}
-                        showEndIcon={"showEndIcon" as const}
+                        showEndIcon={true}
                       >
                         <div
                           className={classNames(
@@ -1368,8 +1366,8 @@ function PlasmicHomepage__RenderFunc(props: {
                             role={"img"}
                           />
                         }
-                        flat={"flat" as const}
-                        showEndIcon={"showEndIcon" as const}
+                        flat={true}
+                        showEndIcon={true}
                       >
                         <div
                           className={classNames(
@@ -1436,11 +1434,11 @@ function PlasmicHomepage__RenderFunc(props: {
                           role={"img"}
                         />
                       }
-                      flat={"flat" as const}
+                      flat={true}
                       link={
                         "/docs/guides/e-commerce/forestry-11ty-jamcart/overview" as const
                       }
-                      showEndIcon={"showEndIcon" as const}
+                      showEndIcon={true}
                     >
                       <div
                         className={classNames(
@@ -1722,13 +1720,13 @@ function PlasmicHomepage__RenderFunc(props: {
                   />
                 }
                 link={"/dashboard" as const}
-                showEndIcon={"showEndIcon" as const}
+                showEndIcon={true}
               >
                 {"Start now"}
               </Button>
 
               <Button
-                bgDifference={"bgDifference" as const}
+                bgDifference={true}
                 className={classNames("__wab_instance", sty.button__bep7L)}
               >
                 <div
@@ -1808,7 +1806,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicHomepage__VariantsArgs;
     args?: PlasmicHomepage__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicHomepage__Fetches;
   } & Omit<PlasmicHomepage__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicHomepage__ArgsType, ReservedPropsType> &
@@ -1835,13 +1832,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicHomepage__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicHomepage__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

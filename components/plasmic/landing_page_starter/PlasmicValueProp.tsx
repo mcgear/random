@@ -36,8 +36,8 @@ import {
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import * as projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
-import * as sty from "./PlasmicValueProp.module.css"; // plasmic-import: 7Osq_1lpBJMp/css
+import projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
+import sty from "./PlasmicValueProp.module.css"; // plasmic-import: 7Osq_1lpBJMp/css
 
 export type PlasmicValueProp__VariantMembers = {
   flatIcon: "flatIcon";
@@ -99,10 +99,10 @@ function PlasmicValueProp__RenderFunc(props: {
   variants: PlasmicValueProp__VariantsArgs;
   args: PlasmicValueProp__ArgsType;
   overrides: PlasmicValueProp__OverridesType;
-  dataFetches?: PlasmicValueProp__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   return (
     <p.Stack
@@ -251,7 +251,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicValueProp__VariantsArgs;
     args?: PlasmicValueProp__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicValueProp__Fetches;
   } & Omit<PlasmicValueProp__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicValueProp__ArgsType, ReservedPropsType> &
@@ -278,13 +277,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicValueProp__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicValueProp__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

@@ -36,8 +36,8 @@ import {
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import * as projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
-import * as sty from "./PlasmicTextInput.module.css"; // plasmic-import: W8d-SKhm83xS/css
+import projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
+import sty from "./PlasmicTextInput.module.css"; // plasmic-import: W8d-SKhm83xS/css
 
 import SearchIcon from "./icons/PlasmicIcon__Search"; // plasmic-import: BfdMPsLO-KiP/icon
 import CheckIcon from "./icons/PlasmicIcon__Check"; // plasmic-import: ilXNZMoWvbmT/icon
@@ -92,10 +92,10 @@ function PlasmicTextInput__RenderFunc(props: {
   variants: PlasmicTextInput__VariantsArgs;
   args: PlasmicTextInput__ArgsType;
   overrides: PlasmicTextInput__OverridesType;
-  dataFetches?: PlasmicTextInput__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   const [isRootFocusVisibleWithin, triggerRootFocusVisibleWithinProps] =
     useTrigger("useFocusVisibleWithin", {
@@ -282,7 +282,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicTextInput__VariantsArgs;
     args?: PlasmicTextInput__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicTextInput__Fetches;
   } & Omit<PlasmicTextInput__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicTextInput__ArgsType, ReservedPropsType> &
@@ -309,13 +308,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicTextInput__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicTextInput__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

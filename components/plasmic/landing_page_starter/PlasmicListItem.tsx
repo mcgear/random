@@ -36,8 +36,8 @@ import {
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import * as projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
-import * as sty from "./PlasmicListItem.module.css"; // plasmic-import: NsK2QjXT7pcM/css
+import projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
+import sty from "./PlasmicListItem.module.css"; // plasmic-import: NsK2QjXT7pcM/css
 
 import CheckCircleIcon from "./icons/PlasmicIcon__CheckCircle"; // plasmic-import: Ct6TrdIWVYnJ/icon
 
@@ -84,10 +84,10 @@ function PlasmicListItem__RenderFunc(props: {
   variants: PlasmicListItem__VariantsArgs;
   args: PlasmicListItem__ArgsType;
   overrides: PlasmicListItem__OverridesType;
-  dataFetches?: PlasmicListItem__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   return (
     <p.Stack
@@ -152,7 +152,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicListItem__VariantsArgs;
     args?: PlasmicListItem__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicListItem__Fetches;
   } & Omit<PlasmicListItem__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicListItem__ArgsType, ReservedPropsType> &
@@ -179,13 +178,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicListItem__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicListItem__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

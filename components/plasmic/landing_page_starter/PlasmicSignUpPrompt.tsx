@@ -39,8 +39,8 @@ import TextInput from "../../TextInput"; // plasmic-import: W8d-SKhm83xS/compone
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import * as projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
-import * as sty from "./PlasmicSignUpPrompt.module.css"; // plasmic-import: yrt3dRfNFL8K/css
+import projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
+import sty from "./PlasmicSignUpPrompt.module.css"; // plasmic-import: yrt3dRfNFL8K/css
 
 import AppleIcon from "./icons/PlasmicIcon__Apple"; // plasmic-import: MwxVTyBYf-O_/icon
 import GoogleIcon from "./icons/PlasmicIcon__Google"; // plasmic-import: z9cGvuOYJMO1/icon
@@ -70,10 +70,10 @@ function PlasmicSignUpPrompt__RenderFunc(props: {
   variants: PlasmicSignUpPrompt__VariantsArgs;
   args: PlasmicSignUpPrompt__ArgsType;
   overrides: PlasmicSignUpPrompt__OverridesType;
-  dataFetches?: PlasmicSignUpPrompt__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   return (
     <p.Stack
@@ -108,16 +108,16 @@ function PlasmicSignUpPrompt__RenderFunc(props: {
           >
             <Button
               className={classNames("__wab_instance", sty.button__iNnM)}
-              outline={"outline" as const}
-              showStartIcon={"showStartIcon" as const}
+              outline={true}
+              showStartIcon={true}
             >
               {"Apple"}
             </Button>
 
             <Button
               className={classNames("__wab_instance", sty.button__tQurv)}
-              outline={"outline" as const}
-              showStartIcon={"showStartIcon" as const}
+              outline={true}
+              showStartIcon={true}
               startIcon={
                 <GoogleIcon
                   className={classNames(projectcss.all, sty.svg___9HHra)}
@@ -229,7 +229,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicSignUpPrompt__VariantsArgs;
     args?: PlasmicSignUpPrompt__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicSignUpPrompt__Fetches;
   } & Omit<PlasmicSignUpPrompt__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicSignUpPrompt__ArgsType, ReservedPropsType> &
@@ -256,13 +255,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicSignUpPrompt__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicSignUpPrompt__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

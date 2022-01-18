@@ -40,8 +40,8 @@ import { useScreenVariants as useScreenVariantsxs8LqfxZhwLy } from "./PlasmicGlo
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import * as projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
-import * as sty from "./PlasmicFooterSection.module.css"; // plasmic-import: iXxSJX956e4d/css
+import projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
+import sty from "./PlasmicFooterSection.module.css"; // plasmic-import: iXxSJX956e4d/css
 
 import TwitterIcon from "./icons/PlasmicIcon__Twitter"; // plasmic-import: xwxygpKk6efH/icon
 import GithubIcon from "./icons/PlasmicIcon__Github"; // plasmic-import: GenxYUKBTlHD/icon
@@ -71,10 +71,10 @@ function PlasmicFooterSection__RenderFunc(props: {
   variants: PlasmicFooterSection__VariantsArgs;
   args: PlasmicFooterSection__ArgsType;
   overrides: PlasmicFooterSection__OverridesType;
-  dataFetches?: PlasmicFooterSection__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsxs8LqfxZhwLy()
@@ -101,7 +101,7 @@ function PlasmicFooterSection__RenderFunc(props: {
           <Logo
             data-plasmic-name={"logo"}
             data-plasmic-override={overrides.logo}
-            _50Opaque={"_50Opaque" as const}
+            _50Opaque={true}
           />
 
           <p.Stack
@@ -161,7 +161,7 @@ function PlasmicFooterSection__RenderFunc(props: {
             <Button
               className={classNames("__wab_instance", sty.button__tGoa1)}
               color={"navLink" as const}
-              flat={"flat" as const}
+              flat={true}
             >
               <div
                 className={classNames(
@@ -178,7 +178,7 @@ function PlasmicFooterSection__RenderFunc(props: {
           <Button
             className={classNames("__wab_instance", sty.button__gFwLl)}
             color={"navLink" as const}
-            flat={"flat" as const}
+            flat={true}
             link={"/dashboard" as const}
           >
             <div
@@ -195,7 +195,7 @@ function PlasmicFooterSection__RenderFunc(props: {
           <Button
             className={classNames("__wab_instance", sty.button__vvfWx)}
             color={"navLink" as const}
-            flat={"flat" as const}
+            flat={true}
             link={"/docs" as const}
           >
             {"Documentation"}
@@ -205,7 +205,7 @@ function PlasmicFooterSection__RenderFunc(props: {
             <Button
               className={classNames("__wab_instance", sty.button__s88Cu)}
               color={"navLink" as const}
-              flat={"flat" as const}
+              flat={true}
             >
               <div
                 className={classNames(
@@ -222,7 +222,7 @@ function PlasmicFooterSection__RenderFunc(props: {
             <Button
               className={classNames("__wab_instance", sty.button__vpTnX)}
               color={"navLink" as const}
-              flat={"flat" as const}
+              flat={true}
             >
               <div
                 className={classNames(
@@ -256,7 +256,7 @@ function PlasmicFooterSection__RenderFunc(props: {
             <Button
               className={classNames("__wab_instance", sty.button__fO03)}
               color={"navLink" as const}
-              flat={"flat" as const}
+              flat={true}
             >
               {"About"}
             </Button>
@@ -265,7 +265,7 @@ function PlasmicFooterSection__RenderFunc(props: {
             <Button
               className={classNames("__wab_instance", sty.button__nViHn)}
               color={"navLink" as const}
-              flat={"flat" as const}
+              flat={true}
             >
               {"Contact us"}
             </Button>
@@ -274,7 +274,7 @@ function PlasmicFooterSection__RenderFunc(props: {
             <Button
               className={classNames("__wab_instance", sty.button__rx9Bh)}
               color={"navLink" as const}
-              flat={"flat" as const}
+              flat={true}
             >
               {"Careers"}
             </Button>
@@ -283,7 +283,7 @@ function PlasmicFooterSection__RenderFunc(props: {
           <Button
             className={classNames("__wab_instance", sty.button___4XmSe)}
             color={"navLink" as const}
-            flat={"flat" as const}
+            flat={true}
             link={"/blog" as const}
           >
             {"Blog"}
@@ -292,7 +292,7 @@ function PlasmicFooterSection__RenderFunc(props: {
           <Button
             className={classNames("__wab_instance", sty.button___1Gtq3)}
             color={"navLink" as const}
-            flat={"flat" as const}
+            flat={true}
             link={"https://fathym.com/privacy-policy/" as const}
           >
             {"Privacy"}
@@ -301,7 +301,7 @@ function PlasmicFooterSection__RenderFunc(props: {
           <Button
             className={classNames("__wab_instance", sty.button__n8JQ)}
             color={"navLink" as const}
-            flat={"flat" as const}
+            flat={true}
             link={"https://fathym.com/terms-of-services/" as const}
           >
             {"Terms"}
@@ -335,7 +335,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicFooterSection__VariantsArgs;
     args?: PlasmicFooterSection__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicFooterSection__Fetches;
   } & Omit<PlasmicFooterSection__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicFooterSection__ArgsType, ReservedPropsType> &
@@ -362,13 +361,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicFooterSection__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicFooterSection__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

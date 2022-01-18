@@ -37,8 +37,8 @@ import Button from "../../Button"; // plasmic-import: 9tG1OyZAVIis/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import * as projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
-import * as sty from "./PlasmicBanner.module.css"; // plasmic-import: vcZIwAsP-PHX/css
+import projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
+import sty from "./PlasmicBanner.module.css"; // plasmic-import: vcZIwAsP-PHX/css
 
 import AppleIcon from "./icons/PlasmicIcon__Apple"; // plasmic-import: MwxVTyBYf-O_/icon
 
@@ -50,7 +50,7 @@ export const PlasmicBanner__VariantProps = new Array<VariantPropType>();
 
 export type PlasmicBanner__ArgsType = {
   left?: React.ReactNode;
-  image?: string;
+  image?: React.ComponentProps<typeof p.PlasmicImg>["src"];
 };
 
 type ArgPropType = keyof PlasmicBanner__ArgsType;
@@ -66,7 +66,7 @@ export type PlasmicBanner__OverridesType = {
 
 export interface DefaultBannerProps {
   left?: React.ReactNode;
-  image?: string;
+  image?: React.ComponentProps<typeof p.PlasmicImg>["src"];
   className?: string;
 }
 
@@ -74,10 +74,10 @@ function PlasmicBanner__RenderFunc(props: {
   variants: PlasmicBanner__VariantsArgs;
   args: PlasmicBanner__ArgsType;
   overrides: PlasmicBanner__OverridesType;
-  dataFetches?: PlasmicBanner__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   return (
     <div
@@ -213,7 +213,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicBanner__VariantsArgs;
     args?: PlasmicBanner__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicBanner__Fetches;
   } & Omit<PlasmicBanner__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicBanner__ArgsType, ReservedPropsType> &
@@ -240,13 +239,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicBanner__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicBanner__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

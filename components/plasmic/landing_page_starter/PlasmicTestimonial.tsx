@@ -36,8 +36,8 @@ import {
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import * as projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
-import * as sty from "./PlasmicTestimonial.module.css"; // plasmic-import: ehiWvKp_fzme/css
+import projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
+import sty from "./PlasmicTestimonial.module.css"; // plasmic-import: ehiWvKp_fzme/css
 
 export type PlasmicTestimonial__VariantMembers = {};
 
@@ -49,7 +49,7 @@ export type PlasmicTestimonial__ArgsType = {
   name?: React.ReactNode;
   title?: React.ReactNode;
   quote?: React.ReactNode;
-  image?: string;
+  image?: React.ComponentProps<typeof p.PlasmicImg>["src"];
 };
 
 type ArgPropType = keyof PlasmicTestimonial__ArgsType;
@@ -69,7 +69,7 @@ export interface DefaultTestimonialProps {
   name?: React.ReactNode;
   title?: React.ReactNode;
   quote?: React.ReactNode;
-  image?: string;
+  image?: React.ComponentProps<typeof p.PlasmicImg>["src"];
   className?: string;
 }
 
@@ -77,10 +77,10 @@ function PlasmicTestimonial__RenderFunc(props: {
   variants: PlasmicTestimonial__VariantsArgs;
   args: PlasmicTestimonial__ArgsType;
   overrides: PlasmicTestimonial__OverridesType;
-  dataFetches?: PlasmicTestimonial__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   return (
     <p.Stack
@@ -180,7 +180,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicTestimonial__VariantsArgs;
     args?: PlasmicTestimonial__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicTestimonial__Fetches;
   } & Omit<PlasmicTestimonial__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicTestimonial__ArgsType, ReservedPropsType> &
@@ -207,13 +206,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicTestimonial__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicTestimonial__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

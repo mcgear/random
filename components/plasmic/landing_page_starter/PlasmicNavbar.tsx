@@ -40,8 +40,8 @@ import { useScreenVariants as useScreenVariantsxs8LqfxZhwLy } from "./PlasmicGlo
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import * as projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
-import * as sty from "./PlasmicNavbar.module.css"; // plasmic-import: ThexOuedbks1/css
+import projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
+import sty from "./PlasmicNavbar.module.css"; // plasmic-import: ThexOuedbks1/css
 
 import AppleIcon from "./icons/PlasmicIcon__Apple"; // plasmic-import: MwxVTyBYf-O_/icon
 
@@ -68,10 +68,10 @@ function PlasmicNavbar__RenderFunc(props: {
   variants: PlasmicNavbar__VariantsArgs;
   args: PlasmicNavbar__ArgsType;
   overrides: PlasmicNavbar__OverridesType;
-  dataFetches?: PlasmicNavbar__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsxs8LqfxZhwLy()
@@ -237,7 +237,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicNavbar__VariantsArgs;
     args?: PlasmicNavbar__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicNavbar__Fetches;
   } & Omit<PlasmicNavbar__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicNavbar__ArgsType, ReservedPropsType> &
@@ -264,13 +263,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicNavbar__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicNavbar__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

@@ -39,8 +39,8 @@ import Button from "../../Button"; // plasmic-import: 9tG1OyZAVIis/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import * as projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
-import * as sty from "./PlasmicPriceCard.module.css"; // plasmic-import: 7SzxSSEbWsst/css
+import projectcss from "./plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
+import sty from "./PlasmicPriceCard.module.css"; // plasmic-import: 7SzxSSEbWsst/css
 
 import CheckIcon from "./icons/PlasmicIcon__Check"; // plasmic-import: ilXNZMoWvbmT/icon
 import AppleIcon from "./icons/PlasmicIcon__Apple"; // plasmic-import: MwxVTyBYf-O_/icon
@@ -96,10 +96,10 @@ function PlasmicPriceCard__RenderFunc(props: {
   variants: PlasmicPriceCard__VariantsArgs;
   args: PlasmicPriceCard__ArgsType;
   overrides: PlasmicPriceCard__OverridesType;
-  dataFetches?: PlasmicPriceCard__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   return (
     <div
@@ -229,7 +229,7 @@ function PlasmicPriceCard__RenderFunc(props: {
               ? ("green" as const)
               : ("white" as const)
           }
-          extraSmallShadow={"extraSmallShadow" as const}
+          extraSmallShadow={true}
           link={"/dashboard" as const}
         >
           {p.renderPlasmicSlot({
@@ -278,7 +278,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicPriceCard__VariantsArgs;
     args?: PlasmicPriceCard__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicPriceCard__Fetches;
   } & Omit<PlasmicPriceCard__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicPriceCard__ArgsType, ReservedPropsType> &
@@ -305,13 +304,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicPriceCard__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicPriceCard__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };

@@ -43,8 +43,8 @@ import { useScreenVariants as useScreenVariantsxs8LqfxZhwLy } from "../landing_p
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import * as projectcss from "../landing_page_starter/plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
-import * as sty from "./PlasmicLandingPagesDocusaurus.module.css"; // plasmic-import: ccuH2KJJLzf/css
+import projectcss from "../landing_page_starter/plasmic_landing_page_starter.module.css"; // plasmic-import: bNJjNc2NbC4jfBdycy75o8/projectcss
+import sty from "./PlasmicLandingPagesDocusaurus.module.css"; // plasmic-import: ccuH2KJJLzf/css
 
 import AppleIcon from "../landing_page_starter/icons/PlasmicIcon__Apple"; // plasmic-import: MwxVTyBYf-O_/icon
 import HammerIcon from "../landing_page_starter/icons/PlasmicIcon__Hammer"; // plasmic-import: ePabL_LXTnk1/icon
@@ -77,18 +77,16 @@ export type PlasmicLandingPagesDocusaurus__OverridesType = {
   footerSection?: p.Flex<typeof FooterSection>;
 };
 
-export interface DefaultLandingPagesDocusaurusProps {
-  dataFetches: PlasmicLandingPagesDocusaurus__Fetches;
-}
+export interface DefaultLandingPagesDocusaurusProps {}
 
 function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
   variants: PlasmicLandingPagesDocusaurus__VariantsArgs;
   args: PlasmicLandingPagesDocusaurus__ArgsType;
   overrides: PlasmicLandingPagesDocusaurus__OverridesType;
-  dataFetches?: PlasmicLandingPagesDocusaurus__Fetches;
+
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode, dataFetches } = props;
+  const { variants, args, overrides, forNode } = props;
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsxs8LqfxZhwLy()
@@ -216,7 +214,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                     )}
                     component={Link}
                     href={
-                      "/docs/guides/hosting/site-builders/docusaurus-sites" as const
+                      "/docs/guides/deploying/site-builders/docusaurus-sites" as const
                     }
                     platform={"nextjs"}
                   >
@@ -262,7 +260,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                   )}
                   component={Link}
                   href={
-                    "/docs/guides/hosting/site-builders/docusaurus-sites" as const
+                    "/docs/guides/deploying/site-builders/docusaurus-sites" as const
                   }
                   platform={"nextjs"}
                 >
@@ -337,7 +335,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                           "__wab_instance",
                           sty.valueProp__g0LwS
                         )}
-                        darkBackground={"darkBackground" as const}
+                        darkBackground={true}
                         description={
                           <div
                             className={classNames(
@@ -361,7 +359,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                           />
                         }
                         title={"Harder"}
-                        vertical={"vertical" as const}
+                        vertical={true}
                       />
                     </div>
 
@@ -373,7 +371,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                           "__wab_instance",
                           sty.valueProp___9Ro9S
                         )}
-                        darkBackground={"darkBackground" as const}
+                        darkBackground={true}
                         description={
                           <div
                             className={classNames(
@@ -397,7 +395,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                           />
                         }
                         title={"Better"}
-                        vertical={"vertical" as const}
+                        vertical={true}
                       />
                     </div>
 
@@ -409,7 +407,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                           "__wab_instance",
                           sty.valueProp__viuJk
                         )}
-                        darkBackground={"darkBackground" as const}
+                        darkBackground={true}
                         description={
                           <div
                             className={classNames(
@@ -433,7 +431,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                           />
                         }
                         title={"Faster"}
-                        vertical={"vertical" as const}
+                        vertical={true}
                       />
                     </div>
 
@@ -445,7 +443,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                           "__wab_instance",
                           sty.valueProp__vFxYz
                         )}
-                        darkBackground={"darkBackground" as const}
+                        darkBackground={true}
                         description={
                           <div
                             className={classNames(
@@ -469,7 +467,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                           />
                         }
                         title={"Stronger"}
-                        vertical={"vertical" as const}
+                        vertical={true}
                       />
                     </div>
                   </p.Stack>
@@ -496,7 +494,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                     )}
                     component={Link}
                     href={
-                      "/docs/guides/hosting/site-builders/docusaurus-sites" as const
+                      "/docs/guides/deploying/site-builders/docusaurus-sites" as const
                     }
                     platform={"nextjs"}
                   >
@@ -568,7 +566,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                             sty.valueProp___1I33L
                           )}
                           description={"Nulla odio mauris."}
-                          flatIcon={"flatIcon" as const}
+                          flatIcon={true}
                           icon={
                             <CheckIcon
                               className={classNames(
@@ -578,7 +576,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                               role={"img"}
                             />
                           }
-                          noTitle={"noTitle" as const}
+                          noTitle={true}
                         />
 
                         <ValueProp
@@ -587,7 +585,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                             sty.valueProp__zz2Vp
                           )}
                           description={"Nulla odio mauris."}
-                          flatIcon={"flatIcon" as const}
+                          flatIcon={true}
                           icon={
                             <CheckIcon
                               className={classNames(
@@ -597,7 +595,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                               role={"img"}
                             />
                           }
-                          noTitle={"noTitle" as const}
+                          noTitle={true}
                         />
                       </React.Fragment>
                     }
@@ -628,7 +626,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                             sty.valueProp__utFyz
                           )}
                           description={"Nulla odio mauris."}
-                          flatIcon={"flatIcon" as const}
+                          flatIcon={true}
                           icon={
                             <CheckIcon
                               className={classNames(
@@ -638,7 +636,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                               role={"img"}
                             />
                           }
-                          noTitle={"noTitle" as const}
+                          noTitle={true}
                         />
 
                         <ValueProp
@@ -647,7 +645,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                             sty.valueProp__c7PzD
                           )}
                           description={"Nulla odio mauris."}
-                          flatIcon={"flatIcon" as const}
+                          flatIcon={true}
                           icon={
                             <CheckIcon
                               className={classNames(
@@ -657,7 +655,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                               role={"img"}
                             />
                           }
-                          noTitle={"noTitle" as const}
+                          noTitle={true}
                         />
 
                         <ValueProp
@@ -666,7 +664,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                             sty.valueProp__mqi4T
                           )}
                           description={"Nulla odio mauris."}
-                          flatIcon={"flatIcon" as const}
+                          flatIcon={true}
                           icon={
                             <CheckIcon
                               className={classNames(
@@ -676,7 +674,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                               role={"img"}
                             />
                           }
-                          noTitle={"noTitle" as const}
+                          noTitle={true}
                         />
                       </React.Fragment>
                     }
@@ -718,7 +716,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                             sty.valueProp__bWUd
                           )}
                           description={"Nulla odio mauris."}
-                          flatIcon={"flatIcon" as const}
+                          flatIcon={true}
                           icon={
                             <CheckIcon
                               className={classNames(
@@ -728,7 +726,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                               role={"img"}
                             />
                           }
-                          noTitle={"noTitle" as const}
+                          noTitle={true}
                         />
 
                         <ValueProp
@@ -737,7 +735,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                             sty.valueProp__gmpF7
                           )}
                           description={"Nulla odio mauris."}
-                          flatIcon={"flatIcon" as const}
+                          flatIcon={true}
                           icon={
                             <CheckIcon
                               className={classNames(
@@ -747,7 +745,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                               role={"img"}
                             />
                           }
-                          noTitle={"noTitle" as const}
+                          noTitle={true}
                         />
 
                         <ValueProp
@@ -756,7 +754,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                             sty.valueProp__qVaIy
                           )}
                           description={"Nulla odio mauris."}
-                          flatIcon={"flatIcon" as const}
+                          flatIcon={true}
                           icon={
                             <CheckIcon
                               className={classNames(
@@ -766,7 +764,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                               role={"img"}
                             />
                           }
-                          noTitle={"noTitle" as const}
+                          noTitle={true}
                         />
 
                         <ValueProp
@@ -775,7 +773,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                             sty.valueProp__yr03Q
                           )}
                           description={"Nulla odio mauris."}
-                          flatIcon={"flatIcon" as const}
+                          flatIcon={true}
                           icon={
                             <CheckIcon
                               className={classNames(
@@ -785,7 +783,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                               role={"img"}
                             />
                           }
-                          noTitle={"noTitle" as const}
+                          noTitle={true}
                         />
                       </React.Fragment>
                     }
@@ -827,7 +825,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                             sty.valueProp__yca1D
                           )}
                           description={"Nulla odio mauris."}
-                          flatIcon={"flatIcon" as const}
+                          flatIcon={true}
                           icon={
                             <CheckIcon
                               className={classNames(
@@ -837,7 +835,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                               role={"img"}
                             />
                           }
-                          noTitle={"noTitle" as const}
+                          noTitle={true}
                         />
 
                         <ValueProp
@@ -846,7 +844,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                             sty.valueProp__lfuk
                           )}
                           description={"Nulla odio mauris."}
-                          flatIcon={"flatIcon" as const}
+                          flatIcon={true}
                           icon={
                             <CheckIcon
                               className={classNames(
@@ -856,7 +854,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                               role={"img"}
                             />
                           }
-                          noTitle={"noTitle" as const}
+                          noTitle={true}
                         />
 
                         <ValueProp
@@ -865,7 +863,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                             sty.valueProp__mRBza
                           )}
                           description={"Nulla odio mauris."}
-                          flatIcon={"flatIcon" as const}
+                          flatIcon={true}
                           icon={
                             <CheckIcon
                               className={classNames(
@@ -875,7 +873,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                               role={"img"}
                             />
                           }
-                          noTitle={"noTitle" as const}
+                          noTitle={true}
                         />
 
                         <ValueProp
@@ -884,7 +882,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                             sty.valueProp__jw8Zg
                           )}
                           description={"Nulla odio mauris."}
-                          flatIcon={"flatIcon" as const}
+                          flatIcon={true}
                           icon={
                             <CheckIcon
                               className={classNames(
@@ -894,7 +892,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                               role={"img"}
                             />
                           }
-                          noTitle={"noTitle" as const}
+                          noTitle={true}
                         />
                       </React.Fragment>
                     }
@@ -910,7 +908,7 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                         {"Enterprise"}
                       </div>
                     }
-                    primary={"primary" as const}
+                    primary={true}
                   />
                 </p.Stack>
               </p.Stack>
@@ -978,7 +976,6 @@ type NodeComponentProps<T extends NodeNameType> =
     variants?: PlasmicLandingPagesDocusaurus__VariantsArgs;
     args?: PlasmicLandingPagesDocusaurus__ArgsType;
     overrides?: NodeOverridesType<T>;
-    dataFetches?: PlasmicLandingPagesDocusaurus__Fetches;
   } & Omit<PlasmicLandingPagesDocusaurus__VariantsArgs, ReservedPropsType> & // Specify variants directly as props
     // Specify args directly as props
     Omit<PlasmicLandingPagesDocusaurus__ArgsType, ReservedPropsType> &
@@ -1005,13 +1002,10 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       internalVariantPropNames: PlasmicLandingPagesDocusaurus__VariantProps
     });
 
-    const { dataFetches } = props;
-
     return PlasmicLandingPagesDocusaurus__RenderFunc({
       variants,
       args,
       overrides,
-      dataFetches,
       forNode: nodeName
     });
   };
