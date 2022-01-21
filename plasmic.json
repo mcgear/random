@@ -276,6 +276,45 @@
           "cssFilePath": "plasmic/lowcodeunit_com/PlasmicLandingPagesDocusaurus.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "cJqBW9FtQjg",
+          "name": "LandingPagesReact",
+          "type": "managed",
+          "projectId": "bNJjNc2NbC4jfBdycy75o8",
+          "renderModuleFilePath": "plasmic/lowcodeunit_com/PlasmicLandingPagesReact.tsx",
+          "importSpec": {
+            "modulePath": "../pages/react.tsx"
+          },
+          "cssFilePath": "plasmic/lowcodeunit_com/PlasmicLandingPagesReact.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "rXmmYC1OnQW",
+          "name": "LandingPagesAngular",
+          "type": "managed",
+          "projectId": "bNJjNc2NbC4jfBdycy75o8",
+          "renderModuleFilePath": "plasmic/lowcodeunit_com/PlasmicLandingPagesAngular.tsx",
+          "importSpec": {
+            "modulePath": "../pages/angular.tsx"
+          },
+          "cssFilePath": "plasmic/lowcodeunit_com/PlasmicLandingPagesAngular.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "-qFSc60jT7K",
+          "name": "LandingPagesVue",
+          "type": "managed",
+          "projectId": "bNJjNc2NbC4jfBdycy75o8",
+          "renderModuleFilePath": "plasmic/lowcodeunit_com/PlasmicLandingPagesVue.tsx",
+          "importSpec": {
+            "modulePath": "../pages/vue.tsx"
+          },
+          "cssFilePath": "plasmic/lowcodeunit_com/PlasmicLandingPagesVue.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -520,6 +559,21 @@
           "id": "DYb3__wKe",
           "name": "image 11",
           "filePath": "../public/plasmic/lowcodeunit_com/images/image11.png"
+        },
+        {
+          "id": "kWW4GULYn",
+          "name": "image 12",
+          "filePath": "../public/plasmic/lowcodeunit_com/images/image12.png"
+        },
+        {
+          "id": "bdRNl7-2p",
+          "name": "image 13",
+          "filePath": "../public/plasmic/lowcodeunit_com/images/image13.png"
+        },
+        {
+          "id": "Sj8KVQwPw",
+          "name": "image 14",
+          "filePath": "../public/plasmic/lowcodeunit_com/images/image14.png"
         }
       ],
       "indirect": false,
