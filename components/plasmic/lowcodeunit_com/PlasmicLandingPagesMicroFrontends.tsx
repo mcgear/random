@@ -201,7 +201,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                   <Button
                     className={classNames("__wab_instance", sty.button___8DaKt)}
                     color={"darkGray" as const}
-                    link={"/dashboard" as const}
+                    link={"/dashboard/create-project" as const}
                   >
                     {"Get started for free"}
                   </Button>
@@ -432,7 +432,7 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                   <Button
                     className={classNames("__wab_instance", sty.button__dshaq)}
                     color={"darkGray" as const}
-                    link={"/dashboard" as const}
+                    link={"/dashboard/create-project" as const}
                   >
                     {"Get started for free"}
                   </Button>

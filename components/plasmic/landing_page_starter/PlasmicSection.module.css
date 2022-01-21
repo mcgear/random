@@ -15,10 +15,10 @@
     padding-right: 20px;
   }
 }
-.root__background_dark {
+.rootbackground_dark {
   background: #1c1c1e;
 }
-.root__background_gray {
+.rootbackground_gray {
   background: #f2f2f7;
 }
 .freeBox {
@@ -34,6 +34,6 @@
   min-width: 0;
   padding: 8px;
 }
-.freeBox__size_fullContentWidth {
+.freeBoxsize_fullContentWidth {
   max-width: none;
 }

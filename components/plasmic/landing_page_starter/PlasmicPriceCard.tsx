@@ -108,17 +108,13 @@ function PlasmicPriceCard__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       className={classNames(projectcss.all, projectcss.root_reset, sty.root, {
-        [sty.root__borders_flatLeft]: hasVariant(
-          variants,
-          "borders",
-          "flatLeft"
-        ),
-        [sty.root__borders_flatRight]: hasVariant(
+        [sty.rootborders_flatLeft]: hasVariant(variants, "borders", "flatLeft"),
+        [sty.rootborders_flatRight]: hasVariant(
           variants,
           "borders",
           "flatRight"
         ),
-        [sty.root__primary]: hasVariant(variants, "primary", "primary")
+        [sty.rootprimary]: hasVariant(variants, "primary", "primary")
       })}
     >
       <p.Stack

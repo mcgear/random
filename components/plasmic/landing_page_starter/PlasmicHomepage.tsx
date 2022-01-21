@@ -214,7 +214,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           role={"img"}
                         />
                       }
-                      link={"/dashboard" as const}
+                      link={"/dashboard/create-project" as const}
                       showEndIcon={true}
                     >
                       <div
@@ -702,7 +702,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         role={"img"}
                       />
                     }
-                    link={"/dashboard" as const}
+                    link={"/dashboard/create-project" as const}
                     showEndIcon={true}
                   >
                     <div
@@ -1719,7 +1719,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     role={"img"}
                   />
                 }
-                link={"/dashboard" as const}
+                link={"/dashboard/create-project" as const}
                 showEndIcon={true}
               >
                 {"Start now"}

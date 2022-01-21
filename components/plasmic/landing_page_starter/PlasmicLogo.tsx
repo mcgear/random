@@ -88,7 +88,7 @@ function PlasmicLogo__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       className={classNames(projectcss.a, projectcss.root_reset, sty.root, {
-        [sty.root___50Opaque]: hasVariant(variants, "_50Opaque", "_50Opaque")
+        [sty.root_50Opaque]: hasVariant(variants, "_50Opaque", "_50Opaque")
       })}
       component={Link}
       href={"/" as const}
@@ -99,7 +99,7 @@ function PlasmicLogo__RenderFunc(props: {
         data-plasmic-override={overrides.img}
         alt={""}
         className={classNames(sty.img, {
-          [sty.img___50Opaque]: hasVariant(variants, "_50Opaque", "_50Opaque")
+          [sty.img_50Opaque]: hasVariant(variants, "_50Opaque", "_50Opaque")
         })}
         displayHeight={
           hasVariant(globalVariants, "screen", "mobileOnly")

@@ -98,17 +98,17 @@ function PlasmicListItem__RenderFunc(props: {
       data-plasmic-for-node={forNode}
       hasGap={true}
       className={classNames(projectcss.all, projectcss.root_reset, sty.root, {
-        [sty.root__bottomBorder_dark]: hasVariant(
+        [sty.rootbottomBorder_dark]: hasVariant(
           variants,
           "bottomBorder",
           "dark"
         ),
-        [sty.root__bottomBorder_light]: hasVariant(
+        [sty.rootbottomBorder_light]: hasVariant(
           variants,
           "bottomBorder",
           "light"
         ),
-        [sty.root__leftCheck]: hasVariant(variants, "leftCheck", "leftCheck")
+        [sty.rootleftCheck]: hasVariant(variants, "leftCheck", "leftCheck")
       })}
     >
       {p.renderPlasmicSlot({

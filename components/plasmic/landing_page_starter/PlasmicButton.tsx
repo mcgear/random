@@ -162,39 +162,39 @@ function PlasmicButton__RenderFunc(props: {
         projectcss.root_reset,
         sty.root,
         {
-          [sty.root__bgDifference]: hasVariant(
+          [sty.rootbgDifference]: hasVariant(
             variants,
             "bgDifference",
             "bgDifference"
           ),
-          [sty.root__color_blue]: hasVariant(variants, "color", "blue"),
-          [sty.root__color_darkGray]: hasVariant(variants, "color", "darkGray"),
-          [sty.root__color_green]: hasVariant(variants, "color", "green"),
-          [sty.root__color_indigo]: hasVariant(variants, "color", "indigo"),
-          [sty.root__color_navLink]: hasVariant(variants, "color", "navLink"),
-          [sty.root__color_red]: hasVariant(variants, "color", "red"),
-          [sty.root__color_white]: hasVariant(variants, "color", "white"),
-          [sty.root__extraSmallShadow]: hasVariant(
+          [sty.rootcolor_blue]: hasVariant(variants, "color", "blue"),
+          [sty.rootcolor_darkGray]: hasVariant(variants, "color", "darkGray"),
+          [sty.rootcolor_green]: hasVariant(variants, "color", "green"),
+          [sty.rootcolor_indigo]: hasVariant(variants, "color", "indigo"),
+          [sty.rootcolor_navLink]: hasVariant(variants, "color", "navLink"),
+          [sty.rootcolor_red]: hasVariant(variants, "color", "red"),
+          [sty.rootcolor_white]: hasVariant(variants, "color", "white"),
+          [sty.rootextraSmallShadow]: hasVariant(
             variants,
             "extraSmallShadow",
             "extraSmallShadow"
           ),
-          [sty.root__flat]: hasVariant(variants, "flat", "flat"),
-          [sty.root__iconOnly]: hasVariant(variants, "iconOnly", "iconOnly"),
-          [sty.root__isDisabled]: hasVariant(
+          [sty.rootflat]: hasVariant(variants, "flat", "flat"),
+          [sty.rooticonOnly]: hasVariant(variants, "iconOnly", "iconOnly"),
+          [sty.rootisDisabled]: hasVariant(
             variants,
             "isDisabled",
             "isDisabled"
           ),
-          [sty.root__large]: hasVariant(variants, "large", "large"),
-          [sty.root__outline]: hasVariant(variants, "outline", "outline"),
-          [sty.root__round]: hasVariant(variants, "round", "round"),
-          [sty.root__showEndIcon]: hasVariant(
+          [sty.rootlarge]: hasVariant(variants, "large", "large"),
+          [sty.rootoutline]: hasVariant(variants, "outline", "outline"),
+          [sty.rootround]: hasVariant(variants, "round", "round"),
+          [sty.rootshowEndIcon]: hasVariant(
             variants,
             "showEndIcon",
             "showEndIcon"
           ),
-          [sty.root__showStartIcon]: hasVariant(
+          [sty.rootshowStartIcon]: hasVariant(
             variants,
             "showStartIcon",
             "showStartIcon"
@@ -219,65 +219,65 @@ function PlasmicButton__RenderFunc(props: {
 
             value: args.startIcon,
             className: classNames(sty.slotTargetStartIcon, {
-              [sty.slotTargetStartIcon__color_blue]: hasVariant(
+              [sty.slotTargetStartIconcolor_blue]: hasVariant(
                 variants,
                 "color",
                 "blue"
               ),
-              [sty.slotTargetStartIcon__color_darkGray]: hasVariant(
+              [sty.slotTargetStartIconcolor_darkGray]: hasVariant(
                 variants,
                 "color",
                 "darkGray"
               ),
-              [sty.slotTargetStartIcon__color_green]: hasVariant(
+              [sty.slotTargetStartIconcolor_green]: hasVariant(
                 variants,
                 "color",
                 "green"
               ),
-              [sty.slotTargetStartIcon__color_indigo]: hasVariant(
+              [sty.slotTargetStartIconcolor_indigo]: hasVariant(
                 variants,
                 "color",
                 "indigo"
               ),
-              [sty.slotTargetStartIcon__color_link]: hasVariant(
+              [sty.slotTargetStartIconcolor_link]: hasVariant(
                 variants,
                 "color",
                 "link"
               ),
-              [sty.slotTargetStartIcon__color_navLink]: hasVariant(
+              [sty.slotTargetStartIconcolor_navLink]: hasVariant(
                 variants,
                 "color",
                 "navLink"
               ),
-              [sty.slotTargetStartIcon__color_red]: hasVariant(
+              [sty.slotTargetStartIconcolor_red]: hasVariant(
                 variants,
                 "color",
                 "red"
               ),
-              [sty.slotTargetStartIcon__color_white]: hasVariant(
+              [sty.slotTargetStartIconcolor_white]: hasVariant(
                 variants,
                 "color",
                 "white"
               ),
-              [sty.slotTargetStartIcon__iconOnly]: hasVariant(
+              [sty.slotTargetStartIconiconOnly]: hasVariant(
                 variants,
                 "iconOnly",
                 "iconOnly"
               ),
-              [sty.slotTargetStartIcon__isDisabled]: hasVariant(
+              [sty.slotTargetStartIconisDisabled]: hasVariant(
                 variants,
                 "isDisabled",
                 "isDisabled"
               ),
-              [sty.slotTargetStartIcon__showEndIcon_color_green]:
+              [sty.slotTargetStartIconshowEndIcon_color_green]:
                 hasVariant(variants, "showEndIcon", "showEndIcon") &&
                 hasVariant(variants, "color", "green"),
-              [sty.slotTargetStartIcon__showStartIcon]: hasVariant(
+              [sty.slotTargetStartIconshowStartIcon]: hasVariant(
                 variants,
                 "showStartIcon",
                 "showStartIcon"
               ),
-              [sty.slotTargetStartIcon__showStartIcon_showEndIcon_color_green]:
+              [sty.slotTargetStartIconshowStartIcon_showEndIcon_color_green]:
                 hasVariant(variants, "showStartIcon", "showStartIcon") &&
                 hasVariant(variants, "showEndIcon", "showEndIcon") &&
                 hasVariant(variants, "color", "green")
@@ -289,72 +289,72 @@ function PlasmicButton__RenderFunc(props: {
             defaultContents: "Label",
             value: args.children,
             className: classNames(sty.slotTargetChildren, {
-              [sty.slotTargetChildren__bgDifference]: hasVariant(
+              [sty.slotTargetChildrenbgDifference]: hasVariant(
                 variants,
                 "bgDifference",
                 "bgDifference"
               ),
-              [sty.slotTargetChildren__color_blue]: hasVariant(
+              [sty.slotTargetChildrencolor_blue]: hasVariant(
                 variants,
                 "color",
                 "blue"
               ),
-              [sty.slotTargetChildren__color_darkGray]: hasVariant(
+              [sty.slotTargetChildrencolor_darkGray]: hasVariant(
                 variants,
                 "color",
                 "darkGray"
               ),
-              [sty.slotTargetChildren__color_green]: hasVariant(
+              [sty.slotTargetChildrencolor_green]: hasVariant(
                 variants,
                 "color",
                 "green"
               ),
-              [sty.slotTargetChildren__color_indigo]: hasVariant(
+              [sty.slotTargetChildrencolor_indigo]: hasVariant(
                 variants,
                 "color",
                 "indigo"
               ),
-              [sty.slotTargetChildren__color_link]: hasVariant(
+              [sty.slotTargetChildrencolor_link]: hasVariant(
                 variants,
                 "color",
                 "link"
               ),
-              [sty.slotTargetChildren__color_navLink]: hasVariant(
+              [sty.slotTargetChildrencolor_navLink]: hasVariant(
                 variants,
                 "color",
                 "navLink"
               ),
-              [sty.slotTargetChildren__color_red]: hasVariant(
+              [sty.slotTargetChildrencolor_red]: hasVariant(
                 variants,
                 "color",
                 "red"
               ),
-              [sty.slotTargetChildren__color_white]: hasVariant(
+              [sty.slotTargetChildrencolor_white]: hasVariant(
                 variants,
                 "color",
                 "white"
               ),
-              [sty.slotTargetChildren__iconOnly]: hasVariant(
+              [sty.slotTargetChildreniconOnly]: hasVariant(
                 variants,
                 "iconOnly",
                 "iconOnly"
               ),
-              [sty.slotTargetChildren__isDisabled]: hasVariant(
+              [sty.slotTargetChildrenisDisabled]: hasVariant(
                 variants,
                 "isDisabled",
                 "isDisabled"
               ),
-              [sty.slotTargetChildren__large]: hasVariant(
+              [sty.slotTargetChildrenlarge]: hasVariant(
                 variants,
                 "large",
                 "large"
               ),
-              [sty.slotTargetChildren__showEndIcon]: hasVariant(
+              [sty.slotTargetChildrenshowEndIcon]: hasVariant(
                 variants,
                 "showEndIcon",
                 "showEndIcon"
               ),
-              [sty.slotTargetChildren__showStartIcon]: hasVariant(
+              [sty.slotTargetChildrenshowStartIcon]: hasVariant(
                 variants,
                 "showStartIcon",
                 "showStartIcon"
@@ -381,62 +381,62 @@ function PlasmicButton__RenderFunc(props: {
 
             value: args.endIcon,
             className: classNames(sty.slotTargetEndIcon, {
-              [sty.slotTargetEndIcon__color_blue]: hasVariant(
+              [sty.slotTargetEndIconcolor_blue]: hasVariant(
                 variants,
                 "color",
                 "blue"
               ),
-              [sty.slotTargetEndIcon__color_darkGray]: hasVariant(
+              [sty.slotTargetEndIconcolor_darkGray]: hasVariant(
                 variants,
                 "color",
                 "darkGray"
               ),
-              [sty.slotTargetEndIcon__color_green]: hasVariant(
+              [sty.slotTargetEndIconcolor_green]: hasVariant(
                 variants,
                 "color",
                 "green"
               ),
-              [sty.slotTargetEndIcon__color_indigo]: hasVariant(
+              [sty.slotTargetEndIconcolor_indigo]: hasVariant(
                 variants,
                 "color",
                 "indigo"
               ),
-              [sty.slotTargetEndIcon__color_link]: hasVariant(
+              [sty.slotTargetEndIconcolor_link]: hasVariant(
                 variants,
                 "color",
                 "link"
               ),
-              [sty.slotTargetEndIcon__color_navLink]: hasVariant(
+              [sty.slotTargetEndIconcolor_navLink]: hasVariant(
                 variants,
                 "color",
                 "navLink"
               ),
-              [sty.slotTargetEndIcon__color_red]: hasVariant(
+              [sty.slotTargetEndIconcolor_red]: hasVariant(
                 variants,
                 "color",
                 "red"
               ),
-              [sty.slotTargetEndIcon__color_white]: hasVariant(
+              [sty.slotTargetEndIconcolor_white]: hasVariant(
                 variants,
                 "color",
                 "white"
               ),
-              [sty.slotTargetEndIcon__iconOnly]: hasVariant(
+              [sty.slotTargetEndIconiconOnly]: hasVariant(
                 variants,
                 "iconOnly",
                 "iconOnly"
               ),
-              [sty.slotTargetEndIcon__isDisabled]: hasVariant(
+              [sty.slotTargetEndIconisDisabled]: hasVariant(
                 variants,
                 "isDisabled",
                 "isDisabled"
               ),
-              [sty.slotTargetEndIcon__showEndIcon]: hasVariant(
+              [sty.slotTargetEndIconshowEndIcon]: hasVariant(
                 variants,
                 "showEndIcon",
                 "showEndIcon"
               ),
-              [sty.slotTargetEndIcon__showStartIcon]: hasVariant(
+              [sty.slotTargetEndIconshowStartIcon]: hasVariant(
                 variants,
                 "showStartIcon",
                 "showStartIcon"

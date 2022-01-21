@@ -90,9 +90,9 @@ function PlasmicSection__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       className={classNames(projectcss.all, projectcss.root_reset, sty.root, {
-        [sty.root__background_dark]: hasVariant(variants, "background", "dark"),
-        [sty.root__background_gray]: hasVariant(variants, "background", "gray"),
-        [sty.root__size_fullContentWidth]: hasVariant(
+        [sty.rootbackground_dark]: hasVariant(variants, "background", "dark"),
+        [sty.rootbackground_gray]: hasVariant(variants, "background", "gray"),
+        [sty.rootsize_fullContentWidth]: hasVariant(
           variants,
           "size",
           "fullContentWidth"
@@ -103,7 +103,7 @@ function PlasmicSection__RenderFunc(props: {
         data-plasmic-name={"freeBox"}
         data-plasmic-override={overrides.freeBox}
         className={classNames(projectcss.all, sty.freeBox, {
-          [sty.freeBox__size_fullContentWidth]: hasVariant(
+          [sty.freeBoxsize_fullContentWidth]: hasVariant(
             variants,
             "size",
             "fullContentWidth"

@@ -195,7 +195,7 @@ function PlasmicLandingPagesVue__RenderFunc(props: {
                   <Button
                     className={classNames("__wab_instance", sty.button__m1Erw)}
                     color={"darkGray" as const}
-                    link={"/dashboard" as const}
+                    link={"/dashboard/create-project" as const}
                   >
                     {"Get started for free"}
                   </Button>
@@ -469,7 +469,7 @@ function PlasmicLandingPagesVue__RenderFunc(props: {
                   <Button
                     className={classNames("__wab_instance", sty.button___2T7Hl)}
                     color={"darkGray" as const}
-                    link={"/dashboard" as const}
+                    link={"/dashboard/create-project" as const}
                   >
                     {"Get started for free"}
                   </Button>

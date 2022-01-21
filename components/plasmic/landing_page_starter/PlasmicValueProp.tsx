@@ -113,29 +113,29 @@ function PlasmicValueProp__RenderFunc(props: {
       data-plasmic-for-node={forNode}
       hasGap={true}
       className={classNames(projectcss.all, projectcss.root_reset, sty.root, {
-        [sty.root__card]: hasVariant(variants, "card", "card"),
-        [sty.root__card_vertical]:
+        [sty.rootcard]: hasVariant(variants, "card", "card"),
+        [sty.rootcard_vertical]:
           hasVariant(variants, "card", "card") &&
           hasVariant(variants, "vertical", "vertical"),
-        [sty.root__flatIcon]: hasVariant(variants, "flatIcon", "flatIcon"),
-        [sty.root__noTitle]: hasVariant(variants, "noTitle", "noTitle"),
-        [sty.root__vertical]: hasVariant(variants, "vertical", "vertical")
+        [sty.rootflatIcon]: hasVariant(variants, "flatIcon", "flatIcon"),
+        [sty.rootnoTitle]: hasVariant(variants, "noTitle", "noTitle"),
+        [sty.rootvertical]: hasVariant(variants, "vertical", "vertical")
       })}
     >
       <div
         data-plasmic-name={"iconContainer"}
         data-plasmic-override={overrides.iconContainer}
         className={classNames(projectcss.all, sty.iconContainer, {
-          [sty.iconContainer__card]: hasVariant(variants, "card", "card"),
-          [sty.iconContainer__card_vertical]:
+          [sty.iconContainercard]: hasVariant(variants, "card", "card"),
+          [sty.iconContainercard_vertical]:
             hasVariant(variants, "card", "card") &&
             hasVariant(variants, "vertical", "vertical"),
-          [sty.iconContainer__flatIcon]: hasVariant(
+          [sty.iconContainerflatIcon]: hasVariant(
             variants,
             "flatIcon",
             "flatIcon"
           ),
-          [sty.iconContainer__vertical]: hasVariant(
+          [sty.iconContainervertical]: hasVariant(
             variants,
             "vertical",
             "vertical"
@@ -169,12 +169,12 @@ function PlasmicValueProp__RenderFunc(props: {
         data-plasmic-override={overrides.contentContainer}
         hasGap={true}
         className={classNames(projectcss.all, sty.contentContainer, {
-          [sty.contentContainer__flatIcon]: hasVariant(
+          [sty.contentContainerflatIcon]: hasVariant(
             variants,
             "flatIcon",
             "flatIcon"
           ),
-          [sty.contentContainer__noTitle]: hasVariant(
+          [sty.contentContainernoTitle]: hasVariant(
             variants,
             "noTitle",
             "noTitle"
@@ -186,12 +186,12 @@ function PlasmicValueProp__RenderFunc(props: {
               defaultContents: "Label",
               value: args.title,
               className: classNames(sty.slotTargetTitle, {
-                [sty.slotTargetTitle__darkBackground]: hasVariant(
+                [sty.slotTargetTitledarkBackground]: hasVariant(
                   variants,
                   "darkBackground",
                   "darkBackground"
                 ),
-                [sty.slotTargetTitle__noTitle]: hasVariant(
+                [sty.slotTargetTitlenoTitle]: hasVariant(
                   variants,
                   "noTitle",
                   "noTitle"
@@ -204,17 +204,17 @@ function PlasmicValueProp__RenderFunc(props: {
             "Porttitor feugiat a scelerisque nullam parturient vestibulum tempor a litora suscipit arcu potenti varius venenatis venenatis dapibus fames adipiscing in in taciti.",
           value: args.description,
           className: classNames(sty.slotTargetDescription, {
-            [sty.slotTargetDescription__card]: hasVariant(
+            [sty.slotTargetDescriptioncard]: hasVariant(
               variants,
               "card",
               "card"
             ),
-            [sty.slotTargetDescription__darkBackground]: hasVariant(
+            [sty.slotTargetDescriptiondarkBackground]: hasVariant(
               variants,
               "darkBackground",
               "darkBackground"
             ),
-            [sty.slotTargetDescription__noTitle]: hasVariant(
+            [sty.slotTargetDescriptionnoTitle]: hasVariant(
               variants,
               "noTitle",
               "noTitle"
