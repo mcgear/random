@@ -580,6 +580,9 @@
   position: relative;
   object-fit: cover;
 }
+.text__dfGet {
+  height: auto;
+}
 .svg__unGrm {
   width: 24px;
   height: 24px;

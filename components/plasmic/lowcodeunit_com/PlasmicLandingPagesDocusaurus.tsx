@@ -198,12 +198,12 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                 <div className={classNames(projectcss.all, sty.column___9UWHb)}>
                   <Button
                     className={classNames("__wab_instance", sty.button__zbs8)}
-                    color={"darkGray" as const}
+                    color={"blue" as const}
                     link={
                       "/dashboard/create-project?recipeId=00000000-0000-0000-0000-000000000005" as const
                     }
                   >
-                    {"Get started for free"}
+                    {"Get Started for Free"}
                   </Button>
                 </div>
 
@@ -480,12 +480,12 @@ function PlasmicLandingPagesDocusaurus__RenderFunc(props: {
                 <div className={classNames(projectcss.all, sty.column__okFjr)}>
                   <Button
                     className={classNames("__wab_instance", sty.button__uZZas)}
-                    color={"darkGray" as const}
+                    color={"blue" as const}
                     link={
                       "/dashboard/create-project?recipeId=00000000-0000-0000-0000-000000000005" as const
                     }
                   >
-                    {"Get started for free"}
+                    {"Get Started for Free"}
                   </Button>
                 </div>
 

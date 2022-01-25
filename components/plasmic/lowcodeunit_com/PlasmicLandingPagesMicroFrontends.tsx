@@ -200,10 +200,10 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                 <div className={classNames(projectcss.all, sty.column___9El1)}>
                   <Button
                     className={classNames("__wab_instance", sty.button___8DaKt)}
-                    color={"darkGray" as const}
+                    color={"blue" as const}
                     link={"/dashboard/create-project" as const}
                   >
-                    {"Get started for free"}
+                    {"Get Started for Free"}
                   </Button>
                 </div>
 
@@ -431,10 +431,10 @@ function PlasmicLandingPagesMicroFrontends__RenderFunc(props: {
                 <div className={classNames(projectcss.all, sty.column__smblr)}>
                   <Button
                     className={classNames("__wab_instance", sty.button__dshaq)}
-                    color={"darkGray" as const}
+                    color={"blue" as const}
                     link={"/dashboard/create-project" as const}
                   >
-                    {"Get started for free"}
+                    {"Get Started for Free"}
                   </Button>
                 </div>
 

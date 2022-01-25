@@ -197,10 +197,10 @@ function PlasmicLandingPagesSvelte__RenderFunc(props: {
                 <div className={classNames(projectcss.all, sty.column___2Tx0F)}>
                   <Button
                     className={classNames("__wab_instance", sty.button__fSbr4)}
-                    color={"darkGray" as const}
+                    color={"blue" as const}
                     link={"/dashboard/create-project" as const}
                   >
-                    {"Get started for free"}
+                    {"Get Started for Free"}
                   </Button>
                 </div>
 
@@ -428,10 +428,10 @@ function PlasmicLandingPagesSvelte__RenderFunc(props: {
                 <div className={classNames(projectcss.all, sty.column___5QkD2)}>
                   <Button
                     className={classNames("__wab_instance", sty.button___3T1Or)}
-                    color={"darkGray" as const}
+                    color={"blue" as const}
                     link={"/dashboard/create-project" as const}
                   >
-                    {"Get started for free"}
+                    {"Get Started for Free"}
                   </Button>
                 </div>
 

@@ -198,10 +198,10 @@ function PlasmicLandingPagesAngular__RenderFunc(props: {
                 <div className={classNames(projectcss.all, sty.column__yFnZ8)}>
                   <Button
                     className={classNames("__wab_instance", sty.button___1YUvP)}
-                    color={"darkGray" as const}
+                    color={"blue" as const}
                     link={"/dashboard/create-project" as const}
                   >
-                    {"Get started for free"}
+                    {"Get Started for Free"}
                   </Button>
                 </div>
 
@@ -474,10 +474,10 @@ function PlasmicLandingPagesAngular__RenderFunc(props: {
                 <div className={classNames(projectcss.all, sty.column___9CkNu)}>
                   <Button
                     className={classNames("__wab_instance", sty.button__jHin4)}
-                    color={"darkGray" as const}
+                    color={"blue" as const}
                     link={"/dashboard/create-project" as const}
                   >
-                    {"Get started for free"}
+                    {"Get Started for Free"}
                   </Button>
                 </div>
 

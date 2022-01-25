@@ -207,7 +207,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         "__wab_instance",
                         sty.button__cUzrP
                       )}
-                      color={"darkGray" as const}
+                      color={"blue" as const}
                       endIcon={
                         <ChevronRightIcon
                           className={classNames(projectcss.all, sty.svg__wuT7)}
@@ -224,7 +224,7 @@ function PlasmicHomepage__RenderFunc(props: {
                           sty.text__boBwT
                         )}
                       >
-                        {"Start now"}
+                        {"Get Started for Free"}
                       </div>
                     </Button>
 
@@ -712,7 +712,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         sty.text__iTbBp
                       )}
                     >
-                      {"Start now"}
+                      {"Get Started for Free"}
                     </div>
                   </Button>
                 </p.Stack>
@@ -1722,7 +1722,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 link={"/dashboard/create-project" as const}
                 showEndIcon={true}
               >
-                {"Start now"}
+                {"Get Started for Free"}
               </Button>
 
               <Button

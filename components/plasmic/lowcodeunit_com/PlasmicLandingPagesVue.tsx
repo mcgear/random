@@ -194,10 +194,10 @@ function PlasmicLandingPagesVue__RenderFunc(props: {
                 <div className={classNames(projectcss.all, sty.column__j9YnE)}>
                   <Button
                     className={classNames("__wab_instance", sty.button__m1Erw)}
-                    color={"darkGray" as const}
+                    color={"blue" as const}
                     link={"/dashboard/create-project" as const}
                   >
-                    {"Get started for free"}
+                    {"Get Started for Free"}
                   </Button>
                 </div>
 
@@ -468,10 +468,18 @@ function PlasmicLandingPagesVue__RenderFunc(props: {
                 <div className={classNames(projectcss.all, sty.column__scqfY)}>
                   <Button
                     className={classNames("__wab_instance", sty.button___2T7Hl)}
-                    color={"darkGray" as const}
+                    color={"blue" as const}
                     link={"/dashboard/create-project" as const}
                   >
-                    {"Get started for free"}
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__dfGet
+                      )}
+                    >
+                      {"Get Started for Free"}
+                    </div>
                   </Button>
                 </div>
 
