@@ -181,7 +181,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         sty.text__bAdTn
                       )}
                     >
-                      {"Accelerated Engagement"}
+                      {"Build, deploy, & scale modern web projects "}
                     </div>
 
                     <div
@@ -191,9 +191,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         sty.text__zKop
                       )}
                     >
-                      {
-                        "Accelerate software delivery by keeping dirty code out of your main branch"
-                      }
+                      {"First class support for every popular  framework"}
                     </div>
                   </p.Stack>
 
@@ -291,7 +289,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.h2__uhf72
                   )}
                 >
-                  {"Built for Open Source"}
+                  {"Built for Developer Scale"}
                 </h2>
               </div>
 
@@ -303,7 +301,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 )}
               >
                 {
-                  "Accelerate adoption, grow your community, monetize services and hosting.  Fathym's LowCodeUnit allows you to focus on delivering quality open-source solutions to your community, with a virtual development team to help you manage your cloud, devops, and monetization. "
+                  "Frontend development is not meant to be a solo activity.  Seamlessly integrating with GitHub, the LowCodeUnit platform makes it a collaborative experience with deploy previews for every code change."
                 }
               </div>
             </p.Stack>
