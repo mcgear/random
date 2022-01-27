@@ -107,9 +107,9 @@ function PlasmicBanner__RenderFunc(props: {
             args.image !== undefined
               ? args.image
               : {
-                  src: "/plasmic/landing_page_starter/images/sunglassesMale.jpeg",
-                  fullWidth: 2851,
-                  fullHeight: 1900,
+                  src: "/plasmic/lowcodeunit_com/images/image15.png",
+                  fullWidth: 1384,
+                  fullHeight: 1023,
                   aspectRatio: undefined
                 }
           }

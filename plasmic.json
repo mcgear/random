@@ -574,6 +574,11 @@
           "id": "Sj8KVQwPw",
           "name": "image 14",
           "filePath": "../public/plasmic/lowcodeunit_com/images/image14.png"
+        },
+        {
+          "id": "P_Hf3teVc",
+          "name": "image 15",
+          "filePath": "../public/plasmic/lowcodeunit_com/images/image15.png"
         }
       ],
       "indirect": false,
