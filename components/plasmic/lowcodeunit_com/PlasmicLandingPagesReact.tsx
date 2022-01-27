@@ -439,10 +439,10 @@ function PlasmicLandingPagesReact__RenderFunc(props: {
                   </div>
 
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__kIuUa)}
+                    className={classNames(projectcss.all, sty.columns__jGQr)}
                   >
-                    <Button
-                      link={"/docs/guides/deploying/frameworks/react" as const}
+                    <div
+                      className={classNames(projectcss.all, sty.column__fEaxU)}
                     >
                       <Button
                         className={classNames(
@@ -456,17 +456,27 @@ function PlasmicLandingPagesReact__RenderFunc(props: {
                       >
                         {"Get Started for Free"}
                       </Button>
+                    </div>
 
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__uHUsG
-                        )}
+                    <div
+                      className={classNames(projectcss.all, sty.column__zypuv)}
+                    >
+                      <Button
+                        link={
+                          "/docs/guides/deploying/frameworks/react" as const
+                        }
                       >
-                        {"Read Documentation >"}
-                      </div>
-                    </Button>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__uHUsG
+                          )}
+                        >
+                          {"Read Documentation >"}
+                        </div>
+                      </Button>
+                    </div>
                   </div>
                 </React.Fragment>
               }

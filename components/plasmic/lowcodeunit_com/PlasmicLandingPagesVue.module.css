@@ -476,15 +476,47 @@
   padding-top: 0px;
   min-width: 0;
 }
-.freeBox___7Lx8J {
+.columns___7M9On {
   display: flex;
   position: relative;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: space-between;
   width: auto;
   height: auto;
+  align-items: stretch;
+  flex-shrink: 1;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 8px;
+}
+.columns___7M9On > :nth-child(2n + 1) {
+  width: calc((100% - 2 * 0px) * 6 / 12);
+}
+.columns___7M9On > :nth-child(2n + 2) {
+  width: calc((100% - 2 * 0px) * 6 / 12);
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .columns___7M9On {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .columns___7M9On > :nth-child(1n + 1) {
+    width: calc((100% - 1 * 0px) * 12 / 12);
+  }
+}
+.column__h1Bni {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
   max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
   padding: 8px;
 }
 .button__efjs7:global(.__wab_instance) {
@@ -504,6 +536,18 @@
   height: 24px;
   position: relative;
   object-fit: cover;
+}
+.column__a20Vb {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  padding: 8px;
 }
 .svg___3VRyh {
   width: 24px;

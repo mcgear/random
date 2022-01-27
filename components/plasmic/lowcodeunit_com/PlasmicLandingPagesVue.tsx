@@ -435,42 +435,50 @@ function PlasmicLandingPagesVue__RenderFunc(props: {
                   </div>
 
                   <div
-                    className={classNames(projectcss.all, sty.freeBox___7Lx8J)}
+                    className={classNames(projectcss.all, sty.columns___7M9On)}
                   >
-                    <Button
-                      className={classNames(
-                        "__wab_instance",
-                        sty.button__efjs7
-                      )}
-                      color={"blue" as const}
-                      link={
-                        "/dashboard/create-project?recipeId=00000000-0000-0000-0000-000000000003" as const
-                      }
+                    <div
+                      className={classNames(projectcss.all, sty.column__h1Bni)}
                     >
-                      <div
+                      <Button
                         className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__nyLd1
+                          "__wab_instance",
+                          sty.button__efjs7
                         )}
+                        color={"blue" as const}
+                        link={
+                          "/dashboard/create-project?recipeId=00000000-0000-0000-0000-000000000003" as const
+                        }
                       >
-                        {"Get Started for Free"}
-                      </div>
-                    </Button>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__nyLd1
+                          )}
+                        >
+                          {"Get Started for Free"}
+                        </div>
+                      </Button>
+                    </div>
 
-                    <Button
-                      link={"/docs/guides/deploying/frameworks/vue" as const}
+                    <div
+                      className={classNames(projectcss.all, sty.column__a20Vb)}
                     >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__q60Dm
-                        )}
+                      <Button
+                        link={"/docs/guides/deploying/frameworks/vue" as const}
                       >
-                        {"Read Documentation >"}
-                      </div>
-                    </Button>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__q60Dm
+                          )}
+                        >
+                          {"Read Documentation >"}
+                        </div>
+                      </Button>
+                    </div>
                   </div>
                 </React.Fragment>
               }
