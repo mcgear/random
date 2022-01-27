@@ -226,6 +226,11 @@
   color: #000000d9 /* plasmic-token: vOPQIfd2vRc9 */;
   line-height: 1;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .h2__bz367 {
+    text-align: center;
+  }
+}
 .text__xpHoL {
   font-size: 20px;
   color: #05050599 /* plasmic-token: ElTzqu9JEMiu */;
@@ -349,6 +354,13 @@
 .text__evYmM {
   height: auto;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__evYmM {
+    max-width: 249px;
+    width: 100%;
+    min-width: 0;
+  }
+}
 .svg__tgGrW {
   width: 24px;
   height: 24px;
@@ -376,6 +388,13 @@
 .valueProp__lXlEw:global(.__wab_instance) {
   width: 100%;
   min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__hTcmb {
+    max-width: 241px;
+    width: 100%;
+    min-width: 0;
+  }
 }
 .svg___1LA6 {
   width: 24px;
@@ -406,6 +425,13 @@
 }
 .text__lRmnk {
   padding-bottom: 0px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__lRmnk {
+    max-width: 247px;
+    width: 100%;
+    min-width: 0;
+  }
 }
 .svg__kWOzq {
   width: 24px;
@@ -458,6 +484,11 @@
   margin-right: 0px;
   font-size: 24px;
   min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__ciVwm {
+    font-size: 18px;
+  }
 }
 .freeBox__rOmbs {
   display: flex;

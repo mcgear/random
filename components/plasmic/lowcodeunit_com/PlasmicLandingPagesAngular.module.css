@@ -227,6 +227,7 @@
   font-weight: 800;
   color: #000000d9 /* plasmic-token: vOPQIfd2vRc9 */;
   line-height: 1;
+  text-align: center;
 }
 .text__qc75X {
   font-size: 20px;
@@ -350,6 +351,9 @@
 }
 .text__eg1T {
   height: auto;
+  max-width: 240px;
+  width: 100%;
+  min-width: 0;
 }
 .svg___6WxN {
   width: 24px;
@@ -376,6 +380,11 @@
   color: #34c759;
 }
 .valueProp__djhvr:global(.__wab_instance) {
+  width: 100%;
+  min-width: 0;
+}
+.text__ujrde {
+  max-width: 242px;
   width: 100%;
   min-width: 0;
 }
@@ -408,6 +417,9 @@
 }
 .text__eAwyV {
   padding-bottom: 0px;
+  max-width: 242px;
+  width: 100%;
+  min-width: 0;
 }
 .svg___2XirK {
   width: 24px;
@@ -462,16 +474,47 @@
   font-size: 24px;
   min-width: 0;
 }
-.freeBox__bmYQw {
+.columns__eNf1S {
   display: flex;
   position: relative;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: space-between;
   width: auto;
   height: auto;
+  align-items: stretch;
+  flex-shrink: 1;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 8px;
+}
+.columns__eNf1S > :nth-child(2n + 1) {
+  width: calc((100% - 2 * 0px) * 6 / 12);
+}
+.columns__eNf1S > :nth-child(2n + 2) {
+  width: calc((100% - 2 * 0px) * 6 / 12);
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .columns__eNf1S {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .columns__eNf1S > :nth-child(1n + 1) {
+    width: calc((100% - 1 * 0px) * 12 / 12);
+  }
+}
+.column___8URFu {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
   max-width: 100%;
-  margin-right: 0px;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
   padding: 8px;
 }
 .button__kuUpv:global(.__wab_instance) {
@@ -488,6 +531,18 @@
   height: 24px;
   position: relative;
   object-fit: cover;
+}
+.column__rdhWw {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  padding: 8px;
 }
 .svg___5K7Hb {
   width: 24px;

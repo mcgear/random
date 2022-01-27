@@ -413,7 +413,9 @@ function PlasmicLandingPagesSvelte__RenderFunc(props: {
                       sty.text__yimCs
                     )}
                   >
-                    {"React Example Tutorial"}
+                    {hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "Svelte Example Tutorial"
+                      : "React Example Tutorial"}
                   </div>
 
                   <div

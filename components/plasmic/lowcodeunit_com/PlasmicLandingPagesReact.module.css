@@ -226,6 +226,7 @@
   font-weight: 800;
   color: #000000d9 /* plasmic-token: vOPQIfd2vRc9 */;
   line-height: 1;
+  text-align: center;
 }
 .text__tg0A {
   font-size: 20px;
@@ -350,6 +351,10 @@
 .text__ldjty {
   height: auto;
   padding-bottom: 0px;
+  max-width: 255px;
+  width: 100%;
+  margin-right: 0px;
+  min-width: 0;
 }
 .svg___7MRjk {
   width: 24px;
@@ -376,6 +381,11 @@
   color: #34c759;
 }
 .valueProp__mOdcn:global(.__wab_instance) {
+  width: 100%;
+  min-width: 0;
+}
+.text___7EaB {
+  max-width: 242px;
   width: 100%;
   min-width: 0;
 }
@@ -408,6 +418,9 @@
 }
 .text__kUswU {
   padding-bottom: 0px;
+  max-width: 247px;
+  width: 100%;
+  min-width: 0;
 }
 .svg__cOkf6 {
   width: 24px;
@@ -455,10 +468,10 @@
   position: relative;
   width: 100%;
   height: auto;
-  max-width: 800px;
+  max-width: 306px;
   padding-right: 0px;
   margin-right: 0px;
-  font-size: 24px;
+  font-size: 18px;
   min-width: 0;
 }
 .freeBox__kIuUa {
@@ -581,6 +594,7 @@
   line-height: 28px;
   height: auto;
   padding-bottom: 0px;
+  padding-left: 0px;
 }
 .freeBox__i2Veo {
   display: flex;

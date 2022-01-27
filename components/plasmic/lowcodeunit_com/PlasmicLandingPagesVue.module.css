@@ -226,6 +226,7 @@
   font-weight: 800;
   color: #000000d9 /* plasmic-token: vOPQIfd2vRc9 */;
   line-height: 1;
+  text-align: center;
 }
 .text___6DhOz {
   font-size: 20px;
@@ -350,6 +351,9 @@
 .text__zmXw1 {
   height: auto;
   padding-bottom: 0px;
+  max-width: 245px;
+  width: 100%;
+  min-width: 0;
 }
 .svg__hG5A {
   width: 24px;
@@ -381,6 +385,9 @@
 }
 .text__zdirw {
   padding-bottom: 0px;
+  max-width: 245px;
+  width: 100%;
+  min-width: 0;
 }
 .svg__saFbg {
   width: 24px;
@@ -412,6 +419,9 @@
 }
 .text__mxhRi {
   padding-bottom: 0px;
+  max-width: 234px;
+  width: 100%;
+  min-width: 0;
 }
 .svg__z3H0V {
   width: 24px;
@@ -462,7 +472,7 @@
   max-width: 800px;
   padding-right: 0px;
   margin-right: 0px;
-  font-size: 24px;
+  font-size: 18px;
   padding-top: 0px;
   min-width: 0;
 }

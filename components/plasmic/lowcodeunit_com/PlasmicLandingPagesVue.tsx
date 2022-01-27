@@ -409,7 +409,7 @@ function PlasmicLandingPagesVue__RenderFunc(props: {
                       sty.text__wpvny
                     )}
                   >
-                    {"React Example Tutorial"}
+                    {"Vue Example Tutorial"}
                   </div>
 
                   <div

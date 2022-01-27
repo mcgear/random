@@ -415,7 +415,7 @@ function PlasmicLandingPagesAngular__RenderFunc(props: {
                       sty.text__ke9B
                     )}
                   >
-                    {"React Example Tutorial"}
+                    {"Angular Example Tutorial"}
                   </div>
 
                   <div
@@ -441,36 +441,44 @@ function PlasmicLandingPagesAngular__RenderFunc(props: {
                   </div>
 
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__bmYQw)}
+                    className={classNames(projectcss.all, sty.columns__eNf1S)}
                   >
-                    <Button
-                      className={classNames(
-                        "__wab_instance",
-                        sty.button__kuUpv
-                      )}
-                      color={"blue" as const}
-                      link={
-                        "/dashboard/create-project?recipeId=00000000-0000-0000-0000-000000000001" as const
-                      }
+                    <div
+                      className={classNames(projectcss.all, sty.column___8URFu)}
                     >
-                      {"Get Started for Free"}
-                    </Button>
-
-                    <Button
-                      link={
-                        "/docs/guides/deploying/frameworks/angular" as const
-                      }
-                    >
-                      <div
+                      <Button
                         className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__kiMi
+                          "__wab_instance",
+                          sty.button__kuUpv
                         )}
+                        color={"blue" as const}
+                        link={
+                          "/dashboard/create-project?recipeId=00000000-0000-0000-0000-000000000001" as const
+                        }
                       >
-                        {"Read Documentation >"}
-                      </div>
-                    </Button>
+                        {"Get Started for Free"}
+                      </Button>
+                    </div>
+
+                    <div
+                      className={classNames(projectcss.all, sty.column__rdhWw)}
+                    >
+                      <Button
+                        link={
+                          "/docs/guides/deploying/frameworks/angular" as const
+                        }
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__kiMi
+                          )}
+                        >
+                          {"Read Documentation >"}
+                        </div>
+                      </Button>
+                    </div>
                   </div>
                 </React.Fragment>
               }
