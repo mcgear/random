@@ -35,7 +35,9 @@ import {
 } from "@plasmicapp/react-web";
 import Navbar from "../../Navbar"; // plasmic-import: ThexOuedbks1/component
 import Button from "../../Button"; // plasmic-import: 9tG1OyZAVIis/component
+import Section from "../../Section"; // plasmic-import: lsmUdTd1Sc6_/component
 import ValueProp from "../../ValueProp"; // plasmic-import: 7Osq_1lpBJMp/component
+import Banner from "../../Banner"; // plasmic-import: vcZIwAsP-PHX/component
 import PriceCard from "../../PriceCard"; // plasmic-import: 7SzxSSEbWsst/component
 import FooterSection from "../../FooterSection"; // plasmic-import: iXxSJX956e4d/component
 
@@ -47,11 +49,11 @@ import projectcss from "../landing_page_starter/plasmic_landing_page_starter.mod
 import sty from "./PlasmicLandingPagesSvelte.module.css"; // plasmic-import: UZaPkpLSomxt/css
 
 import AppleIcon from "../landing_page_starter/icons/PlasmicIcon__Apple"; // plasmic-import: MwxVTyBYf-O_/icon
+import CheckIcon from "../landing_page_starter/icons/PlasmicIcon__Check"; // plasmic-import: ilXNZMoWvbmT/icon
 import HammerIcon from "../landing_page_starter/icons/PlasmicIcon__Hammer"; // plasmic-import: ePabL_LXTnk1/icon
 import TargetIcon from "../landing_page_starter/icons/PlasmicIcon__Target"; // plasmic-import: EMtLeGl57bmd/icon
 import FastIcon from "../landing_page_starter/icons/PlasmicIcon__Fast"; // plasmic-import: WqD9rzKB0T2b/icon
 import StrongIcon from "../landing_page_starter/icons/PlasmicIcon__Strong"; // plasmic-import: FK_DHr1NmIMb/icon
-import CheckIcon from "../landing_page_starter/icons/PlasmicIcon__Check"; // plasmic-import: ilXNZMoWvbmT/icon
 
 export type PlasmicLandingPagesSvelte__VariantMembers = {};
 
@@ -70,9 +72,10 @@ export type PlasmicLandingPagesSvelte__OverridesType = {
   foreground?: p.Flex<"div">;
   img?: p.Flex<typeof p.PlasmicImg>;
   foreground2?: p.Flex<"div">;
+  valuePropsSection?: p.Flex<typeof Section>;
+  banner?: p.Flex<typeof Banner>;
   section?: p.Flex<"section">;
   foreground3?: p.Flex<"div">;
-  h2?: p.Flex<"h2">;
   footerSection?: p.Flex<typeof FooterSection>;
 };
 
@@ -222,6 +225,235 @@ function PlasmicLandingPagesSvelte__RenderFunc(props: {
                 </div>
               </div>
             </p.Stack>
+
+            <Section
+              data-plasmic-name={"valuePropsSection"}
+              data-plasmic-override={overrides.valuePropsSection}
+              className={classNames("__wab_instance", sty.valuePropsSection)}
+            >
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__sbxAu)}
+              >
+                <div className={classNames(projectcss.all, sty.freeBox__yEc3R)}>
+                  <h2
+                    className={classNames(
+                      projectcss.h2,
+                      projectcss.__wab_text,
+                      sty.h2__bz367
+                    )}
+                  >
+                    {"See how Svelte Compares"}
+                  </h2>
+                </div>
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__xpHoL
+                  )}
+                >
+                  {
+                    "Looking for the right framework for your next JAMStack example, tutorial or project?  Deploy Svelte alongside any number of additional frameworks, get a feel for the development experience, and see how they perform.  Deploy your Svelte app free with Fathym's LowCodeUnit micro frontend framework."
+                  }
+                </div>
+              </p.Stack>
+
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__kO3Mc)}
+              >
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__nuOoY)}
+                >
+                  <ValueProp
+                    className={classNames(
+                      "__wab_instance",
+                      sty.valueProp__edRf1
+                    )}
+                    description={
+                      <React.Fragment>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__evYmM
+                          )}
+                        >
+                          {
+                            "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components."
+                          }
+                        </div>
+
+                        <Button link={"/react" as const}>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text___9W79H
+                            )}
+                          >
+                            {"React Deployments >"}
+                          </div>
+                        </Button>
+                      </React.Fragment>
+                    }
+                    flatIcon={true}
+                    icon={
+                      <CheckIcon
+                        className={classNames(projectcss.all, sty.svg__xFcel)}
+                        role={"img"}
+                      />
+                    }
+                    title={"Svelte vs React"}
+                  />
+
+                  <ValueProp
+                    className={classNames(
+                      "__wab_instance",
+                      sty.valueProp__lXlEw
+                    )}
+                    description={
+                      <React.Fragment>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__hTcmb
+                          )}
+                        >
+                          {
+                            "The progressive javascript framework.  Already know HTML, CSS and JavaScript? Read the guide and start deploying VueJS apps in no time!               \n"
+                          }
+                        </div>
+
+                        <Button link={"/vue" as const}>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__zBwAv
+                            )}
+                          >
+                            {"Vue Deployments >"}
+                          </div>
+                        </Button>
+                      </React.Fragment>
+                    }
+                    flatIcon={true}
+                    icon={
+                      <CheckIcon
+                        className={classNames(projectcss.all, sty.svg___737Pn)}
+                        role={"img"}
+                      />
+                    }
+                    title={"Svelte vs VueJS"}
+                  />
+
+                  <ValueProp
+                    className={classNames(
+                      "__wab_instance",
+                      sty.valueProp__qcfSg
+                    )}
+                    description={
+                      <React.Fragment>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__lRmnk
+                          )}
+                        >
+                          {
+                            "Learn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. Deploy your Angular app now."
+                          }
+                        </div>
+
+                        <Button link={"/angular" as const}>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text___48Czc
+                            )}
+                          >
+                            {"Angular Deployments >"}
+                          </div>
+                        </Button>
+                      </React.Fragment>
+                    }
+                    flatIcon={true}
+                    icon={
+                      <CheckIcon
+                        className={classNames(projectcss.all, sty.svg__so2Cu)}
+                        role={"img"}
+                      />
+                    }
+                    title={"Svelte vs Angular"}
+                  />
+                </p.Stack>
+              </p.Stack>
+            </Section>
+
+            <Banner
+              data-plasmic-name={"banner"}
+              data-plasmic-override={overrides.banner}
+              className={classNames("__wab_instance", sty.banner)}
+              left={
+                <React.Fragment>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__yimCs
+                    )}
+                  >
+                    {"React Example Tutorial"}
+                  </div>
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__p2NTv
+                    )}
+                  >
+                    {"Do it Yourself"}
+                  </div>
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__ciVwm
+                    )}
+                  >
+                    {
+                      "Get started now and deploy your Svelte app to production following the simple deployment guide. Have your Svelte micro frontend hosted on your domain in minutes."
+                    }
+                  </div>
+
+                  <Button
+                    link={"/docs/guides/deploying/frameworks/svelte" as const}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__xt0D5
+                      )}
+                    >
+                      {"Read Documentation >"}
+                    </div>
+                  </Button>
+                </React.Fragment>
+              }
+            />
           </p.Stack>
 
           <section
@@ -243,12 +475,10 @@ function PlasmicLandingPagesSvelte__RenderFunc(props: {
               >
                 <div className={classNames(projectcss.all, sty.freeBox__w2HfO)}>
                   <h2
-                    data-plasmic-name={"h2"}
-                    data-plasmic-override={overrides.h2}
                     className={classNames(
                       projectcss.h2,
                       projectcss.__wab_text,
-                      sty.h2
+                      sty.h2___9NtQ
                     )}
                   >
                     {"Why deploy Svelte?"}
@@ -885,18 +1115,20 @@ const PlasmicDescendants = {
     "foreground",
     "img",
     "foreground2",
+    "valuePropsSection",
+    "banner",
     "section",
     "foreground3",
-    "h2",
     "footerSection"
   ],
   navbar: ["navbar"],
   foreground: ["foreground"],
   img: ["img"],
   foreground2: ["foreground2"],
-  section: ["section", "foreground3", "h2"],
-  foreground3: ["foreground3", "h2"],
-  h2: ["h2"],
+  valuePropsSection: ["valuePropsSection"],
+  banner: ["banner"],
+  section: ["section", "foreground3"],
+  foreground3: ["foreground3"],
   footerSection: ["footerSection"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -908,9 +1140,10 @@ type NodeDefaultElementType = {
   foreground: "div";
   img: typeof p.PlasmicImg;
   foreground2: "div";
+  valuePropsSection: typeof Section;
+  banner: typeof Banner;
   section: "section";
   foreground3: "div";
-  h2: "h2";
   footerSection: typeof FooterSection;
 };
 
@@ -975,9 +1208,10 @@ export const PlasmicLandingPagesSvelte = Object.assign(
     foreground: makeNodeComponent("foreground"),
     img: makeNodeComponent("img"),
     foreground2: makeNodeComponent("foreground2"),
+    valuePropsSection: makeNodeComponent("valuePropsSection"),
+    banner: makeNodeComponent("banner"),
     section: makeNodeComponent("section"),
     foreground3: makeNodeComponent("foreground3"),
-    h2: makeNodeComponent("h2"),
     footerSection: makeNodeComponent("footerSection"),
 
     // Metadata about props expected for PlasmicLandingPagesSvelte

@@ -256,7 +256,7 @@ function PlasmicLandingPagesReact__RenderFunc(props: {
                   )}
                 >
                   {
-                    "Looking for the right framework for your next JAMStack example, tutorial or project?  Launch React alongside any number of additional frameworks, get a feel for the development experience, and see how they perform.  Host your React app free with Fathym's LowCodeUnit micro frontend framework."
+                    "Looking for the right framework for your next JAMStack example, tutorial or project?  Deploy React alongside any number of additional frameworks, get a feel for the development experience, and see how they perform.  Host your React app free with Fathym's LowCodeUnit micro frontend framework."
                   }
                 </div>
               </p.Stack>
@@ -286,7 +286,7 @@ function PlasmicLandingPagesReact__RenderFunc(props: {
                           )}
                         >
                           {
-                            "Deploy your Angular app alongside React in order to compare these two end-to-end frameworks.  Be coding in minutes, and release your favorite framework to your users."
+                            "Learn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. Deploy your Angular app now."
                           }
                         </div>
 
@@ -310,7 +310,7 @@ function PlasmicLandingPagesReact__RenderFunc(props: {
                         role={"img"}
                       />
                     }
-                    title={"React vs Angular Examples"}
+                    title={"React vs Angular"}
                   />
 
                   <ValueProp
@@ -352,7 +352,7 @@ function PlasmicLandingPagesReact__RenderFunc(props: {
                         role={"img"}
                       />
                     }
-                    title={"React vs VueJS Examples"}
+                    title={"React vs VueJS"}
                   />
 
                   <ValueProp
@@ -374,7 +374,7 @@ function PlasmicLandingPagesReact__RenderFunc(props: {
                           }
                         </div>
 
-                        <Button link={"/svelte" as const}>
+                        <Button link={"/svelte-deployment" as const}>
                           <div
                             className={classNames(
                               projectcss.all,
@@ -394,7 +394,7 @@ function PlasmicLandingPagesReact__RenderFunc(props: {
                         role={"img"}
                       />
                     }
-                    title={"React vs Svelte Examples"}
+                    title={"React vs Svelte"}
                   />
                 </p.Stack>
               </p.Stack>

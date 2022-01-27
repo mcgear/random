@@ -35,7 +35,9 @@ import {
 } from "@plasmicapp/react-web";
 import Navbar from "../../Navbar"; // plasmic-import: ThexOuedbks1/component
 import Button from "../../Button"; // plasmic-import: 9tG1OyZAVIis/component
+import Section from "../../Section"; // plasmic-import: lsmUdTd1Sc6_/component
 import ValueProp from "../../ValueProp"; // plasmic-import: 7Osq_1lpBJMp/component
+import Banner from "../../Banner"; // plasmic-import: vcZIwAsP-PHX/component
 import PriceCard from "../../PriceCard"; // plasmic-import: 7SzxSSEbWsst/component
 import FooterSection from "../../FooterSection"; // plasmic-import: iXxSJX956e4d/component
 
@@ -47,11 +49,11 @@ import projectcss from "../landing_page_starter/plasmic_landing_page_starter.mod
 import sty from "./PlasmicLandingPagesVue.module.css"; // plasmic-import: -qFSc60jT7K/css
 
 import AppleIcon from "../landing_page_starter/icons/PlasmicIcon__Apple"; // plasmic-import: MwxVTyBYf-O_/icon
+import CheckIcon from "../landing_page_starter/icons/PlasmicIcon__Check"; // plasmic-import: ilXNZMoWvbmT/icon
 import HammerIcon from "../landing_page_starter/icons/PlasmicIcon__Hammer"; // plasmic-import: ePabL_LXTnk1/icon
 import TargetIcon from "../landing_page_starter/icons/PlasmicIcon__Target"; // plasmic-import: EMtLeGl57bmd/icon
 import FastIcon from "../landing_page_starter/icons/PlasmicIcon__Fast"; // plasmic-import: WqD9rzKB0T2b/icon
 import StrongIcon from "../landing_page_starter/icons/PlasmicIcon__Strong"; // plasmic-import: FK_DHr1NmIMb/icon
-import CheckIcon from "../landing_page_starter/icons/PlasmicIcon__Check"; // plasmic-import: ilXNZMoWvbmT/icon
 
 export type PlasmicLandingPagesVue__VariantMembers = {};
 
@@ -70,10 +72,10 @@ export type PlasmicLandingPagesVue__OverridesType = {
   foreground?: p.Flex<"div">;
   img?: p.Flex<typeof p.PlasmicImg>;
   foreground2?: p.Flex<"div">;
-  h1?: p.Flex<"h1">;
+  valuePropsSection?: p.Flex<typeof Section>;
+  banner?: p.Flex<typeof Banner>;
   section?: p.Flex<"section">;
   foreground3?: p.Flex<"div">;
-  h2?: p.Flex<"h2">;
   footerSection?: p.Flex<typeof FooterSection>;
 };
 
@@ -220,48 +222,234 @@ function PlasmicLandingPagesVue__RenderFunc(props: {
               </div>
             </p.Stack>
 
-            <div className={classNames(projectcss.all, sty.columns__zbMhu)}>
-              <div className={classNames(projectcss.all, sty.column__kvsDy)}>
-                <div className={classNames(projectcss.all, sty.freeBox__nxGme)}>
-                  <h1
-                    data-plasmic-name={"h1"}
-                    data-plasmic-override={overrides.h1}
+            <Section
+              data-plasmic-name={"valuePropsSection"}
+              data-plasmic-override={overrides.valuePropsSection}
+              className={classNames("__wab_instance", sty.valuePropsSection)}
+            >
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox___3ChIw)}
+              >
+                <div className={classNames(projectcss.all, sty.freeBox__f7K25)}>
+                  <h2
                     className={classNames(
-                      projectcss.h1,
+                      projectcss.h2,
                       projectcss.__wab_text,
-                      sty.h1
+                      sty.h2__vtNU
                     )}
                   >
-                    {"Do it Yourself"}
-                  </h1>
+                    {"See how Vue Compares"}
+                  </h2>
+                </div>
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___6DhOz
+                  )}
+                >
+                  {
+                    "Looking for the right framework for your next JAMStack example, tutorial or project?  Deploy Vue alongside any number of additional frameworks, get a feel for the development experience, and see how they perform.  Deploy your Vue app free with Fathym's LowCodeUnit micro frontend framework."
+                  }
+                </div>
+              </p.Stack>
+
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__kO3Mc)}
+              >
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__nuOoY)}
+                >
+                  <ValueProp
+                    className={classNames(
+                      "__wab_instance",
+                      sty.valueProp__oirUm
+                    )}
+                    description={
+                      <React.Fragment>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__zmXw1
+                          )}
+                        >
+                          {
+                            "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components."
+                          }
+                        </div>
+
+                        <Button link={"/react" as const}>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__rZBt3
+                            )}
+                          >
+                            {"React Deployments >"}
+                          </div>
+                        </Button>
+                      </React.Fragment>
+                    }
+                    flatIcon={true}
+                    icon={
+                      <CheckIcon
+                        className={classNames(projectcss.all, sty.svg__l8Swl)}
+                        role={"img"}
+                      />
+                    }
+                    title={"VueJS vs React"}
+                  />
+
+                  <ValueProp
+                    className={classNames(
+                      "__wab_instance",
+                      sty.valueProp__uZ2D
+                    )}
+                    description={
+                      <React.Fragment>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__zdirw
+                          )}
+                        >
+                          {
+                            "Learn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. Deploy your Angular app now."
+                          }
+                        </div>
+
+                        <Button link={"/angular" as const}>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__aafyz
+                            )}
+                          >
+                            {"Angular Deployments >"}
+                          </div>
+                        </Button>
+                      </React.Fragment>
+                    }
+                    flatIcon={true}
+                    icon={
+                      <CheckIcon
+                        className={classNames(projectcss.all, sty.svg__zuo07)}
+                        role={"img"}
+                      />
+                    }
+                    title={"VueJS vs Angular"}
+                  />
+
+                  <ValueProp
+                    className={classNames(
+                      "__wab_instance",
+                      sty.valueProp___1Yt8V
+                    )}
+                    description={
+                      <React.Fragment>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__mxhRi
+                          )}
+                        >
+                          {
+                            "Whereas traditional frameworks like React and Vue do the bulk of their work in the browser, Svelte shifts that work into a compile step that happens when you build your app."
+                          }
+                        </div>
+
+                        <Button link={"/svelte-deployment" as const}>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__v2OmJ
+                            )}
+                          >
+                            {"Svelte Deployments >"}
+                          </div>
+                        </Button>
+                      </React.Fragment>
+                    }
+                    flatIcon={true}
+                    icon={
+                      <CheckIcon
+                        className={classNames(projectcss.all, sty.svg___00Bgo)}
+                        role={"img"}
+                      />
+                    }
+                    title={"VueJS vs Svelte"}
+                  />
+                </p.Stack>
+              </p.Stack>
+            </Section>
+
+            <Banner
+              data-plasmic-name={"banner"}
+              data-plasmic-override={overrides.banner}
+              className={classNames("__wab_instance", sty.banner)}
+              left={
+                <React.Fragment>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__wpvny
+                    )}
+                  >
+                    {"React Example Tutorial"}
+                  </div>
 
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__bS6Zq
+                      sty.text__p2NTv
+                    )}
+                  >
+                    {"Do it Yourself"}
+                  </div>
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__ciVwm
                     )}
                   >
                     {
-                      "Get started now following the simple Vue deployment guide, have Vue hosted on your domain in minutes."
+                      "Get started now and deploy your Vue app to production following the simple deployment guide. Have your Vue micro frontend hosted on your domain in minutes."
                     }
                   </div>
-                </div>
 
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link__zhPix
-                  )}
-                  component={Link}
-                  href={"/docs/guides/deploying/frameworks/vue" as const}
-                  platform={"nextjs"}
-                >
-                  {"Read Documentation >"}
-                </p.PlasmicLink>
-              </div>
-            </div>
+                  <Button
+                    link={"/docs/guides/deploying/frameworks/vue" as const}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__q60Dm
+                      )}
+                    >
+                      {"Read Documentation >"}
+                    </div>
+                  </Button>
+                </React.Fragment>
+              }
+            />
           </p.Stack>
 
           <section
@@ -283,12 +471,10 @@ function PlasmicLandingPagesVue__RenderFunc(props: {
               >
                 <div className={classNames(projectcss.all, sty.freeBox__dsTqr)}>
                   <h2
-                    data-plasmic-name={"h2"}
-                    data-plasmic-override={overrides.h2}
                     className={classNames(
                       projectcss.h2,
                       projectcss.__wab_text,
-                      sty.h2
+                      sty.h2__xmy8W
                     )}
                   >
                     {"Why deploy Vue?"}
@@ -933,20 +1119,20 @@ const PlasmicDescendants = {
     "foreground",
     "img",
     "foreground2",
-    "h1",
+    "valuePropsSection",
+    "banner",
     "section",
     "foreground3",
-    "h2",
     "footerSection"
   ],
   navbar: ["navbar"],
   foreground: ["foreground"],
   img: ["img"],
   foreground2: ["foreground2"],
-  h1: ["h1"],
-  section: ["section", "foreground3", "h2"],
-  foreground3: ["foreground3", "h2"],
-  h2: ["h2"],
+  valuePropsSection: ["valuePropsSection"],
+  banner: ["banner"],
+  section: ["section", "foreground3"],
+  foreground3: ["foreground3"],
   footerSection: ["footerSection"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -958,10 +1144,10 @@ type NodeDefaultElementType = {
   foreground: "div";
   img: typeof p.PlasmicImg;
   foreground2: "div";
-  h1: "h1";
+  valuePropsSection: typeof Section;
+  banner: typeof Banner;
   section: "section";
   foreground3: "div";
-  h2: "h2";
   footerSection: typeof FooterSection;
 };
 
@@ -1026,10 +1212,10 @@ export const PlasmicLandingPagesVue = Object.assign(
     foreground: makeNodeComponent("foreground"),
     img: makeNodeComponent("img"),
     foreground2: makeNodeComponent("foreground2"),
-    h1: makeNodeComponent("h1"),
+    valuePropsSection: makeNodeComponent("valuePropsSection"),
+    banner: makeNodeComponent("banner"),
     section: makeNodeComponent("section"),
     foreground3: makeNodeComponent("foreground3"),
-    h2: makeNodeComponent("h2"),
     footerSection: makeNodeComponent("footerSection"),
 
     // Metadata about props expected for PlasmicLandingPagesVue

@@ -35,7 +35,9 @@ import {
 } from "@plasmicapp/react-web";
 import Navbar from "../../Navbar"; // plasmic-import: ThexOuedbks1/component
 import Button from "../../Button"; // plasmic-import: 9tG1OyZAVIis/component
+import Section from "../../Section"; // plasmic-import: lsmUdTd1Sc6_/component
 import ValueProp from "../../ValueProp"; // plasmic-import: 7Osq_1lpBJMp/component
+import Banner from "../../Banner"; // plasmic-import: vcZIwAsP-PHX/component
 import PriceCard from "../../PriceCard"; // plasmic-import: 7SzxSSEbWsst/component
 import FooterSection from "../../FooterSection"; // plasmic-import: iXxSJX956e4d/component
 
@@ -47,11 +49,11 @@ import projectcss from "../landing_page_starter/plasmic_landing_page_starter.mod
 import sty from "./PlasmicLandingPagesAngular.module.css"; // plasmic-import: rXmmYC1OnQW/css
 
 import AppleIcon from "../landing_page_starter/icons/PlasmicIcon__Apple"; // plasmic-import: MwxVTyBYf-O_/icon
+import CheckIcon from "../landing_page_starter/icons/PlasmicIcon__Check"; // plasmic-import: ilXNZMoWvbmT/icon
 import HammerIcon from "../landing_page_starter/icons/PlasmicIcon__Hammer"; // plasmic-import: ePabL_LXTnk1/icon
 import TargetIcon from "../landing_page_starter/icons/PlasmicIcon__Target"; // plasmic-import: EMtLeGl57bmd/icon
 import FastIcon from "../landing_page_starter/icons/PlasmicIcon__Fast"; // plasmic-import: WqD9rzKB0T2b/icon
 import StrongIcon from "../landing_page_starter/icons/PlasmicIcon__Strong"; // plasmic-import: FK_DHr1NmIMb/icon
-import CheckIcon from "../landing_page_starter/icons/PlasmicIcon__Check"; // plasmic-import: ilXNZMoWvbmT/icon
 
 export type PlasmicLandingPagesAngular__VariantMembers = {};
 
@@ -70,10 +72,10 @@ export type PlasmicLandingPagesAngular__OverridesType = {
   foreground?: p.Flex<"div">;
   img?: p.Flex<typeof p.PlasmicImg>;
   foreground2?: p.Flex<"div">;
-  h1?: p.Flex<"h1">;
+  valuePropsSection?: p.Flex<typeof Section>;
+  banner?: p.Flex<typeof Banner>;
   section?: p.Flex<"section">;
   foreground3?: p.Flex<"div">;
-  h2?: p.Flex<"h2">;
   footerSection?: p.Flex<typeof FooterSection>;
 };
 
@@ -199,7 +201,9 @@ function PlasmicLandingPagesAngular__RenderFunc(props: {
                   <Button
                     className={classNames("__wab_instance", sty.button___1YUvP)}
                     color={"blue" as const}
-                    link={"/dashboard/create-project" as const}
+                    link={
+                      "/dashboard/create-project?recipeId=00000000-0000-0000-0000-000000000001" as const
+                    }
                   >
                     {"Get Started for Free"}
                   </Button>
@@ -222,50 +226,236 @@ function PlasmicLandingPagesAngular__RenderFunc(props: {
               </div>
             </p.Stack>
 
-            <div className={classNames(projectcss.all, sty.columns__lnujU)}>
-              <div className={classNames(projectcss.all, sty.column___5SgkD)}>
+            <Section
+              data-plasmic-name={"valuePropsSection"}
+              data-plasmic-override={overrides.valuePropsSection}
+              className={classNames("__wab_instance", sty.valuePropsSection)}
+            >
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__kx75U)}
+              >
                 <div
-                  className={classNames(projectcss.all, sty.freeBox___1FeX9)}
+                  className={classNames(projectcss.all, sty.freeBox___4ZcUe)}
                 >
-                  <h1
-                    data-plasmic-name={"h1"}
-                    data-plasmic-override={overrides.h1}
+                  <h2
                     className={classNames(
-                      projectcss.h1,
+                      projectcss.h2,
                       projectcss.__wab_text,
-                      sty.h1
+                      sty.h2__f3MM
                     )}
                   >
-                    {"Do it Yourself"}
-                  </h1>
+                    {"See how Angular Compares"}
+                  </h2>
+                </div>
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__qc75X
+                  )}
+                >
+                  {
+                    "Looking for the right framework for your next JAMStack example, tutorial or project?  Deploy Angular alongside any number of additional frameworks, get a feel for the development experience, and see how they perform.  Deploy your Angular app free with Fathym's LowCodeUnit micro frontend framework."
+                  }
+                </div>
+              </p.Stack>
+
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__kO3Mc)}
+              >
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__nuOoY)}
+                >
+                  <ValueProp
+                    className={classNames(
+                      "__wab_instance",
+                      sty.valueProp__osvGo
+                    )}
+                    description={
+                      <React.Fragment>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__eg1T
+                          )}
+                        >
+                          {
+                            "React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components."
+                          }
+                        </div>
+
+                        <Button link={"/react" as const}>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__q8ZuE
+                            )}
+                          >
+                            {"React Deployments >"}
+                          </div>
+                        </Button>
+                      </React.Fragment>
+                    }
+                    flatIcon={true}
+                    icon={
+                      <CheckIcon
+                        className={classNames(projectcss.all, sty.svg__mUh7M)}
+                        role={"img"}
+                      />
+                    }
+                    title={"Angular vs React"}
+                  />
+
+                  <ValueProp
+                    className={classNames(
+                      "__wab_instance",
+                      sty.valueProp__djhvr
+                    )}
+                    description={
+                      <React.Fragment>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__ujrde
+                          )}
+                        >
+                          {
+                            "The progressive javascript framework.  Already know HTML, CSS and JavaScript? Read the guide and start deploying VueJS apps in no time!               \n"
+                          }
+                        </div>
+
+                        <Button link={"/vue" as const}>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text___8Iotm
+                            )}
+                          >
+                            {"Vue Deployments >"}
+                          </div>
+                        </Button>
+                      </React.Fragment>
+                    }
+                    flatIcon={true}
+                    icon={
+                      <CheckIcon
+                        className={classNames(projectcss.all, sty.svg__rhBDe)}
+                        role={"img"}
+                      />
+                    }
+                    title={"Angular vs VueJS"}
+                  />
+
+                  <ValueProp
+                    className={classNames(
+                      "__wab_instance",
+                      sty.valueProp__wygBi
+                    )}
+                    description={
+                      <React.Fragment>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__eAwyV
+                          )}
+                        >
+                          {
+                            "Whereas traditional frameworks like React and Vue do the bulk of their work in the browser, Svelte shifts that work into a compile step that happens when you build your app."
+                          }
+                        </div>
+
+                        <Button link={"/svelte-deployment" as const}>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__kFbiz
+                            )}
+                          >
+                            {"Svelte Deployments >"}
+                          </div>
+                        </Button>
+                      </React.Fragment>
+                    }
+                    flatIcon={true}
+                    icon={
+                      <CheckIcon
+                        className={classNames(projectcss.all, sty.svg__mMim3)}
+                        role={"img"}
+                      />
+                    }
+                    title={"Angular vs Svelte"}
+                  />
+                </p.Stack>
+              </p.Stack>
+            </Section>
+
+            <Banner
+              data-plasmic-name={"banner"}
+              data-plasmic-override={overrides.banner}
+              className={classNames("__wab_instance", sty.banner)}
+              left={
+                <React.Fragment>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__ke9B
+                    )}
+                  >
+                    {"React Example Tutorial"}
+                  </div>
 
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__oSMss
+                      sty.text__p2NTv
+                    )}
+                  >
+                    {"Do it Yourself"}
+                  </div>
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__ciVwm
                     )}
                   >
                     {
-                      "Get started now following the simple Angular deployment guide, have Angular hosted on your domain in minutes."
+                      "Get started now and deploy your Angular app to production following the simple deployment guide. Have your Angular micro frontend hosted on your domain in minutes."
                     }
                   </div>
-                </div>
 
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link__jY8S
-                  )}
-                  component={Link}
-                  href={"/docs/guides/deploying/frameworks/angular" as const}
-                  platform={"nextjs"}
-                >
-                  {"Read Documentation >"}
-                </p.PlasmicLink>
-              </div>
-            </div>
+                  <Button
+                    link={"/docs/guides/deploying/frameworks/angular" as const}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__kiMi
+                      )}
+                    >
+                      {"Read Documentation >"}
+                    </div>
+                  </Button>
+                </React.Fragment>
+              }
+            />
           </p.Stack>
 
           <section
@@ -287,12 +477,10 @@ function PlasmicLandingPagesAngular__RenderFunc(props: {
               >
                 <div className={classNames(projectcss.all, sty.freeBox__mivhc)}>
                   <h2
-                    data-plasmic-name={"h2"}
-                    data-plasmic-override={overrides.h2}
                     className={classNames(
                       projectcss.h2,
                       projectcss.__wab_text,
-                      sty.h2
+                      sty.h2__yrEH
                     )}
                   >
                     {"Why deploy Angular?"}
@@ -927,20 +1115,20 @@ const PlasmicDescendants = {
     "foreground",
     "img",
     "foreground2",
-    "h1",
+    "valuePropsSection",
+    "banner",
     "section",
     "foreground3",
-    "h2",
     "footerSection"
   ],
   navbar: ["navbar"],
   foreground: ["foreground"],
   img: ["img"],
   foreground2: ["foreground2"],
-  h1: ["h1"],
-  section: ["section", "foreground3", "h2"],
-  foreground3: ["foreground3", "h2"],
-  h2: ["h2"],
+  valuePropsSection: ["valuePropsSection"],
+  banner: ["banner"],
+  section: ["section", "foreground3"],
+  foreground3: ["foreground3"],
   footerSection: ["footerSection"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -952,10 +1140,10 @@ type NodeDefaultElementType = {
   foreground: "div";
   img: typeof p.PlasmicImg;
   foreground2: "div";
-  h1: "h1";
+  valuePropsSection: typeof Section;
+  banner: typeof Banner;
   section: "section";
   foreground3: "div";
-  h2: "h2";
   footerSection: typeof FooterSection;
 };
 
@@ -1020,10 +1208,10 @@ export const PlasmicLandingPagesAngular = Object.assign(
     foreground: makeNodeComponent("foreground"),
     img: makeNodeComponent("img"),
     foreground2: makeNodeComponent("foreground2"),
-    h1: makeNodeComponent("h1"),
+    valuePropsSection: makeNodeComponent("valuePropsSection"),
+    banner: makeNodeComponent("banner"),
     section: makeNodeComponent("section"),
     foreground3: makeNodeComponent("foreground3"),
-    h2: makeNodeComponent("h2"),
     footerSection: makeNodeComponent("footerSection"),
 
     // Metadata about props expected for PlasmicLandingPagesAngular
