@@ -466,6 +466,35 @@
   padding-top: 0px;
   min-width: 0;
 }
+.freeBox___7Lx8J {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  padding: 8px;
+}
+.button__efjs7:global(.__wab_instance) {
+  position: relative;
+}
+.svg__s2Grd {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  object-fit: cover;
+}
+.text__nyLd1 {
+  height: auto;
+}
+.svg__sjmMd {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  object-fit: cover;
+}
 .svg___3VRyh {
   width: 24px;
   height: 24px;

@@ -459,6 +459,32 @@
   font-size: 24px;
   min-width: 0;
 }
+.freeBox__rOmbs {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  padding: 8px;
+}
+.button__bznyw:global(.__wab_instance) {
+  position: relative;
+}
+.svg__faaVl {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  object-fit: cover;
+}
+.svg__keRmX {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  object-fit: cover;
+}
 .svg__yTqo4 {
   width: 24px;
   height: 24px;

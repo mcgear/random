@@ -438,19 +438,36 @@ function PlasmicLandingPagesReact__RenderFunc(props: {
                     }
                   </div>
 
-                  <Button
-                    link={"/docs/guides/deploying/frameworks/react" as const}
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__kIuUa)}
                   >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__uHUsG
-                      )}
+                    <Button
+                      link={"/docs/guides/deploying/frameworks/react" as const}
                     >
-                      {"Read Documentation >"}
-                    </div>
-                  </Button>
+                      <Button
+                        className={classNames(
+                          "__wab_instance",
+                          sty.button__sFzU
+                        )}
+                        color={"blue" as const}
+                        link={
+                          "/dashboard/create-project?recipeId=00000000-0000-0000-0000-000000000002" as const
+                        }
+                      >
+                        {"Get Started for Free"}
+                      </Button>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__uHUsG
+                        )}
+                      >
+                        {"Read Documentation >"}
+                      </div>
+                    </Button>
+                  </div>
                 </React.Fragment>
               }
             />

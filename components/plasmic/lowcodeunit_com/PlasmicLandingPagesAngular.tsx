@@ -440,19 +440,38 @@ function PlasmicLandingPagesAngular__RenderFunc(props: {
                     }
                   </div>
 
-                  <Button
-                    link={"/docs/guides/deploying/frameworks/angular" as const}
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__bmYQw)}
                   >
-                    <div
+                    <Button
                       className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__kiMi
+                        "__wab_instance",
+                        sty.button__kuUpv
                       )}
+                      color={"blue" as const}
+                      link={
+                        "/dashboard/create-project?recipeId=00000000-0000-0000-0000-000000000001" as const
+                      }
                     >
-                      {"Read Documentation >"}
-                    </div>
-                  </Button>
+                      {"Get Started for Free"}
+                    </Button>
+
+                    <Button
+                      link={
+                        "/docs/guides/deploying/frameworks/angular" as const
+                      }
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__kiMi
+                        )}
+                      >
+                        {"Read Documentation >"}
+                      </div>
+                    </Button>
+                  </div>
                 </React.Fragment>
               }
             />
@@ -663,7 +682,9 @@ function PlasmicLandingPagesAngular__RenderFunc(props: {
                   <Button
                     className={classNames("__wab_instance", sty.button__jHin4)}
                     color={"blue" as const}
-                    link={"/dashboard/create-project" as const}
+                    link={
+                      "/dashboard/create-project?recipeId=00000000-0000-0000-0000-000000000001" as const
+                    }
                   >
                     {"Get Started for Free"}
                   </Button>

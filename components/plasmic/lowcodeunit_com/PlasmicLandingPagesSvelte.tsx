@@ -438,19 +438,36 @@ function PlasmicLandingPagesSvelte__RenderFunc(props: {
                     }
                   </div>
 
-                  <Button
-                    link={"/docs/guides/deploying/frameworks/svelte" as const}
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__rOmbs)}
                   >
-                    <div
+                    <Button
                       className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__xt0D5
+                        "__wab_instance",
+                        sty.button__bznyw
                       )}
+                      color={"blue" as const}
+                      link={
+                        "/dashboard/create-project?recipeId=00000000-0000-0000-0000-000000000004" as const
+                      }
                     >
-                      {"Read Documentation >"}
-                    </div>
-                  </Button>
+                      {"Get Started for Free"}
+                    </Button>
+
+                    <Button
+                      link={"/docs/guides/deploying/frameworks/svelte" as const}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__xt0D5
+                        )}
+                      >
+                        {"Read Documentation >"}
+                      </div>
+                    </Button>
+                  </div>
                 </React.Fragment>
               }
             />

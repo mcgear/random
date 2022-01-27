@@ -434,19 +434,44 @@ function PlasmicLandingPagesVue__RenderFunc(props: {
                     }
                   </div>
 
-                  <Button
-                    link={"/docs/guides/deploying/frameworks/vue" as const}
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox___7Lx8J)}
                   >
-                    <div
+                    <Button
                       className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__q60Dm
+                        "__wab_instance",
+                        sty.button__efjs7
                       )}
+                      color={"blue" as const}
+                      link={
+                        "/dashboard/create-project?recipeId=00000000-0000-0000-0000-000000000003" as const
+                      }
                     >
-                      {"Read Documentation >"}
-                    </div>
-                  </Button>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__nyLd1
+                        )}
+                      >
+                        {"Get Started for Free"}
+                      </div>
+                    </Button>
+
+                    <Button
+                      link={"/docs/guides/deploying/frameworks/vue" as const}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__q60Dm
+                        )}
+                      >
+                        {"Read Documentation >"}
+                      </div>
+                    </Button>
+                  </div>
                 </React.Fragment>
               }
             />
